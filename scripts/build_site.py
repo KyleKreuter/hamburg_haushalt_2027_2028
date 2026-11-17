@@ -18,6 +18,7 @@ import sys
 DATASETS = ["eckwerte", "einzelplaene", "produkte", "finanzbericht", "kostenarten", "kennzahlen"]
 D3_VERSION = "7.9.0"
 IMPRESSUM = "https://kyle.vermittler.dev"
+REPO = "https://github.com/KyleKreuter/hamburg_haushalt_2027_2028"
 # Controller named in the privacy notice (Art. 13 GDPR); taken from the public page at IMPRESSUM.
 VERANTWORTLICH = 'Kyle Kreuter<br>E-Mail: <a href="mailto:kyle.kreuter@outlook.de">kyle.kreuter@outlook.de</a>'
 STAND = "17. November 2026"
@@ -115,9 +116,10 @@ HEAD = (
 FOOTER = f"""
 <footer class="site-foot">
   <p>Unabhängige Auswertung der veröffentlichten Haushaltspläne.<br>Kein Angebot der Freien und Hansestadt Hamburg.</p>
-  <nav class="site-links" aria-label="Rechtliches">
+  <nav class="site-links" aria-label="Weitere Seiten">
     <a href="datenschutz.html">Datenschutz</a>
     <a href="{IMPRESSUM}" rel="noopener">Impressum</a>
+    <a href="{REPO}" rel="noopener">Quellcode und Daten</a>
   </nav>
 </footer>
 """
