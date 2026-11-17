@@ -1,0 +1,19 @@
+# Local Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Editor and OS files
+.DS_Store
+.idea/
+
+# Source documents of the Freie und Hansestadt Hamburg (download them, see README)
+raw/pdf/
+raw/txt/
+raw/web/
+
+# Build output of scripts/build_site.py
+site/
+
+# Earlier draft of the dashboard page
+dashboard/index_v1.html

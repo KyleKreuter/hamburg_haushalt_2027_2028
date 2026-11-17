@@ -1,0 +1,1799 @@
+<meta name="dash-one-writer">
+<style>
+  .hx {
+    --hx-bg: #0e1c2b; --hx-panel: #13263a; --hx-ctl: #1a3149; --hx-ctl-hover: #21405f; --hx-line: #274159;
+    --hx-ink: #eef2f6; --hx-muted: #a6b6c6; --hx-accent: #f6c445; --hx-sky: #6fb7e9; --hx-pale: #b8c4ce;
+    --hx-slate: #64798d; --hx-bad: #ef7d63;
+    container-type: inline-size;
+    display: flex; flex-direction: column; gap: 64px;
+    background: var(--hx-bg); color: var(--hx-ink);
+    font-family: var(--font-sans); font-size: 15px; line-height: 1.5;
+    --hx-pad: clamp(18px, 3.2vw, 44px);
+    border-radius: 14px; padding: var(--hx-pad);
+    color-scheme: dark;
+  }
+  .hx [hidden] { display: none !important; }
+  .hx h1, .hx h2, .hx h3 { margin: 0; font-weight: 600; letter-spacing: -0.01em; text-wrap: balance; }
+  .hx h1 { font-size: clamp(30px, 4.4vw, 48px); line-height: 1.05; }
+  .hx h2 { font-size: clamp(22px, 2.4vw, 28px); line-height: 1.15; }
+  .hx h3 { font-size: 17px; line-height: 1.3; }
+  .hx p { margin: 0; max-width: 68ch; }
+  .hx b { font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .hx-muted { color: var(--hx-muted); }
+  .hx-accent { color: var(--hx-accent); }
+  .hx-head { display: flex; flex-direction: column; gap: 18px; }
+  .hx-lede { font-size: 18px; line-height: 1.5; max-width: 60ch; }
+  .hx-section { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
+  .hx-section-head { display: flex; flex-direction: column; gap: 8px; }
+
+  /* Explorer: controls, stage, figures, table */
+  .hx-explorer { display: grid; grid-template-columns: 236px minmax(0, 1fr) 212px; grid-template-areas: "ctl stage fig" "ctl verlauf verlauf" "ctl table table"; gap: 32px; align-items: start; }
+  .hx-verlauf { grid-area: verlauf; display: flex; flex-direction: column; gap: 18px; min-width: 0; background: var(--hx-panel); border-radius: 12px; padding: clamp(16px, 2.4vw, 28px); }
+  .hx-verlauf-head { display: flex; flex-direction: column; gap: 4px; }
+  .hx-verlauf-head h3 { font-size: 20px; }
+  .hx-verlauf-head .hx-muted { font-size: 13px; }
+  .hx-verlauf-figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px 24px; }
+  .hx-verlauf-figs .hx-fig-num { font-size: 22px; }
+  .hx-verlauf-body { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(min(300px, 100%), 1fr); gap: 24px; align-items: start; }
+  .hx-verlauf .hx-chart { min-height: 260px; }
+  .hx-verlauf .hx-table thead th { background: var(--hx-ctl); }
+  .hx-back { align-self: flex-start; font: inherit; font-size: 13px; color: var(--hx-accent); background: none; border: 0; padding: 8px 0; cursor: pointer; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; }
+  .hx-back:hover { text-decoration-color: currentColor; }
+  .hx-detail { display: flex; flex-direction: column; gap: 14px; padding-top: 18px; }
+  .hx-detail[hidden] { display: none; }
+  .hx-detail .hx-verlauf-note { margin: 0; }
+  .hx-kosten tr.hx-davon td { color: var(--hx-muted); font-size: 13px; padding-top: 6px; padding-bottom: 6px; }
+  .hx-kosten tr.hx-davon td:first-child { padding-left: 28px; }
+  .hx-kosten tfoot td { font-weight: 600; border-bottom: 0; }
+  .hx-kosten tfoot tr.hx-davon td { font-weight: 400; }
+  .hx-share { display: inline-block; vertical-align: middle; width: 90px; height: 8px; border-radius: 4px; background: var(--hx-ctl); overflow: hidden; margin-right: 10px; }
+  .hx-share > span { display: block; height: 100%; background: var(--hx-accent); }
+  .hx-share-t { font-variant-numeric: tabular-nums; font-size: 13px; color: var(--hx-muted); white-space: nowrap; }
+  .hx-kosten td:last-child { white-space: nowrap; }
+  .hx-sub-h { font-size: 15px; font-weight: 600; margin: 8px 0 10px; }
+  .hx-verlauf-note { margin: 10px 0 0; max-width: 72ch; font-size: 13px; line-height: 1.5; color: var(--hx-muted); }
+  .hx-table tbody tr.hx-sel td { background: rgba(246, 196, 69, 0.1); }
+  .hx-link[aria-pressed="true"] { color: var(--hx-accent); text-decoration-color: var(--hx-accent); }
+  .hx-controls { grid-area: ctl; display: flex; flex-direction: column; gap: 18px; }
+  .hx-stage { grid-area: stage; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+  .hx-figures { grid-area: fig; display: flex; flex-direction: column; gap: 22px; text-align: right; }
+  .hx-tablebox { grid-area: table; min-width: 0; }
+  @container (max-width: 1020px) {
+    .hx-explorer { grid-template-columns: minmax(0, 1fr); grid-template-areas: "ctl" "stage" "fig" "verlauf" "table"; }
+    .hx-verlauf-body { grid-template-columns: minmax(0, 1fr); }
+    .hx-controls { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px 20px; }
+    .hx-figures { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); text-align: left; gap: 16px 20px; }
+  }
+
+  .hx-ctl { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+  .hx-ctl-label { font-size: 13px; color: var(--hx-muted); }
+  .hx-seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; background: var(--hx-ctl); border-radius: 8px; padding: 3px; gap: 3px; }
+  .hx-seg button, .hx-step button, .hx-select, .hx-reset, .hx-pager button {
+    font: inherit; font-size: 14px; color: var(--hx-ink); border: 0; border-radius: 6px; cursor: pointer;
+  }
+  .hx-seg button { background: transparent; min-height: 38px; padding: 0 10px; }
+  .hx-seg button:hover { background: var(--hx-ctl-hover); }
+  .hx-seg button[aria-pressed="true"] { background: var(--hx-accent); color: var(--hx-bg); font-weight: 600; }
+  .hx-step { display: grid; grid-template-columns: 40px 1fr 40px; align-items: center; background: var(--hx-ctl); border-radius: 8px; padding: 3px; }
+  .hx-step button { background: transparent; height: 38px; font-size: 18px; line-height: 1; }
+  .hx-step button:hover:not(:disabled) { background: var(--hx-ctl-hover); }
+  .hx-step button:disabled { color: var(--hx-slate); cursor: default; }
+  .hx-step output { text-align: center; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .hx-select { width: 100%; min-height: 44px; padding: 0 12px; background: var(--hx-ctl); border-bottom: 2px solid var(--hx-accent); border-radius: 6px 6px 0 0; }
+  .hx-select:hover { background: var(--hx-ctl-hover); }
+  .hx-reset { align-self: flex-start; justify-self: start; text-align: left; background: none; color: var(--hx-accent); font-size: 14px; font-weight: 600; padding: 10px 0; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; }
+  .hx-reset:hover { text-decoration-color: currentColor; }
+  .hx button:focus-visible, .hx select:focus-visible, .hx summary:focus-visible { outline: 2px solid var(--hx-accent); outline-offset: 2px; }
+
+  .hx-titlebox { display: flex; flex-direction: column; gap: 6px; min-height: 76px; }
+  .hx-crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 8px; font-size: 13px; color: var(--hx-muted); }
+  .hx-crumbs button { font: inherit; color: var(--hx-ink); background: none; border: 0; padding: 4px 0; cursor: pointer; text-decoration: underline; text-decoration-color: var(--hx-line); text-underline-offset: 3px; }
+  .hx-crumbs button:hover { text-decoration-color: var(--hx-accent); }
+  .hx-current { color: var(--hx-accent); font-size: clamp(20px, 2.2vw, 26px); }
+
+  .hx-fig { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .hx-fig-label { font-size: 13px; color: var(--hx-ink); }
+  .hx-fig-unit { font-size: 12px; color: var(--hx-accent); }
+  .hx-fig-num { font-size: clamp(24px, 2.4vw, 30px); font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.15; overflow-wrap: anywhere; }
+  .hx-fig-sub { font-size: 13px; color: var(--hx-muted); font-variant-numeric: tabular-nums; }
+
+  .hx-chart { position: relative; min-height: 300px; min-width: 0; }
+  .hx-chart svg { display: block; overflow: visible; }
+  .hx-chart text { font-family: var(--font-sans); }
+  .hx-axis text { fill: var(--hx-muted); font-size: 12px; }
+  .hx-grid line { stroke: var(--hx-line); }
+  .hx-lab { fill: var(--hx-ink); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .hx-lab-muted { fill: var(--hx-muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .hx-lab-dark { fill: var(--hx-bg); font-size: 12px; font-weight: 600; }
+  .hx-hit.hx-open { cursor: pointer; }
+  .hx-bars:hover .hx-hit { opacity: 0.55; }
+  .hx-bars .hx-hit:hover { opacity: 1; }
+  .hx-slices:hover path { opacity: 0.6; }
+  .hx-slices path:hover { opacity: 1; }
+  @media (prefers-reduced-motion: no-preference) {
+    .hx-bars .hx-hit, .hx-slices path { transition: opacity 160ms ease-out; }
+    .hx-seg button, .hx-step button, .hx-pager button, .hx-crumbs button, .hx-link, .hx-reset { transition: background-color 120ms ease-out, transform 80ms ease-out, text-decoration-color 120ms ease-out; }
+    .hx-seg button:active, .hx-step button:active:not(:disabled), .hx-pager button:active:not(:disabled) { transform: translateY(1px); }
+  }
+  .hx-pager { display: flex; align-items: center; justify-content: flex-end; gap: 10px; font-size: 13px; color: var(--hx-muted); font-variant-numeric: tabular-nums; }
+  .hx-pager button { width: 44px; height: 44px; border-radius: 50%; background: var(--hx-accent); color: var(--hx-bg); font-size: 18px; font-weight: 600; }
+  .hx-pager button:disabled { background: var(--hx-ctl); color: var(--hx-slate); cursor: default; }
+  .hx-track { position: relative; height: 4px; background: var(--hx-ctl); border-radius: 2px; margin-top: 10px; }
+  .hx-thumb { position: absolute; top: 0; height: 4px; background: var(--hx-accent); border-radius: 2px; }
+  .hx-empty { color: var(--hx-muted); padding: 40px 0; }
+
+  .hx-tip { position: absolute; z-index: 5; pointer-events: none; background: #0a1520; border: 1px solid var(--hx-line); border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 1.45; max-width: 280px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35); font-variant-numeric: tabular-nums; }
+  .hx-tip-title { font-weight: 600; color: var(--hx-accent); margin-bottom: 4px; }
+  .hx-tip-row { display: flex; justify-content: space-between; gap: 16px; color: var(--hx-muted); }
+  .hx-tip-row span:last-child { color: var(--hx-ink); }
+  .hx-tip-hint { color: var(--hx-muted); margin-top: 6px; font-size: 12px; }
+
+  .hx-tablewrap { overflow-x: auto; }
+  .hx-table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+  .hx-table th, .hx-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--hx-line); vertical-align: top; }
+  .hx-table thead th { background: var(--hx-panel); font-size: 12px; font-weight: 600; color: var(--hx-ink); white-space: nowrap; }
+  .hx-table thead th:first-child { border-radius: 8px 0 0 0; }
+  .hx-table thead th:last-child { border-radius: 0 8px 0 0; }
+  .hx-table .hx-r { text-align: right; white-space: nowrap; }
+  .hx-table tbody tr:hover td { background: rgba(255, 255, 255, 0.03); }
+  .hx-table tfoot td { font-weight: 600; border-bottom: 0; }
+  .hx-rank { display: inline-flex; align-items: center; gap: 8px; color: var(--hx-muted); }
+  .hx-dot { width: 10px; height: 10px; border-radius: 2px; display: inline-block; flex: none; }
+  .hx-link { font: inherit; color: var(--hx-ink); background: none; border: 0; padding: 0; text-align: left; cursor: pointer; text-decoration: underline; text-decoration-color: var(--hx-slate); text-underline-offset: 3px; }
+  .hx-link:hover { text-decoration-color: var(--hx-accent); }
+  .hx-sub { display: block; color: var(--hx-muted); font-size: 12px; }
+
+  /* Fiscal position */
+  .hx-grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 48px 40px; }
+  .hx-block { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+  .hx-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--hx-muted); list-style: none; margin: 0; padding: 0; }
+  .hx-legend li { display: inline-flex; align-items: center; gap: 7px; }
+  .hx-sw-a { background: var(--hx-accent); }
+  .hx-sw-b { background: var(--hx-sky); }
+  .hx-sw-c { background: var(--hx-pale); }
+
+  /* Bar list: replaces the column chart on narrow screens */
+  .hx-blist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+  .hx-bitem { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; width: 100%; padding: 10px 0; font: inherit; color: var(--hx-ink); text-align: left; background: none; border: 0; border-bottom: 1px solid var(--hx-line); cursor: pointer; }
+  .hx-bitem:hover .hx-bname, .hx-bitem[aria-pressed="true"] .hx-bname { color: var(--hx-accent); }
+  .hx-bname { font-size: 14px; line-height: 1.35; overflow-wrap: anywhere; }
+  .hx-bname .hx-brank { color: var(--hx-muted); font-variant-numeric: tabular-nums; margin-right: 6px; }
+  .hx-bval { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+  .hx-bbars { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 3px; margin-top: 6px; }
+  .hx-bbar { display: block; height: 6px; border-radius: 3px; background: var(--hx-accent); min-width: 2px; }
+  .hx-bbar.hx-bbar-v { background: var(--hx-slate); }
+  .hx-bbar.hx-bbar-neg { background: transparent; box-shadow: inset 0 0 0 1.5px var(--hx-bad); }
+  .hx-bsub { grid-column: 1 / -1; font-size: 12px; color: var(--hx-muted); font-variant-numeric: tabular-nums; }
+  .hx-bmore { align-self: flex-start; margin-top: 12px; font: inherit; font-size: 13px; font-weight: 600; color: var(--hx-accent); background: none; border: 0; padding: 8px 0; cursor: pointer; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; }
+  .hx-bmore:hover { text-decoration-color: currentColor; }
+
+  /* The bar list on narrow screens already names every row, so the table would repeat it. */
+  .hx-explorer:has(.hx-chart .hx-blist) .hx-tablebox { display: none; }
+  .hx-dot-m { display: none; }
+
+  /* Narrow screens: compact controls, two-column figures, stacked tables */
+  @container (max-width: 560px) {
+    .hx-explorer { gap: 28px; }
+    .hx-controls { display: flex; flex-direction: column; gap: 10px; }
+    .hx-ctl { display: grid; grid-template-columns: 88px minmax(0, 1fr); align-items: center; gap: 10px; }
+    .hx-ctl-label { font-size: 13px; }
+    .hx-seg button { min-height: 38px; padding: 0 6px; font-size: 13px; }
+    .hx-select { min-height: 40px; font-size: 13px; }
+    .hx-reset { padding: 4px 0; }
+    .hx-titlebox { min-height: 0; }
+    .hx-figures, .hx-verlauf-figs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 16px; text-align: left; }
+    .hx-fig-num, .hx-verlauf-figs .hx-fig-num { font-size: 20px; }
+    .hx-fig-unit { font-size: 11px; }
+    .hx-verlauf { margin-inline: calc(-1 * var(--hx-pad)); border-radius: 0; padding: 22px var(--hx-pad); }
+    .hx-verlauf .hx-chart { min-height: 0; }
+    .hx-chart { min-height: 0; }
+    .hx-grid2 { gap: 40px; }
+
+    .hx-explorer:has(.hx-chart .hx-slices) { grid-template-areas: "ctl" "stage" "fig" "table" "verlauf"; }
+    .hx-tablewrap { overflow-x: visible; }
+    .hx-table.hx-stack, .hx-table.hx-stack tbody, .hx-table.hx-stack tfoot { display: block; }
+    .hx-table.hx-stack thead { display: none; }
+    .hx-table.hx-stack caption { display: block; }
+    .hx-table.hx-stack tr { display: grid; grid-template-columns: repeat(var(--hx-cols, 3), minmax(0, 1fr)); gap: 6px 14px; padding: 12px 0; border-bottom: 1px solid var(--hx-line); }
+    .hx-table.hx-stack tfoot tr:last-child { border-bottom: 0; }
+    .hx-table.hx-stack td { display: block; padding: 0; border: 0; text-align: left; white-space: normal; min-width: 0; }
+    .hx-table.hx-stack td:first-child, .hx-table.hx-stack td.hx-st-head { grid-column: 1 / -1; font-weight: 600; }
+    .hx-table.hx-stack td.hx-st-hide { display: none; }
+    .hx-table.hx-stack td[data-label]::before { content: attr(data-label); display: block; font-size: 11px; font-weight: 400; color: var(--hx-muted); margin-bottom: 1px; }
+    .hx-table.hx-stack tbody tr:hover td { background: none; }
+    .hx-table.hx-stack tbody tr.hx-sel { background: rgba(246, 196, 69, 0.1); }
+    .hx-table.hx-stack tbody tr.hx-sel td { background: none; }
+    .hx-table.hx-stack .hx-sub { font-weight: 400; }
+    .hx-kosten.hx-stack tr.hx-davon td { padding: 0; }
+    .hx-kosten.hx-stack tr.hx-davon td:first-child { padding-left: 14px; }
+    .hx-kosten.hx-stack tr.hx-davon { padding: 10px 0; }
+    /* Change spans two columns so that its label fits on one line; the share sits under Plan 2028. */
+    .hx-kosten.hx-stack td:nth-child(5) { grid-column: span 2; }
+    .hx-table.hx-stack td[data-label]:empty { display: none; }
+    .hx-stack .hx-dot-m { display: inline-block; margin-right: 8px; vertical-align: 1px; }
+    .hx-stack .hx-share { width: 44px; margin-right: 6px; }
+  }
+
+</style>
+
+<div class="hx" lang="de">
+  <header class="hx-head">
+    <h1>Hamburgs Haushalt 2027/2028</h1>
+    <p class="hx-lede">Im Entwurf für 2027 plant der Senat einen Aufwand von <b data-draw="wert" data-fmt="mio" data-source="eckwerte" data-where="jahr=2027" data-field="aufwand">—</b> bei Erträgen von <b data-draw="wert" data-fmt="mio" data-source="eckwerte" data-where="jahr=2027" data-field="ertrag">—</b>. Das Jahresergebnis liegt damit bei <b class="hx-accent" data-draw="wert" data-fmt="mio" data-source="eckwerte" data-where="jahr=2027" data-field="jahresergebnis">—</b>.</p>
+  </header>
+
+  <section class="hx-section" id="explorer">
+    <div class="hx-section-head">
+      <h2>Ausgaben und Einnahmen nach Einzelplan</h2>
+      <p class="hx-muted">Ein Klick auf eine Säule, ein Segment oder einen Tabelleneintrag öffnet die nächste Ebene: vom Einzelplan über Aufgabenbereich und Produktgruppe bis zum Produkt. Ein Klick auf ein Produkt zeigt seinen Verlauf von 2024 bis 2030.</p>
+    </div>
+    <div class="hx-explorer">
+      <div class="hx-controls" data-draw="steuerung" data-source="produkte"></div>
+
+      <div class="hx-stage">
+        <div class="hx-titlebox" data-draw="titel" data-source="ebene">—</div>
+        <div class="hx-chart" data-draw="explorer" data-source="ebene">—</div>
+      </div>
+
+      <aside class="hx-figures" aria-label="Summen der gewählten Ebene">
+        <div class="hx-fig">
+          <div class="hx-fig-label" data-draw="txt" data-txt="betrag">—</div>
+          <div class="hx-fig-unit">in Tausend Euro</div>
+          <div class="hx-fig-num" data-draw="fig" data-fmt="tsd" data-source="ebene_summe" data-row="0" data-field="betrag">—</div>
+        </div>
+        <div class="hx-fig">
+          <div class="hx-fig-label" data-draw="txt" data-txt="anteil">—</div>
+          <div class="hx-fig-unit">in Prozent</div>
+          <div class="hx-fig-num" data-draw="fig" data-fmt="pct" data-source="ebene_summe" data-row="0" data-field="anteil">—</div>
+        </div>
+        <div class="hx-fig" data-nur-vergleich hidden>
+          <div class="hx-fig-label" data-draw="txt" data-txt="diff">—</div>
+          <div class="hx-fig-unit">in Tausend Euro</div>
+          <div class="hx-fig-num" data-draw="fig" data-fmt="tsdsigned" data-source="ebene_summe" data-row="0" data-field="diff">—</div>
+          <div class="hx-fig-sub" data-draw="fig" data-fmt="pctsigned" data-source="ebene_summe" data-row="0" data-field="pct">—</div>
+        </div>
+        <div class="hx-fig">
+          <div class="hx-fig-label">Positionen auf dieser Ebene</div>
+          <div class="hx-fig-num" data-draw="fig" data-fmt="int" data-source="ebene_summe" data-row="0" data-field="anzahl">—</div>
+        </div>
+      </aside>
+
+      <div class="hx-verlauf">
+        <div class="hx-verlauf-head" data-draw="verlauf_titel" data-source="produkte">—</div>
+        <div class="hx-verlauf-figs">
+          <div class="hx-fig">
+            <div class="hx-fig-label" data-draw="vtxt" data-txt="betrag">—</div>
+            <div class="hx-fig-unit">in Tausend Euro</div>
+            <div class="hx-fig-num" data-draw="vfig" data-fmt="tsd" data-source="verlauf_kennzahlen" data-row="0" data-field="betrag_2027">—</div>
+          </div>
+          <div class="hx-fig">
+            <div class="hx-fig-label">Veränderung zu Ist 2025</div>
+            <div class="hx-fig-unit">in Prozent</div>
+            <div class="hx-fig-num" data-draw="vfig" data-fmt="pctsigned" data-source="verlauf_kennzahlen" data-row="0" data-field="aenderung_2025_2027">—</div>
+          </div>
+          <div class="hx-fig">
+            <div class="hx-fig-label">Veränderung 2027 bis 2030</div>
+            <div class="hx-fig-unit">in Prozent</div>
+            <div class="hx-fig-num" data-draw="vfig" data-fmt="pctsigned" data-source="verlauf_kennzahlen" data-row="0" data-field="aenderung_2027_2030">—</div>
+          </div>
+          <div class="hx-fig">
+            <div class="hx-fig-label">Kostendeckung 2027</div>
+            <div class="hx-fig-unit">Einnahmen in Prozent der Ausgaben</div>
+            <div class="hx-fig-num" data-draw="vfig" data-fmt="pct1" data-source="verlauf_kennzahlen" data-row="0" data-field="deckung_2027">—</div>
+          </div>
+        </div>
+        <div class="hx-verlauf-body">
+          <div class="hx-chart" data-draw="verlauf_chart" data-source="verlauf">—</div>
+          <div data-draw="verlauf_tabelle" data-source="verlauf">—</div>
+        </div>
+        <div class="hx-detail" hidden>
+          <div class="hx-verlauf-head" data-draw="details_titel" data-source="kostenarten">—</div>
+          <div data-draw="kosten_tabelle" data-source="kostenarten_auswahl">—</div>
+          <div data-draw="kennzahlen_tabelle" data-source="kennzahlen_auswahl">—</div>
+        </div>
+      </div>
+
+      <div class="hx-tablebox" data-draw="tabelle" data-source="ebene">—</div>
+    </div>
+  </section>
+
+  <section class="hx-section" id="finanzlage">
+    <div class="hx-section-head">
+      <h2>Finanzlage 2024 bis 2030</h2>
+      <p class="hx-muted">Gesamtergebnisplan und Gesamtfinanzplan der Stadt in Mio. €. 2024 und 2025 sind Ist-Werte, 2026 ist der fortgeschriebene Plan, 2029 und 2030 sind Finanzplanung.</p>
+    </div>
+
+    <div class="hx-block">
+      <h3>Eckwerte</h3>
+      <div class="hx-tablewrap">
+        <table class="hx-table" data-source="eckwerte" data-cols="4">
+          <thead>
+            <tr><th>Mio. €</th><th class="hx-r">Ist 2025</th><th class="hx-r">Plan 2026</th><th class="hx-r">Plan 2027</th><th class="hx-r">Plan 2028</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Aufwand</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2025" data-field="aufwand">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2026" data-field="aufwand">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2027" data-field="aufwand">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2028" data-field="aufwand">—</td></tr>
+            <tr><td>Erträge</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2025" data-field="ertrag">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2026" data-field="ertrag">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2027" data-field="ertrag">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2028" data-field="ertrag">—</td></tr>
+            <tr><td>Jahresergebnis</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2025" data-field="jahresergebnis">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2026" data-field="jahresergebnis">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2027" data-field="jahresergebnis">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2028" data-field="jahresergebnis">—</td></tr>
+            <tr><td>Nettokreditaufnahme</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2025" data-field="nettokreditaufnahme">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2026" data-field="nettokreditaufnahme">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2027" data-field="nettokreditaufnahme">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2028" data-field="nettokreditaufnahme">—</td></tr>
+            <tr><td>Investitionsauszahlungen</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2025" data-field="investitionen">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2026" data-field="investitionen">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2027" data-field="investitionen">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2028" data-field="investitionen">—</td></tr>
+            <tr><td>Zinsaufwand</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2025" data-field="zinsen">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2026" data-field="zinsen">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2027" data-field="zinsen">—</td>
+              <td class="hx-r" data-draw="wert" data-fmt="mio0" data-source="eckwerte" data-where="jahr=2028" data-field="zinsen">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="hx-block">
+      <h3>Aufwand und Erträge in Mrd. €</h3>
+      <p>Der Aufwand wächst bis 2030 auf <b data-draw="wert" data-fmt="mio" data-source="eckwerte" data-where="jahr=2030" data-field="aufwand">—</b>, die Erträge auf <b data-draw="wert" data-fmt="mio" data-source="eckwerte" data-where="jahr=2030" data-field="ertrag">—</b>.</p>
+      <ul class="hx-legend">
+        <li><span class="hx-dot hx-sw-a"></span>Aufwand</li>
+        <li><span class="hx-dot hx-sw-b"></span>Erträge</li>
+        <li>gestrichelt: Finanzplanung</li>
+      </ul>
+      <div class="hx-chart" data-draw="entwicklung" data-source="eckwerte">—</div>
+    </div>
+
+    <div class="hx-grid2">
+      <div class="hx-block">
+        <h3>Kreditaufnahme nach Schuldenbremse in Mio. €</h3>
+        <p>2027 und 2028 entfallen die meisten Kredite auf finanzielle Transaktionen, also Darlehen und Beteiligungen. Ab 2029 ist die Konjunkturkomponente der größte Teil.</p>
+        <ul class="hx-legend">
+          <li><span class="hx-dot hx-sw-a"></span>Finanzielle Transaktionen</li>
+          <li><span class="hx-dot hx-sw-b"></span>Konjunkturkomponente</li>
+          <li><span class="hx-dot hx-sw-c"></span>Strukturkomponente</li>
+        </ul>
+        <div class="hx-chart" data-draw="nka" data-source="finanzbericht">—</div>
+      </div>
+      <div class="hx-block">
+        <h3>Zinsaufwand in Mio. €</h3>
+        <p>Von 2025 bis 2030 steigt der Zinsaufwand auf das <b data-draw="zinsfaktor" data-source="zinsfaktor">—</b>-Fache.</p>
+        <div class="hx-chart" data-draw="zinschart" data-source="eckwerte">—</div>
+      </div>
+    </div>
+
+    <div class="hx-block">
+      <h3>Investitionsauszahlungen nach Einzelplan in Mio. €</h3>
+      <p>Investitionsauszahlungen sind Zahlungen, mit denen die Stadt dauerhaftes Vermögen baut oder erwirbt: Baumaßnahmen, Grundstücke und Gebäude, Fahrzeuge und Ausstattung sowie Anteile an Unternehmen. Dazu kommen Zuschüsse, mit denen Dritte investieren. Darlehen der Stadt zählen nicht dazu.</p>
+      <p>Diese Zahlungen stehen im Finanzplan, nicht als Aufwand im Ergebnisplan. Dort wirken sie erst über die Abschreibungen der folgenden Jahre.</p>
+      <ul class="hx-legend">
+        <li><span class="hx-dot hx-sw-a"></span>Plan 2027</li>
+        <li><span class="hx-dot hx-sw-b"></span>Plan 2028</li>
+      </ul>
+      <div class="hx-chart" data-draw="invest" data-source="einzelplaene">—</div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  // Shared helpers: formats, colors, tooltip and the level selection.
+  window.hx = (() => {
+    const loc = d3.formatLocale({ decimal: ',', thousands: '.', grouping: [3], currency: ['', ' €'] });
+    const f0 = loc.format(',.0f');
+    const f1 = loc.format(',.1f');
+    const f2 = loc.format(',.2f');
+    const ok = (v) => v !== null && v !== undefined && v !== '' && !Number.isNaN(Number(v));
+    const minus = (s) => s.replace('-', '−');
+    const mio = (v) => {
+      if (!ok(v)) return '—';
+      v = Number(v);
+      return minus(Math.abs(v) >= 1000 ? `${f1(v / 1000)} Mrd. €` : `${f0(v)} Mio. €`);
+    };
+    const signed = (v, fmt) => (v > 0 ? '+' : v < 0 ? '−' : '±') + fmt(Math.abs(v));
+    const fmt = {
+      tsd: (v) => (ok(v) ? minus(f0(Number(v))) : '—'),
+      tsdsigned: (v) => (ok(v) ? signed(Number(v), f0) : '—'),
+      pct: (v) => (ok(v) ? minus(`${f2(Number(v))} %`) : '—'),
+      pctsigned: (v) => (ok(v) ? `${signed(Number(v), f1)} %` : '—'),
+      pct1: (v) => (ok(v) ? minus(`${f1(Number(v))} %`) : '—'),
+      num: (v) => (ok(v) ? minus(loc.format(',.2~f')(Number(v))) : '—'),
+      int: (v) => (ok(v) ? f0(Number(v)) : '—'),
+      mio: (v) => mio(v),
+      mio0: (v) => (ok(v) ? minus(f0(Number(v))) : '—'),
+    };
+    const JAHRE = ['2025', '2027', '2028'];
+    const jahrLabel = (j) => (j === '2025' ? 'Ist 2025' : `Plan ${j}`);
+    // Donut colors: one hue fading from the accent to slate by rank; the
+    // rest shares a dark slate.
+    const ramp = d3.interpolateLab('#f6c445', '#5d7389');
+    const farbe = (rang) => (rang >= 1 && rang <= 9 ? ramp((rang - 1) / 8) : '#3c5268');
+
+    // Sums the products of the selected level. Pure: the calcs and the
+    // drawings call it with the same rows and filters.
+    function auswahl(produkte, p) {
+      const jahr = JAHRE.includes(String(p.jahr)) ? String(p.jahr) : '2027';
+      const vgl = JAHRE.includes(String(p.vgl)) && String(p.vgl) !== jahr ? String(p.vgl) : '';
+      const art = p.art === 'einnahmen' ? 'e' : 'k';
+      const feld = (j) => art + j.slice(2);
+      const aufgabe = p.sicht === 'aufgabe';
+      const ebenen = aufgabe
+        ? [['gruppe', 'gruppe_name', 'Aufgabe'], ['ipr', 'ipr_name', 'IPR-Produkt'], ['id', 'produkt', 'Produkt']]
+        : [['epl', 'epl_kurz', 'Einzelplan'], ['ab', 'ab_name', 'Aufgabenbereich'], ['pg', 'pg_name', 'Produktgruppe'], ['id', 'produkt', 'Produkt']];
+      const summe = (rows, j) => rows.reduce((s, r) => s + (Number(r[feld(j)]) || 0), 0);
+      const rund = (v, d) => Math.round(v * 10 ** d) / 10 ** d;
+      let rows = produkte;
+      const pfad = [];
+      for (const key of String(p.pfad || '').split('|').filter(Boolean)) {
+        if (pfad.length >= ebenen.length - 1) break;
+        const [k, n, stufe] = ebenen[pfad.length];
+        const sub = rows.filter((r) => String(r[k]) === key);
+        if (!sub.length) break;
+        pfad.push({ stufe, key, name: sub[0][n] || key });
+        rows = sub;
+      }
+      const [k, n, stufe] = ebenen[pfad.length];
+      const blatt = pfad.length === ebenen.length - 1;
+      const gesamt = summe(produkte, jahr);
+      const ebeneSumme = summe(rows, jahr);
+      const zeilen = Array.from(d3.group(rows, (r) => String(r[k])), ([key, rs]) => {
+        const betrag = summe(rs, jahr);
+        const vergleich = vgl ? summe(rs, vgl) : null;
+        return {
+          id: key,
+          name: rs[0][n] || key,
+          zusatz: k === 'id' ? (aufgabe ? rs[0].epl_kurz : '') : key,
+          betrag,
+          vergleich,
+          diff: vgl ? betrag - vergleich : null,
+          pct: vgl && vergleich > 0 ? rund((betrag / vergleich - 1) * 100, 1) : null,
+          anteil: ebeneSumme ? rund((betrag / ebeneSumme) * 100, 2) : null,
+          offen: !blatt,
+        };
+      })
+        .filter((r) => r.betrag !== 0 || (vgl && r.vergleich !== 0))
+        .sort((a, b) => b.betrag - a.betrag)
+        .map((r, i) => ({ rang: i + 1, ...r }));
+      const vSumme = vgl ? summe(rows, vgl) : null;
+      return {
+        jahr, vgl, art, aufgabe, stufe, pfad, zeilen, basis: rows,
+        summe: [{
+          betrag: ebeneSumme,
+          anteil: gesamt ? rund((ebeneSumme / gesamt) * 100, 2) : null,
+          vergleich: vSumme,
+          diff: vgl ? ebeneSumme - vSumme : null,
+          pct: vgl && vSumme > 0 ? rund((ebeneSumme / vSumme - 1) * 100, 1) : null,
+          anzahl: zeilen.length,
+        }],
+      };
+    }
+
+    // The level for a drawing: context from the filters, rows from the calcs.
+    function kontext() {
+      const d = dash.data('produkte');
+      if (d.status !== 'ok' || !Array.isArray(d.data)) return { status: d };
+      const a = auswahl(d.data, dash.params());
+      const z = dash.data('ebene');
+      const s = dash.data('ebene_summe');
+      if (z.status === 'ok' && Array.isArray(z.data)) a.zeilen = z.data;
+      if (s.status === 'ok' && Array.isArray(s.data)) a.summe = s.data;
+      return { a };
+    }
+
+    // A click on a group opens its next level; a click on a product
+    // selects it for the time series, a second click clears the choice.
+    function oeffnen(a, zeile) {
+      if (zeile.id === '__rest') return;
+      if (zeile.offen) {
+        dash.setParams({ pfad: [...a.pfad.map((x) => x.key), zeile.id].join('|'), fokus: '' });
+        return;
+      }
+      dash.setParams({ fokus: String(dash.params().fokus || '') === String(zeile.id) ? '' : zeile.id });
+    }
+
+    // Time series 2024-2030 of the selected product, or else of the level.
+    const VJAHRE = ['2024', '2025', '2026', '2027', '2028', '2029', '2030'];
+    const stand = (j) => (j <= '2025' ? 'Ist' : j === '2026' ? 'fortg. Plan' : j <= '2028' ? 'Plan' : 'Finanzplanung');
+    function verlauf(produkte, p) {
+      const a = auswahl(produkte, p);
+      const fokus = p.fokus ? a.basis.find((r) => String(r.id) === String(p.fokus)) || null : null;
+      const rows = fokus ? [fokus] : a.basis;
+      const rund = (v) => Math.round(v * 10) / 10;
+      const reihe = VJAHRE.map((j) => {
+        // The product report has no values for the updated plan 2026.
+        if (j === '2026') return { jahr: j, stand: stand(j), ausgaben: null, einnahmen: null, saldo: null };
+        const y = j.slice(2);
+        // Actuals in the structure of the 2027 plan (vk/ve), so products that moved
+        // between Einzelpläne compare like for like. An old row on its own keeps its actuals.
+        const v = j <= '2025' && !(fokus && fokus.wechsel === 'abgang') ? 'v' : '';
+        const k = rund(rows.reduce((s, r) => s + (Number(r[`${v}k${y}`]) || 0), 0));
+        const e = rund(rows.reduce((s, r) => s + (Number(r[`${v}e${y}`]) || 0), 0));
+        return { jahr: j, stand: stand(j), ausgaben: k, einnahmen: e, saldo: rund(e - k) };
+      });
+      const last = a.pfad[a.pfad.length - 1];
+      return { a, fokus, reihe, name: fokus ? fokus.produkt : last ? last.name : 'Gesamthaushalt' };
+    }
+
+    function placeholder(el, s) {
+      el.replaceChildren();
+      const p = document.createElement('p');
+      p.className = 'hx-empty';
+      p.textContent = s && s.status === 'error' ? 'Die Daten konnten nicht geladen werden.' : '—';
+      el.append(p);
+    }
+
+    function tip(host) {
+      const box = document.createElement('div');
+      box.className = 'hx-tip';
+      box.hidden = true;
+      host.append(box);
+      return {
+        show(event, title, rows, hint) {
+          box.replaceChildren();
+          const t = document.createElement('div');
+          t.className = 'hx-tip-title';
+          t.textContent = title;
+          box.append(t);
+          for (const [k, v] of rows) {
+            const r = document.createElement('div');
+            r.className = 'hx-tip-row';
+            const a = document.createElement('span');
+            a.textContent = k;
+            const b = document.createElement('span');
+            b.textContent = v;
+            r.append(a, b);
+            box.append(r);
+          }
+          if (hint) {
+            const h = document.createElement('div');
+            h.className = 'hx-tip-hint';
+            h.textContent = hint;
+            box.append(h);
+          }
+          box.hidden = false;
+          const hb = host.getBoundingClientRect();
+          const bw = box.offsetWidth;
+          const bh = box.offsetHeight;
+          let x = event.clientX - hb.left + 14;
+          let y = event.clientY - hb.top + 14;
+          if (x + bw > hb.width) x = Math.max(0, event.clientX - hb.left - bw - 14);
+          if (y + bh > hb.height) y = Math.max(0, event.clientY - hb.top - bh - 14);
+          box.style.left = `${x}px`;
+          box.style.top = `${y}px`;
+        },
+        hide() { box.hidden = true; },
+      };
+    }
+
+    function svgFor(el, w, h, label) {
+      return d3.select(el).append('svg')
+        .attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`)
+        .attr('role', 'img').attr('aria-label', label);
+    }
+
+    function textWidth(svg, text, cls) {
+      const t = svg.append('text').attr('class', cls).text(text);
+      const w = t.node().getComputedTextLength();
+      t.remove();
+      return w;
+    }
+
+    // Cost types from the Einzelplan volumes for the selected product or level.
+    // modus: 'aus' (nothing to show), 'fehlt' (volume not evaluated), 'ok'.
+    const DJ = ['2024', '2025', '2026', '2027', '2028', '2029', '2030'];
+    function details(produkte, kosten, kennz, p) {
+      const v = verlauf(produkte, p);
+      // District offices reuse Produktgruppe numbers, so Einzelplan and Produktgruppe form the key.
+      const key = (r) => `${r.epl}|${r.pg}`;
+      let keys;
+      if (v.fokus) keys = [key(v.fokus)];
+      else if (p.sicht !== 'aufgabe' && v.a.pfad.length) keys = [...new Set(v.a.basis.map(key))];
+      else return { modus: 'aus', v };
+      const ref = v.fokus || v.a.basis[0];
+      if (!ref) return { modus: 'aus', v };
+      if (!kosten.some((r) => r.epl === ref.epl)) return { modus: 'fehlt', v, epl: ref.epl_kurz };
+      const pgSet = new Set(keys.filter((k) => kosten.some((r) => key(r) === k)));
+      if (!pgSet.size) return { modus: 'fehlt', v, epl: ref.epl_kurz };
+      const rows = [];
+      const byPos = new Map();
+      for (const r of kosten) {
+        if (!pgSet.has(key(r)) || r.produkt_id) continue;
+        let t = byPos.get(r.pos);
+        if (!t) {
+          t = { pos: r.pos, label: r.label, ebene: r.ebene };
+          DJ.forEach((j) => { t[`j${j}`] = null; });
+          byPos.set(r.pos, t);
+          rows.push(t);
+        }
+        DJ.forEach((j) => { const x = r[`j${j}`]; if (ok(x)) t[`j${j}`] = Math.round(((t[`j${j}`] || 0) + Number(x)) * 10) / 10; });
+      }
+      const produktRows = v.fokus ? kosten.filter((r) => String(r.produkt_id) === String(v.fokus.id)) : [];
+      const gruppen = [...pgSet].map((k) => {
+        const r = kosten.find((x) => key(x) === k);
+        return { pg: r.pg, name: r.pg_name, n: produkte.filter((x) => key(x) === k && (x.k27 || x.k28)).length };
+      });
+      const kz = pgSet.size === 1 ? kennz.filter((r) => pgSet.has(key(r))) : [];
+      // Products whose actuals sit in another Einzelplan leave the 2025 column incomplete.
+      const extern = (v.fokus ? [v.fokus] : v.a.basis).some((r) => pgSet.has(key(r)) && r.wechsel === 'zugang' && r.wechsel_extern);
+      // District volumes (Einzelpläne 1.2 to 1.8) carry no product table and do not reconcile with the product report.
+      const bezirk = /^1\.[2-8]$/.test(String(ref.epl));
+      return { modus: 'ok', v, rows, produktRows, gruppen, kz, extern, bezirk };
+    }
+
+    return { f0, f1, f2, fmt, mio, ok, JAHRE, jahrLabel, farbe, auswahl, verlauf, details, kontext, oeffnen, placeholder, tip, svgFor, textWidth };
+  })();
+
+  dash.calc('ebene', {
+    title: 'Positionen der gewählten Ebene',
+    description: 'Summe der Produkte je Position der gewählten Ebene in Tsd. €, mit Anteil an der Ebene und Veränderung zum Vergleichsjahr. Jahr, Vergleichsjahr, Art, Gliederung und Pfad kommen aus den Filtern.',
+    inputs: ['produkte'],
+    fn: (produkte) => hx.auswahl(produkte, dash.params()).zeilen,
+  });
+
+  dash.calc('ebene_summe', {
+    title: 'Summe der gewählten Ebene',
+    description: 'Summe der Ebene in Tsd. €, ihr Anteil an allen Ausgaben bzw. Einnahmen des Jahres und die Veränderung zum Vergleichsjahr.',
+    inputs: ['produkte'],
+    fn: (produkte) => hx.auswahl(produkte, dash.params()).summe,
+  });
+
+  dash.calc('verlauf', {
+    title: 'Verlauf 2024 bis 2030',
+    description: 'Ausgaben (Kosten), Einnahmen (Erlöse) und Saldo je Jahr in Tsd. € für das gewählte Produkt oder, ohne Auswahl, für alle Produkte der gewählten Ebene. 2026 enthält der Produktbericht keine Werte.',
+    inputs: ['produkte'],
+    fn: (produkte) => hx.verlauf(produkte, dash.params()).reihe,
+  });
+
+  dash.calc('kostenarten_auswahl', {
+    title: 'Kostenarten der Auswahl',
+    description: 'Kosten nach Kostenarten in Tsd. € für die Produktgruppe des gewählten Produkts oder alle Produktgruppen der gewählten Ebene, aus den Einzelplan-Bänden. Mit Veränderung Ist 2025 zu Plan 2027 in Prozent und Anteil an den Kosten 2027. ebene: haupt, davon (Teilmenge der Hauptzeile), erloese, produkt (nur das gewählte Produkt).',
+    inputs: ['produkte', 'kostenarten', 'kennzahlen'],
+    fn: (produkte, kostenarten, kennzahlen) => {
+      const d = hx.details(produkte, kostenarten, kennzahlen, dash.params());
+      if (d.modus !== 'ok') return [];
+      const pct = (x, y) => (y > 0 && x > 0 ? Math.round((x / y - 1) * 1000) / 10 : null);
+      const gesamt = d.rows.filter((r) => r.ebene === 'haupt').reduce((s, r) => s + (r.j2027 || 0), 0);
+      return [...d.rows, ...d.produktRows].map((r) => ({
+        pos: r.pos, label: r.label, ebene: r.ebene,
+        ist_2025: r.j2025, plan_2027: r.j2027, plan_2028: r.j2028,
+        aenderung_2025_2027: d.extern ? null : pct(r.j2027, r.j2025),
+        anteil_2027: r.ebene !== 'erloese' && r.ebene !== 'produkt' && gesamt > 0 && hx.ok(r.j2027) ? Math.round((r.j2027 / gesamt) * 1000) / 10 : null,
+      }));
+    },
+  });
+
+  dash.calc('kennzahlen_auswahl', {
+    title: 'Kennzahlen der Produktgruppe',
+    description: 'Leistungskennzahlen der Produktgruppe des gewählten Produkts aus dem Einzelplan-Band, Ist 2025 bis Plan 2030. Nur wenn genau eine Produktgruppe gewählt ist.',
+    inputs: ['produkte', 'kostenarten', 'kennzahlen'],
+    fn: (produkte, kostenarten, kennzahlen) => {
+      const d = hx.details(produkte, kostenarten, kennzahlen, dash.params());
+      if (d.modus !== 'ok') return [];
+      return d.kz.map((k) => ({ code: k.code, name: k.name, einheit: k.einheit, ist_2025: k.j2025, plan_2027: k.j2027, plan_2028: k.j2028, plan_2030: k.j2030 }));
+    },
+  });
+
+  dash.calc('verlauf_kennzahlen', {
+    title: 'Kennzahlen zum Verlauf',
+    description: 'Betrag 2027 der gewählten Art in Tsd. €, Veränderung von Ist 2025 (in der Gliederung des Plans 2027) zu Plan 2027 und von 2027 bis 2030 in Prozent sowie Einnahmen in Prozent der Ausgaben 2027. Keine Rate, wenn eines der beiden Jahre 0 ist.',
+    inputs: ['verlauf'],
+    fn: (reihe) => {
+      const feld = dash.params().art === 'einnahmen' ? 'einnahmen' : 'ausgaben';
+      const g = (j) => reihe.find((r) => r.jahr === j) || {};
+      // No rate when either year is empty, for example a product that moved to another Einzelplan.
+      const pct = (x, y) => (y > 0 && x > 0 ? Math.round((x / y - 1) * 1000) / 10 : null);
+      const k27 = g('2027').ausgaben;
+      return [{
+        betrag_2027: g('2027')[feld],
+        aenderung_2025_2027: pct(g('2027')[feld], g('2025')[feld]),
+        aenderung_2027_2030: pct(g('2030')[feld], g('2027')[feld]),
+        deckung_2027: k27 > 0 ? Math.round((g('2027').einnahmen / k27) * 1000) / 10 : null,
+      }];
+    },
+  });
+
+  dash.calc('zinsfaktor', {
+    title: 'Anstieg des Zinsaufwands 2025 bis 2030',
+    description: 'Zinsaufwand 2030 geteilt durch den Zinsaufwand 2025.',
+    inputs: ['eckwerte'],
+    fn: (eckwerte) => {
+      const z = (j) => Number((eckwerte.find((r) => Number(r.jahr) === j) || {}).zinsen);
+      return Math.round((z(2030) / z(2025)) * 10) / 10;
+    },
+  });
+
+  // Outside drawings the script only toggles the comparison figure.
+  dash.onData(() => {
+    const p = dash.params();
+    const jahr = hx.JAHRE.includes(String(p.jahr)) ? String(p.jahr) : '2027';
+    const an = hx.JAHRE.includes(String(p.vgl)) && String(p.vgl) !== jahr;
+    document.querySelectorAll('[data-nur-vergleich]').forEach((el) => { el.hidden = !an; });
+  });
+
+  // Controls: built once, updated from the filters.
+  dash.draw('steuerung', {
+    mount: (el) => {
+      const ctl = (label) => {
+        const box = document.createElement('div');
+        box.className = 'hx-ctl';
+        const l = document.createElement('span');
+        l.className = 'hx-ctl-label';
+        l.textContent = label;
+        box.append(l);
+        el.append(box);
+        return box;
+      };
+      const seg = (label, name, options) => {
+        const box = ctl(label);
+        const g = document.createElement('div');
+        g.className = 'hx-seg';
+        g.setAttribute('role', 'group');
+        g.setAttribute('aria-label', label);
+        const buttons = options.map(([value, text]) => {
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.textContent = text;
+          b.dataset.value = value;
+          b.addEventListener('click', () => {
+            const change = { [name]: value };
+            if (name === 'sicht') { change.pfad = ''; change.fokus = ''; }
+            dash.setParams(change);
+          });
+          g.append(b);
+          return b;
+        });
+        box.append(g);
+        return { name, buttons };
+      };
+
+      const jahrBox = ctl('Haushaltsjahr');
+      const step = document.createElement('div');
+      step.className = 'hx-step';
+      const prev = document.createElement('button');
+      prev.type = 'button';
+      prev.textContent = '‹';
+      prev.setAttribute('aria-label', 'Früheres Haushaltsjahr zeigen');
+      const out = document.createElement('output');
+      out.setAttribute('aria-live', 'polite');
+      const next = document.createElement('button');
+      next.type = 'button';
+      next.textContent = '›';
+      next.setAttribute('aria-label', 'Späteres Haushaltsjahr zeigen');
+      const move = (d) => {
+        const p = dash.params();
+        const i = Math.max(0, hx.JAHRE.indexOf(String(p.jahr)));
+        const j = hx.JAHRE[Math.min(hx.JAHRE.length - 1, Math.max(0, i + d))];
+        const change = { jahr: j };
+        if (String(p.vgl) === j) change.vgl = '';
+        dash.setParams(change);
+      };
+      prev.addEventListener('click', () => move(-1));
+      next.addEventListener('click', () => move(1));
+      step.append(prev, out, next);
+      jahrBox.append(step);
+
+      const segs = [
+        seg('Darstellung', 'chart', [['saeulen', 'Säulen'], ['kreis', 'Kreis']]),
+        seg('Art', 'art', [['ausgaben', 'Ausgaben'], ['einnahmen', 'Einnahmen']]),
+        seg('Gliederung', 'sicht', [['epl', 'Einzelplan'], ['aufgabe', 'Aufgabe']]),
+      ];
+
+      const bereichBox = ctl('Bereich');
+      const bereich = document.createElement('select');
+      bereich.className = 'hx-select';
+      bereich.setAttribute('aria-label', 'Bereich wählen');
+      bereich.addEventListener('change', () => dash.setParams({ pfad: bereich.value, fokus: '' }));
+      bereichBox.append(bereich);
+
+      const vglBox = ctl('Jahresvergleich');
+      const vgl = document.createElement('select');
+      vgl.className = 'hx-select';
+      vgl.setAttribute('aria-label', 'Vergleichsjahr wählen');
+      vgl.addEventListener('change', () => dash.setParams({ vgl: vgl.value }));
+      vglBox.append(vgl);
+
+      const reset = document.createElement('button');
+      reset.type = 'button';
+      reset.className = 'hx-reset';
+      reset.textContent = 'Auswahl zurücksetzen';
+      reset.addEventListener('click', () => dash.resetParams());
+      el.append(reset);
+
+      return { prev, next, out, segs, bereich, vgl };
+    },
+    update: (el, c) => {
+      const p = dash.params();
+      const jahr = hx.JAHRE.includes(String(p.jahr)) ? String(p.jahr) : '2027';
+      c.out.textContent = hx.jahrLabel(jahr);
+      c.prev.disabled = jahr === hx.JAHRE[0];
+      c.next.disabled = jahr === hx.JAHRE[hx.JAHRE.length - 1];
+      const current = { chart: p.chart === 'kreis' ? 'kreis' : 'saeulen', art: p.art === 'einnahmen' ? 'einnahmen' : 'ausgaben', sicht: p.sicht === 'aufgabe' ? 'aufgabe' : 'epl' };
+      for (const s of c.segs) for (const b of s.buttons) b.setAttribute('aria-pressed', String(b.dataset.value === current[s.name]));
+
+      // Top-level choices come from the data.
+      const d = dash.data('produkte');
+      const aufgabe = current.sicht === 'aufgabe';
+      const [k, n] = aufgabe ? ['gruppe', 'gruppe_name'] : ['epl', 'epl_kurz'];
+      const opts = [['', aufgabe ? 'Alle Aufgaben' : 'Alle Einzelpläne']];
+      if (d.status === 'ok' && Array.isArray(d.data)) {
+        const seen = new Map();
+        for (const r of d.data) if (!seen.has(String(r[k]))) seen.set(String(r[k]), r[n]);
+        const keys = Array.from(seen.keys()).sort((a, b) => a.localeCompare(b, 'de', { numeric: true }));
+        for (const key of keys) opts.push([key, aufgabe ? seen.get(key) : `${key} ${seen.get(key)}`]);
+      }
+      c.bereich.replaceChildren(...opts.map(([v, t]) => { const o = document.createElement('option'); o.value = v; o.textContent = t; return o; }));
+      const top = String(p.pfad || '').split('|')[0] || '';
+      c.bereich.value = opts.some(([v]) => v === top) ? top : '';
+
+      const vOpts = [['', 'Kein Vergleich'], ...hx.JAHRE.filter((j) => j !== jahr).map((j) => [j, `mit ${hx.jahrLabel(j)}`])];
+      c.vgl.replaceChildren(...vOpts.map(([v, t]) => { const o = document.createElement('option'); o.value = v; o.textContent = t; return o; }));
+      c.vgl.value = vOpts.some(([v]) => v === String(p.vgl)) ? String(p.vgl) : '';
+    },
+  });
+
+  // Title: the path to the level, the level's name in the accent color.
+  dash.draw('titel', (el) => {
+    const { a, status } = hx.kontext();
+    if (!a) { hx.placeholder(el, status); return; }
+    el.replaceChildren();
+    const root = a.aufgabe ? 'Alle Aufgaben' : 'Alle Einzelpläne';
+    if (a.pfad.length) {
+      const nav = document.createElement('nav');
+      nav.className = 'hx-crumbs';
+      nav.setAttribute('aria-label', 'Übergeordnete Ebenen');
+      [{ name: root }, ...a.pfad.slice(0, -1)].forEach((t, i) => {
+        if (i > 0) { const sep = document.createElement('span'); sep.textContent = '›'; nav.append(sep); }
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = t.name;
+        b.addEventListener('click', () => dash.setParams({ pfad: a.pfad.slice(0, i).map((x) => x.key).join('|'), fokus: '' }));
+        nav.append(b);
+      });
+      el.append(nav);
+    }
+    const h = document.createElement('h3');
+    h.className = 'hx-current';
+    const last = a.pfad[a.pfad.length - 1];
+    h.textContent = last ? last.name : (a.art === 'e' ? 'Alle Einnahmen' : 'Alle Ausgaben');
+    el.append(h);
+    const sub = document.createElement('div');
+    sub.className = 'hx-muted';
+    sub.textContent = `Gegliedert nach ${a.stufe}`;
+    el.append(sub);
+  });
+
+  dash.draw('txt', (el) => {
+    const { a } = hx.kontext();
+    if (!a) { el.textContent = '—'; return; }
+    const art = a.art === 'e' ? 'Einnahmen' : 'Ausgaben';
+    const t = {
+      betrag: `${art} ${hx.jahrLabel(a.jahr)}`,
+      anteil: `Anteil an allen ${art}`,
+      diff: a.vgl ? `Veränderung zu ${hx.jahrLabel(a.vgl)}` : 'Veränderung',
+    };
+    el.textContent = t[el.dataset.txt] || '—';
+  });
+
+  dash.draw('fig', (el) => {
+    const s = dash.data('ebene_summe');
+    const row = s.status === 'ok' && Array.isArray(s.data) ? s.data[0] : null;
+    const f = hx.fmt[el.dataset.fmt] || hx.fmt.tsd;
+    el.textContent = row ? f(row[el.dataset.field]) : '—';
+  });
+
+  dash.draw('wert', (el) => {
+    const s = dash.data(el.dataset.source);
+    const [k, v] = (el.dataset.where || '').split('=');
+    const row = s.status === 'ok' ? s.data.find((r) => String(r[k]) === v) : null;
+    const f = hx.fmt[el.dataset.fmt] || hx.fmt.mio;
+    el.textContent = row ? f(row[el.dataset.field]) : '—';
+  });
+
+  dash.draw('zinsfaktor', (el) => {
+    const s = dash.data('zinsfaktor');
+    el.textContent = s.status === 'ok' && hx.ok(s.data) ? hx.f1(s.data) : '—';
+  });
+
+  // Column chart of the level, paged in fixed pages.
+  // Compact amount for the bar list; input in Tsd. EUR.
+  // Below this chart width a bar list with names replaces the numbered columns and the table.
+  const HX_LISTE_BIS = 600;
+
+  function hxKurz(v) {
+    if (!hx.ok(v)) return '—';
+    const a = Math.abs(Number(v));
+    if (a >= 1e6) return hx.mio(Number(v) / 1000);
+    if (a >= 1e3) return `${hx.fmt.mio0(Number(v) / 1000)} Mio. €`;
+    return `${hx.fmt.tsd(v)} Tsd. €`;
+  }
+
+  // Narrow screens: one row per position with name, amount and bar; no paging.
+  function hxListe(el, a, st) {
+    const rows = a.zeilen;
+    const cmp = !!a.vgl;
+    const fokus = String(dash.params().fokus || '');
+    if (cmp) {
+      const legend = document.createElement('ul');
+      legend.className = 'hx-legend';
+      for (const [j, color] of [[a.jahr, 'var(--hx-accent)'], [a.vgl, 'var(--hx-slate)']]) {
+        const li = document.createElement('li');
+        const sw = document.createElement('span');
+        sw.className = 'hx-dot';
+        sw.style.background = color;
+        li.append(sw, document.createTextNode(hx.jahrLabel(j)));
+        legend.append(li);
+      }
+      el.append(legend);
+    }
+    const max = d3.max(rows, (r) => Math.max(Math.abs(r.betrag || 0), cmp ? Math.abs(r.vergleich || 0) : 0)) || 1;
+    const SHOW = 10;
+    const n = st.alle ? rows.length : Math.min(rows.length, SHOW);
+    const ol = document.createElement('ol');
+    ol.className = 'hx-blist';
+    ol.setAttribute('aria-label', `${a.art === 'e' ? 'Einnahmen' : 'Ausgaben'} ${hx.jahrLabel(a.jahr)} je ${a.stufe}`);
+    const balken = (v, extra) => {
+      const s = document.createElement('span');
+      s.className = `hx-bbar${extra}${v < 0 ? ' hx-bbar-neg' : ''}`;
+      s.style.width = `${Math.max(0.5, (Math.abs(v || 0) / max) * 100)}%`;
+      return s;
+    };
+    for (const r of rows.slice(0, n)) {
+      const li = document.createElement('li');
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'hx-bitem';
+      if (!r.offen) b.setAttribute('aria-pressed', String(String(r.id) === fokus));
+      const name = document.createElement('span');
+      name.className = 'hx-bname';
+      const rank = document.createElement('span');
+      rank.className = 'hx-brank';
+      rank.textContent = String(r.rang);
+      name.append(rank, document.createTextNode(r.name));
+      const val = document.createElement('span');
+      val.className = 'hx-bval';
+      val.textContent = hxKurz(r.betrag);
+      const bars = document.createElement('span');
+      bars.className = 'hx-bbars';
+      bars.append(balken(r.betrag, ''));
+      if (cmp) bars.append(balken(r.vergleich, ' hx-bbar-v'));
+      const sub = document.createElement('span');
+      sub.className = 'hx-bsub';
+      const teile = [`${hx.fmt.pct1(r.anteil)} der Ebene`];
+      if (cmp) teile.push(hx.ok(r.pct) ? `${hx.fmt.pctsigned(r.pct)} zu ${hx.jahrLabel(a.vgl)}` : !r.vergleich && r.betrag > 0 ? `neu gegenüber ${hx.jahrLabel(a.vgl)}` : '');
+      sub.textContent = teile.filter(Boolean).join(' · ');
+      b.append(name, val, bars, sub);
+      b.addEventListener('click', () => hx.oeffnen(a, r));
+      li.append(b);
+      ol.append(li);
+    }
+    el.append(ol);
+    if (rows.length > SHOW) {
+      const more = document.createElement('button');
+      more.type = 'button';
+      more.className = 'hx-bmore';
+      more.textContent = st.alle ? 'Weniger zeigen' : `Alle ${rows.length} Positionen zeigen`;
+      more.addEventListener('click', () => { st.alle = !st.alle; dash.draw('explorer'); });
+      el.append(more);
+    }
+  }
+
+  function hxSaeulen(el, a, st) {
+    const rows = a.zeilen;
+    const cmp = !!a.vgl;
+    if ((el.clientWidth || 700) < HX_LISTE_BIS) { hxListe(el, a, st); return; }
+    const W = Math.max(300, el.clientWidth || 700);
+    const per = Math.max(4, Math.min(cmp ? 9 : 14, Math.floor((W - 56) / (cmp ? 76 : 48))));
+    const seiten = Math.ceil(rows.length / per);
+    st.seite = Math.max(0, Math.min(st.seite, seiten - 1));
+    const von = st.seite * per;
+    const teil = rows.slice(von, von + per);
+
+    if (seiten > 1) {
+      const pager = document.createElement('div');
+      pager.className = 'hx-pager';
+      const info = document.createElement('span');
+      info.textContent = `${von + 1}–${von + teil.length} von ${rows.length}`;
+      const prev = document.createElement('button');
+      prev.type = 'button';
+      prev.textContent = '‹';
+      prev.setAttribute('aria-label', 'Vorherige Positionen zeigen');
+      prev.disabled = st.seite === 0;
+      prev.addEventListener('click', () => { st.seite -= 1; dash.draw('explorer'); });
+      const next = document.createElement('button');
+      next.type = 'button';
+      next.textContent = '›';
+      next.setAttribute('aria-label', 'Weitere Positionen zeigen');
+      next.disabled = st.seite >= seiten - 1;
+      next.addEventListener('click', () => { st.seite += 1; dash.draw('explorer'); });
+      pager.append(info, prev, next);
+      el.append(pager);
+    }
+
+    if (cmp) {
+      const legend = document.createElement('ul');
+      legend.className = 'hx-legend';
+      for (const [j, color] of [[a.vgl, 'var(--hx-slate)'], [a.jahr, 'var(--hx-accent)']]) {
+        const li = document.createElement('li');
+        const sw = document.createElement('span');
+        sw.className = 'hx-dot';
+        sw.style.background = color;
+        li.append(sw, document.createTextNode(hx.jahrLabel(j)));
+        legend.append(li);
+      }
+      el.append(legend);
+    }
+
+    const H = 320;
+    const m = { t: 30, r: 6, b: 30, l: 50 };
+    const svg = hx.svgFor(el, W, H, `Säulendiagramm: ${a.art === 'e' ? 'Einnahmen' : 'Ausgaben'} ${hx.jahrLabel(a.jahr)} je ${a.stufe}, Positionen ${von + 1} bis ${von + teil.length}`);
+    const werte = rows.flatMap((r) => (cmp ? [r.betrag, r.vergleich || 0] : [r.betrag]));
+    const y = d3.scaleLinear([Math.min(0, d3.min(werte)), Math.max(0, d3.max(werte))], [H - m.b, m.t]).nice();
+    const x = d3.scaleBand(teil.map((r) => r.id), [m.l, W - m.r]).paddingInner(0.28).paddingOuter(0.08);
+    svg.append('g').attr('class', 'hx-grid').selectAll('line').data(y.ticks(5)).join('line')
+      .attr('x1', m.l).attr('x2', W - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+    svg.append('g').attr('class', 'hx-axis').attr('transform', `translate(${m.l - 8},0)`)
+      .call(d3.axisLeft(y).ticks(5).tickSize(0).tickFormat((d) => hx.fmt.mio0(d / 1000)))
+      .call((g) => g.select('.domain').remove());
+    svg.append('text').attr('class', 'hx-lab-muted').attr('x', 0).attr('y', 10).text('Mio. €');
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).style('stroke', 'var(--hx-muted)');
+
+    const t = hx.tip(el);
+    const inner = d3.scaleBand(cmp ? ['v', 'b'] : ['b'], [0, x.bandwidth()]).padding(cmp ? 0.08 : 0);
+    const g = svg.append('g').attr('class', 'hx-bars').selectAll('g').data(teil).join('g')
+      .attr('class', 'hx-hit hx-open')
+      .attr('transform', (r) => `translate(${x(r.id)},0)`);
+    // Transparent hit area over the full column, so thin bars stay easy to point at.
+    g.append('rect').attr('x', 0).attr('width', x.bandwidth()).attr('y', m.t).attr('height', H - m.t - m.b).style('fill', 'transparent');
+    const bar = (sel, key, val, fill) => sel.append('rect')
+      .attr('x', inner(key)).attr('width', inner.bandwidth())
+      .attr('y', (r) => Math.min(y(val(r)), y(0))).attr('height', (r) => Math.max(1, Math.abs(y(val(r)) - y(0))))
+      .attr('rx', 2)
+      .style('fill', (r) => (val(r) < 0 ? 'transparent' : fill(r)))
+      .style('stroke', (r) => (val(r) < 0 ? 'var(--hx-bad)' : 'none'))
+      .style('stroke-width', 1.5);
+    if (cmp) bar(g, 'v', (r) => r.vergleich || 0, () => 'var(--hx-slate)');
+    bar(g, 'b', (r) => r.betrag, () => 'var(--hx-accent)');
+    g.append('text').attr('class', 'hx-lab').attr('text-anchor', 'middle')
+      .attr('x', x.bandwidth() / 2)
+      .attr('y', (r) => {
+        const top = Math.min(y(r.betrag), cmp ? y(r.vergleich || 0) : Infinity, y(0));
+        return r.betrag < 0 && !cmp ? y(r.betrag) + 14 : top - 7;
+      })
+      .text((r) => {
+        if (!cmp) return x.bandwidth() >= 34 ? hx.fmt.pct(r.anteil) : '';
+        if (hx.ok(r.pct)) return hx.fmt.pctsigned(r.pct);
+        return !r.vergleich && r.betrag > 0 ? 'neu' : '';
+      })
+      .style('font-size', x.bandwidth() < 44 ? '10px' : '12px');
+    g.append('text').attr('class', 'hx-lab-muted').attr('text-anchor', 'middle')
+      .attr('x', x.bandwidth() / 2).attr('y', H - m.b + 18).text((r) => r.rang);
+    g.on('pointermove', (event, r) => {
+      const rowsTip = [[hx.jahrLabel(a.jahr), `${hx.fmt.tsd(r.betrag)} Tsd. €`], ['Anteil an der Ebene', hx.fmt.pct(r.anteil)]];
+      if (cmp) {
+        rowsTip.push([hx.jahrLabel(a.vgl), `${hx.fmt.tsd(r.vergleich)} Tsd. €`]);
+        rowsTip.push(['Veränderung', `${hx.fmt.tsdsigned(r.diff)} Tsd. €`]);
+      }
+      t.show(event, `${r.rang}. ${r.name}`, rowsTip, r.offen ? 'Klick öffnet die Untergliederung' : 'Klick zeigt den Verlauf');
+    })
+      .on('pointerleave', () => t.hide())
+      .on('click', (event, r) => { t.hide(); hx.oeffnen(a, r); });
+
+    if (seiten > 1) {
+      const track = document.createElement('div');
+      track.className = 'hx-track';
+      const thumb = document.createElement('div');
+      thumb.className = 'hx-thumb';
+      thumb.style.left = `${(von / rows.length) * 100}%`;
+      thumb.style.width = `${(teil.length / rows.length) * 100}%`;
+      track.append(thumb);
+      el.append(track);
+    }
+  }
+
+  // Donut of the level: ranks 1-9 and the rest; negative entries left out.
+  function hxKreis(el, a) {
+    const pos = a.zeilen.filter((r) => r.betrag > 0);
+    if (!pos.length) {
+      const p = document.createElement('p');
+      p.className = 'hx-empty';
+      p.textContent = 'Auf dieser Ebene gibt es keine positiven Beträge.';
+      el.append(p);
+      return;
+    }
+    const W = Math.max(300, el.clientWidth || 700);
+    const posSumme = d3.sum(pos, (r) => r.betrag);
+    const slices = pos.slice(0, 9).map((r) => ({ ...r, quote: (r.betrag / posSumme) * 100 }));
+    const rest = pos.slice(9);
+    if (rest.length) {
+      const b = d3.sum(rest, (r) => r.betrag);
+      slices.push({ id: '__rest', rang: 0, name: `Übrige ${rest.length} Positionen`, betrag: b, quote: (b / posSumme) * 100, offen: false });
+    }
+    const size = Math.min(W, 380);
+    const R = size / 2 - 6;
+    const inner = R * 0.6;
+    const svg = hx.svgFor(el, W, size, `Kreisdiagramm: ${a.art === 'e' ? 'Einnahmen' : 'Ausgaben'} ${hx.jahrLabel(a.jahr)} je ${a.stufe}`);
+    const g = svg.append('g').attr('transform', `translate(${W / 2},${size / 2})`);
+    const pie = d3.pie().sort(null).value((r) => r.betrag)(slices);
+    const arc = d3.arc().innerRadius(inner).outerRadius(R).padAngle(0.006);
+    const t = hx.tip(el);
+    g.append('g').attr('class', 'hx-slices').selectAll('path').data(pie).join('path')
+      .attr('d', arc)
+      .attr('class', (d) => `hx-hit${d.data.id !== '__rest' ? ' hx-open' : ''}`)
+      .style('fill', (d) => hx.farbe(d.data.rang))
+      .on('pointermove', (event, d) => t.show(event, d.data.rang ? `${d.data.rang}. ${d.data.name}` : d.data.name,
+        [[hx.jahrLabel(a.jahr), `${hx.fmt.tsd(d.data.betrag)} Tsd. €`], ['Anteil am Kreis', hx.fmt.pct(d.data.quote)]],
+        d.data.id === '__rest' ? '' : d.data.offen ? 'Klick öffnet die Untergliederung' : 'Klick zeigt den Verlauf'))
+      .on('pointerleave', () => t.hide())
+      .on('click', (event, d) => { t.hide(); hx.oeffnen(a, d.data); });
+    const mid = d3.arc().innerRadius((inner + R) / 2).outerRadius((inner + R) / 2);
+    g.append('g').selectAll('text').data(pie.filter((d) => d.endAngle - d.startAngle > 0.3)).join('text')
+      .attr('class', (d) => (d.data.rang ? 'hx-lab-dark' : 'hx-lab'))
+      .attr('transform', (d) => `translate(${mid.centroid(d)})`).attr('text-anchor', 'middle').attr('dy', '0.35em')
+      .style('pointer-events', 'none')
+      .text((d) => `${hx.f0(d.data.quote)} %`);
+    g.append('text').attr('class', 'hx-lab-muted').attr('text-anchor', 'middle').attr('y', -14)
+      .text(a.zeilen.length > pos.length ? 'positive Ansätze' : 'Summe');
+    g.append('text').attr('text-anchor', 'middle').attr('y', 14)
+      .style('fill', 'var(--hx-ink)').style('font-size', `${Math.max(18, Math.min(28, inner / 3.4))}px`).style('font-weight', 600)
+      .text(hx.mio(posSumme / 1000));
+  }
+
+  dash.draw('explorer', {
+    mount: () => ({ seite: 0, sig: '' }),
+    update: (el, st) => {
+      const { a, status } = hx.kontext();
+      if (!a) { hx.placeholder(el, status); return; }
+      const p = dash.params();
+      const sig = [a.jahr, a.art, a.vgl, p.sicht, p.chart, a.pfad.map((x) => x.key).join('|')].join('/');
+      if (sig !== st.sig) { st.seite = 0; st.alle = false; st.sig = sig; }
+      el.replaceChildren();
+      if (!a.zeilen.length) {
+        const e = document.createElement('p');
+        e.className = 'hx-empty';
+        e.textContent = 'Für diese Auswahl weist der Produktbericht keine Beträge aus.';
+        el.append(e);
+        return;
+      }
+      if (p.chart === 'kreis') hxKreis(el, a); else hxSaeulen(el, a, st);
+    },
+  });
+
+  // Table of the level, also the keyboard route into deeper levels.
+  dash.draw('tabelle', (el) => {
+    const { a, status } = hx.kontext();
+    if (!a) { hx.placeholder(el, status); return; }
+    const cmp = !!a.vgl;
+    const kreis = dash.params().chart === 'kreis';
+    const fokus = String(dash.params().fokus || '');
+    el.replaceChildren();
+    const wrap = document.createElement('div');
+    wrap.className = 'hx-tablewrap';
+    const table = document.createElement('table');
+    table.className = 'hx-table';
+    table.dataset.source = 'ebene';
+    table.dataset.rowKey = 'id';
+    table.dataset.cols = '2';
+    const thead = document.createElement('thead');
+    const hr = document.createElement('tr');
+    const heads = [['rang', 'Nr.', ''], ['name', a.stufe, ''], ['betrag', `${hx.jahrLabel(a.jahr)} in Tsd. €`, 'hx-r'], ['anteil', 'Anteil', 'hx-r']];
+    if (cmp) heads.push(['vergleich', `${hx.jahrLabel(a.vgl)} in Tsd. €`, 'hx-r'], ['diff', 'Veränderung in Tsd. €', 'hx-r']);
+    for (const [f, label, cls] of heads) {
+      const th = document.createElement('th');
+      th.dataset.field = f;
+      th.textContent = label;
+      if (cls) th.className = cls;
+      hr.append(th);
+    }
+    thead.append(hr);
+    const tbody = document.createElement('tbody');
+    for (const r of a.zeilen) {
+      const tr = document.createElement('tr');
+      tr.dataset.key = r.id;
+      const td0 = document.createElement('td');
+      const rank = document.createElement('span');
+      rank.className = 'hx-rank';
+      const nr = document.createElement('span');
+      nr.textContent = String(r.rang);
+      // In the donut view the swatch links a row to its slice.
+      if (kreis) {
+        const dot = document.createElement('span');
+        dot.className = 'hx-dot';
+        dot.style.background = hx.farbe(r.rang);
+        rank.append(dot);
+      }
+      rank.append(nr);
+      td0.append(rank);
+      td0.className = 'hx-st-hide';
+      const td1 = document.createElement('td');
+      td1.className = 'hx-st-head';
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'hx-link';
+      b.textContent = r.name;
+      if (!r.offen) {
+        // Products toggle the time series instead of opening a level.
+        const sel = String(r.id) === fokus;
+        b.setAttribute('aria-pressed', String(sel));
+        b.setAttribute('aria-label', `${r.name}: Verlauf ${sel ? 'ausblenden' : 'zeigen'}`);
+        if (sel) tr.className = 'hx-sel';
+      }
+      b.addEventListener('click', () => hx.oeffnen(a, r));
+      if (kreis) {
+        // Stacked rows hide the rank cell, so the name carries its own swatch.
+        const dot = document.createElement('span');
+        dot.className = 'hx-dot hx-dot-m';
+        dot.style.background = hx.farbe(r.rang);
+        td1.append(dot);
+      }
+      td1.append(b);
+      if (r.zusatz) {
+        const sub = document.createElement('span');
+        sub.className = 'hx-sub';
+        sub.textContent = r.zusatz;
+        td1.append(sub);
+      }
+      tr.append(td0, td1);
+      const cells = [hx.fmt.tsd(r.betrag), hx.fmt.pct(r.anteil)];
+      if (cmp) cells.push(hx.fmt.tsd(r.vergleich), hx.fmt.tsdsigned(r.diff));
+      for (const c of cells) {
+        const td = document.createElement('td');
+        td.className = 'hx-r';
+        td.textContent = c;
+        tr.append(td);
+      }
+      tbody.append(tr);
+    }
+    const tfoot = document.createElement('tfoot');
+    const fr = document.createElement('tr');
+    const sum = a.summe[0];
+    const fcells = ['', 'Summe der Ebene', hx.fmt.tsd(sum.betrag), hx.fmt.pct(100)];
+    if (cmp) fcells.push(hx.fmt.tsd(sum.vergleich), hx.fmt.tsdsigned(sum.diff));
+    fcells.forEach((c, i) => {
+      const td = document.createElement('td');
+      td.className = ['hx-st-hide', 'hx-st-head'][i] || 'hx-r';
+      td.textContent = c;
+      fr.append(td);
+    });
+    tfoot.append(fr);
+    table.append(thead, tbody, tfoot);
+    wrap.append(table);
+    el.append(wrap);
+  });
+
+  // Time series panel: heading for the product or level shown.
+  dash.draw('verlauf_titel', (el) => {
+    const d = dash.data('produkte');
+    if (d.status !== 'ok' || !Array.isArray(d.data)) { hx.placeholder(el, d); return; }
+    const v = hx.verlauf(d.data, dash.params());
+    el.replaceChildren();
+    const h = document.createElement('h3');
+    h.textContent = `Verlauf: ${v.name}`;
+    el.append(h);
+    const sub = document.createElement('div');
+    sub.className = 'hx-muted';
+    if (v.fokus) {
+      const f = v.fokus;
+      sub.textContent = `Produkt in ${f.epl_kurz} › ${f.ab_name} › ${f.pg_name} · IPR ${f.ipr} ${f.ipr_name}`;
+    } else {
+      const n = v.a.basis.length;
+      sub.textContent = `Summe von ${hx.f0(n)} ${n === 1 ? 'Produkt' : 'Produkten'}. Ein Klick auf ein Produkt zeigt nur dessen Verlauf.`;
+    }
+    el.append(sub);
+    const hinweis = document.createElement('p');
+    hinweis.className = 'hx-verlauf-note';
+    if (v.fokus && v.fokus.wechsel_text) {
+      hinweis.textContent = v.fokus.wechsel_text;
+    } else if (!v.fokus && v.a.basis.some((r) => r.wechsel)) {
+      hinweis.textContent = 'Das Ist 2024 und 2025 folgt der Gliederung des Plans 2027. Produkte, die zum Plan 2027 den Einzelplan gewechselt haben, sind mit ihrem Ist der neuen Stelle zugeordnet.';
+    }
+    if (hinweis.textContent) el.append(hinweis);
+    if (v.fokus) {
+      const back = document.createElement('button');
+      back.type = 'button';
+      back.className = 'hx-back';
+      back.textContent = 'Verlauf der ganzen Ebene zeigen';
+      back.addEventListener('click', () => dash.setParams({ fokus: '' }));
+      el.append(back);
+    }
+  });
+
+  dash.draw('vtxt', (el) => {
+    const art = dash.params().art === 'einnahmen' ? 'Einnahmen' : 'Ausgaben';
+    el.textContent = `${art} Plan 2027`;
+  });
+
+  dash.draw('vfig', (el) => {
+    const s = dash.data('verlauf_kennzahlen');
+    const row = s.status === 'ok' && Array.isArray(s.data) ? s.data[0] : null;
+    const f = hx.fmt[el.dataset.fmt] || hx.fmt.tsd;
+    el.textContent = row ? f(row[el.dataset.field]) : '—';
+  });
+
+  // Grouped columns: expenses and income per year, 2024-2030.
+  dash.draw('verlauf_chart', (el) => {
+    const s = dash.data('verlauf');
+    if (s.status !== 'ok' || !Array.isArray(s.data)) { hx.placeholder(el, s); return; }
+    const rows = s.data;
+    el.replaceChildren();
+    const legend = document.createElement('ul');
+    legend.className = 'hx-legend';
+    for (const [label, cls] of [['Ausgaben', 'hx-sw-a'], ['Einnahmen', 'hx-sw-b']]) {
+      const li = document.createElement('li');
+      const sw = document.createElement('span');
+      sw.className = `hx-dot ${cls}`;
+      li.append(sw, document.createTextNode(label));
+      legend.append(li);
+    }
+    el.append(legend);
+    const W = Math.max(280, el.clientWidth || 600);
+    const H = 250;
+    const werte = rows.flatMap((r) => [r.ausgaben, r.einnahmen]).filter((v) => hx.ok(v));
+    // Large sums read better in Mio. EUR; the axis width follows the longest label.
+    const gross = (d3.max(werte, (v) => Math.abs(v)) ?? 0) >= 10000;
+    const tickFmt = gross ? (d) => hx.fmt.mio0(d / 1000) : (d) => hx.fmt.tsd(d);
+    const y = d3.scaleLinear([Math.min(0, d3.min(werte) ?? 0), Math.max(1, d3.max(werte) ?? 1)], [H - 40, 22]).nice();
+    const svg = hx.svgFor(el, W, H, `Säulendiagramm: Ausgaben und Einnahmen 2024 bis 2030 in ${gross ? 'Millionen' : 'Tausend'} Euro`);
+    const wTick = d3.max(y.ticks(4), (d) => hx.textWidth(svg, tickFmt(d), 'hx-lab-muted'));
+    const m = { t: 22, r: 4, b: 40, l: Math.max(36, Math.ceil(wTick) + 14) };
+    y.range([H - m.b, m.t]);
+    svg.append('text').attr('class', 'hx-lab-muted').attr('x', 0).attr('y', 10).text(gross ? 'Mio. €' : 'Tsd. €');
+    const x = d3.scaleBand(rows.map((r) => r.jahr), [m.l, W - m.r]).paddingInner(0.22).paddingOuter(0.06);
+    const inner = d3.scaleBand(['ausgaben', 'einnahmen'], [0, x.bandwidth()]).padding(0.08);
+    // Band behind the medium-term financial plan.
+    svg.append('rect').attr('x', x('2029') - (x.step() - x.bandwidth()) / 2).attr('width', x.step() * 2)
+      .attr('y', m.t - 18).attr('height', H - m.b - m.t + 18).style('fill', 'var(--hx-ctl)');
+    svg.append('text').attr('class', 'hx-lab-muted').attr('text-anchor', 'end')
+      .attr('x', W - m.r - 6).attr('y', m.t - 6).text('Finanzplanung');
+    svg.append('g').attr('class', 'hx-grid').selectAll('line').data(y.ticks(4)).join('line')
+      .attr('x1', m.l).attr('x2', W - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+    svg.append('g').attr('class', 'hx-axis').attr('transform', `translate(${m.l - 8},0)`)
+      .call(d3.axisLeft(y).ticks(4).tickSize(0).tickFormat(tickFmt)).call((g) => g.select('.domain').remove());
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).style('stroke', 'var(--hx-muted)');
+    const t = hx.tip(el);
+    const g = svg.append('g').attr('class', 'hx-bars').selectAll('g').data(rows).join('g')
+      .attr('class', 'hx-hit').attr('transform', (r) => `translate(${x(r.jahr)},0)`);
+    g.append('rect').attr('width', x.bandwidth()).attr('y', m.t).attr('height', H - m.t - m.b).style('fill', 'transparent');
+    [['ausgaben', 'var(--hx-accent)'], ['einnahmen', 'var(--hx-sky)']].forEach(([k, c]) => {
+      g.filter((r) => hx.ok(r[k])).append('rect')
+        .attr('x', inner(k)).attr('width', inner.bandwidth()).attr('rx', 2)
+        .attr('y', (r) => Math.min(y(r[k]), y(0))).attr('height', (r) => Math.max(1, Math.abs(y(r[k]) - y(0))))
+        .style('fill', (r) => (r[k] < 0 ? 'transparent' : c))
+        .style('stroke', (r) => (r[k] < 0 ? 'var(--hx-bad)' : 'none')).style('stroke-width', 1.5);
+    });
+    g.filter((r) => !hx.ok(r.ausgaben)).append('text').attr('class', 'hx-lab-muted').attr('text-anchor', 'middle')
+      .attr('x', x.bandwidth() / 2).attr('y', y(0) - 8).text('—');
+    const ticks = svg.append('g').attr('class', 'hx-axis');
+    rows.forEach((r) => {
+      const tx = ticks.append('text').attr('text-anchor', 'middle').attr('x', x(r.jahr) + x.bandwidth() / 2).attr('y', H - m.b + 16);
+      tx.append('tspan').text(r.jahr);
+      const kurz = r.jahr === '2026' ? 'k. W.' : r.stand === 'Finanzplanung' ? '' : r.stand;
+      if (kurz) tx.append('tspan').attr('x', x(r.jahr) + x.bandwidth() / 2).attr('dy', 14).text(kurz);
+    });
+    g.on('pointermove', (event, r) => t.show(event, `${r.jahr} · ${r.stand}`, hx.ok(r.ausgaben)
+      ? [['Ausgaben', `${hx.fmt.tsd(r.ausgaben)} Tsd. €`], ['Einnahmen', `${hx.fmt.tsd(r.einnahmen)} Tsd. €`], ['Saldo', `${hx.fmt.tsdsigned(r.saldo)} Tsd. €`]]
+      : [['Werte', 'keine im Produktbericht']]))
+      .on('pointerleave', () => t.hide());
+  });
+
+  // Table of the time series, one row per year.
+  dash.draw('verlauf_tabelle', (el) => {
+    const s = dash.data('verlauf');
+    if (s.status !== 'ok' || !Array.isArray(s.data)) { hx.placeholder(el, s); return; }
+    el.replaceChildren();
+    const wrap = document.createElement('div');
+    wrap.className = 'hx-tablewrap';
+    const table = document.createElement('table');
+    table.className = 'hx-table';
+    table.dataset.source = 'verlauf';
+    table.dataset.rowKey = 'jahr';
+    const thead = document.createElement('thead');
+    const hr = document.createElement('tr');
+    for (const [f, label, cls] of [['jahr', 'Jahr', ''], ['ausgaben', 'Ausgaben', 'hx-r'], ['einnahmen', 'Einnahmen', 'hx-r'], ['saldo', 'Saldo', 'hx-r']]) {
+      const th = document.createElement('th');
+      th.dataset.field = f;
+      th.textContent = label;
+      if (cls) th.className = cls;
+      hr.append(th);
+    }
+    thead.append(hr);
+    const tbody = document.createElement('tbody');
+    for (const r of s.data) {
+      const tr = document.createElement('tr');
+      tr.dataset.key = r.jahr;
+      const td = document.createElement('td');
+      td.textContent = r.jahr;
+      const sub = document.createElement('span');
+      sub.className = 'hx-sub';
+      sub.textContent = r.jahr === '2026' ? 'keine Werte im Produktbericht' : r.stand;
+      td.append(sub);
+      tr.append(td);
+      for (const v of [hx.fmt.tsd(r.ausgaben), hx.fmt.tsd(r.einnahmen), hx.fmt.tsdsigned(r.saldo)]) {
+        const c = document.createElement('td');
+        c.className = 'hx-r';
+        c.textContent = v;
+        tr.append(c);
+      }
+      tbody.append(tr);
+    }
+    const cap = document.createElement('caption');
+    cap.className = 'hx-muted';
+    cap.style.cssText = 'caption-side: bottom; text-align: left; padding-top: 8px; font-size: 12px;';
+    cap.textContent = 'Tsd. €';
+    table.append(thead, tbody, cap);
+    wrap.append(table);
+    el.append(wrap);
+  });
+
+  // Cost types: heading, scope and notes; hides the block where nothing applies.
+  dash.draw('details_titel', (el) => {
+    const box = el.closest('.hx-detail');
+    const s = [dash.data('produkte'), dash.data('kostenarten'), dash.data('kennzahlen')];
+    const bad = s.find((x) => x.status !== 'ok' || !Array.isArray(x.data));
+    if (bad) { box.hidden = false; hx.placeholder(el, bad); return; }
+    const d = hx.details(s[0].data, s[1].data, s[2].data, dash.params());
+    box.hidden = d.modus === 'aus';
+    box.classList.toggle('hx-detail-leer', d.modus !== 'ok');
+    el.replaceChildren();
+    if (d.modus === 'aus') return;
+    const h = document.createElement('h3');
+    h.textContent = 'Wofür das Geld ausgegeben wird';
+    el.append(h);
+    const sub = document.createElement('p');
+    sub.className = 'hx-verlauf-note';
+    if (d.modus === 'fehlt') {
+      sub.textContent = `Die Aufteilung nach Kostenarten steht in den Bänden der einzelnen Einzelpläne. Für ${d.epl} liegt kein ausgewerteter Band vor.`;
+      el.append(sub);
+      return;
+    }
+    if (d.gruppen.length === 1) {
+      const g = d.gruppen[0];
+      sub.textContent = `Kostenarten der Produktgruppe ${g.pg} ${g.name}` + (d.v.fokus && g.n > 1
+        ? `. Der Einzelplan weist Kostenarten nur je Produktgruppe aus; die Gruppe umfasst ${g.n} Produkte.`
+        : '.');
+    } else {
+      sub.textContent = `Summe der Kostenarten aus ${d.gruppen.length} Produktgruppen.`;
+    }
+    el.append(sub);
+    if (d.extern) {
+      const x = document.createElement('p');
+      x.className = 'hx-verlauf-note';
+      x.textContent = 'Ein Teil der Produkte ist zum Plan 2027 aus einem anderen Einzelplan hierher gewechselt. Der Band zeigt ihr Ist dort, nicht hier. Das Ist 2025 ist in dieser Tabelle deshalb unvollständig; die Veränderung ist nicht ausgewiesen. Den bereinigten Vergleich zeigt der Verlauf oben.';
+      el.append(x);
+    }
+    if (d.bezirk) {
+      const b = document.createElement('p');
+      b.className = 'hx-verlauf-note';
+      b.textContent = 'Die Bände der Bezirksämter zeigen nur die im Bezirk veranschlagten Kosten. Die Produktgruppe „Steuerung und Service“ trägt dort Gemeinkosten, die der Produktbericht auf die Fachprodukte verteilt. Der Produktbericht weist außerdem mehr aus: 2027 für alle sieben Bezirksämter rund 1.290 Mio. €, die Bände 855 Mio. €. Die Summen hier passen deshalb nicht zu den Werten oben.';
+      el.append(b);
+    }
+    const p1 = d.produktRows.find((r) => r.pos === 'P1');
+    const p2 = d.produktRows.find((r) => r.pos === 'P2');
+    if (d.v.fokus && p1 && p2 && hx.ok(p2.j2027) && p2.j2027 !== 0) {
+      const sp = document.createElement('p');
+      sp.className = 'hx-verlauf-note';
+      const ist = hx.ok(p2.j2025) && p2.j2025 !== 0
+        ? `Im Ist 2025 waren es ${hx.fmt.tsd(p2.j2025)} Tsd. €.`
+        : 'Im Ist 2024 und 2025 war diesem Produkt kein solcher Anteil zugeordnet; das erklärt einen Teil des Anstiegs.';
+      sp.textContent = `Von den Kosten 2027 für „${d.v.fokus.produkt}“ sind ${hx.fmt.tsd(p2.j2027)} Tsd. € ein Anteil an internen Dienstleistungen der Behörde, etwa Verwaltung und zentrale Dienste. ${ist}`;
+      el.append(sp);
+    }
+  });
+
+  dash.draw('kosten_tabelle', (el) => {
+    const s = dash.data('kostenarten_auswahl');
+    if (s.status !== 'ok' || !Array.isArray(s.data)) { hx.placeholder(el, s); return; }
+    el.replaceChildren();
+    const all = s.data.filter((r) => r.ebene !== 'produkt');
+    if (!all.length) return;
+    const haupt = all.filter((r) => r.ebene === 'haupt').sort((a, b) => (b.plan_2027 || 0) - (a.plan_2027 || 0));
+    const ordered = [];
+    for (const r of haupt) {
+      ordered.push(r);
+      // 'davon' rows belong to the main row with the same leading digit.
+      all.filter((x) => x.ebene === 'davon' && x.pos.startsWith(r.pos) && (x.ist_2025 || x.plan_2027 || x.plan_2028)).forEach((x) => ordered.push(x));
+    }
+    const wrap = document.createElement('div');
+    wrap.className = 'hx-tablewrap';
+    const table = document.createElement('table');
+    table.className = 'hx-table hx-kosten';
+    table.dataset.source = 'kostenarten_auswahl';
+    table.dataset.rowKey = 'pos';
+    const cols = [['label', 'Kostenart', ''], ['ist_2025', 'Ist 2025', 'hx-r'], ['plan_2027', 'Plan 2027', 'hx-r'], ['plan_2028', 'Plan 2028', 'hx-r'], ['aenderung_2025_2027', 'Veränd. 2025–2027', 'hx-r'], ['anteil_2027', 'Anteil 2027', '']];
+    const thead = document.createElement('thead');
+    const hr = document.createElement('tr');
+    for (const [f, label, cls] of cols) {
+      const th = document.createElement('th');
+      th.dataset.field = f;
+      th.textContent = label;
+      if (cls) th.className = cls;
+      hr.append(th);
+    }
+    thead.append(hr);
+    const tbody = document.createElement('tbody');
+    const zeile = (r, cls) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = r.pos;
+      if (cls) tr.className = cls;
+      const td = document.createElement('td');
+      td.textContent = r.label;
+      tr.append(td);
+      for (const [v, f] of [[r.ist_2025, 'tsd'], [r.plan_2027, 'tsd'], [r.plan_2028, 'tsd'], [r.aenderung_2025_2027, 'pctsigned']]) {
+        const c = document.createElement('td');
+        c.className = 'hx-r';
+        c.textContent = hx.fmt[f](v);
+        tr.append(c);
+      }
+      const c = document.createElement('td');
+      if (hx.ok(r.anteil_2027) && r.ebene === 'haupt') {
+        const bar = document.createElement('span');
+        bar.className = 'hx-share';
+        const fill = document.createElement('span');
+        fill.style.width = `${Math.max(0, Math.min(100, r.anteil_2027))}%`;
+        bar.append(fill);
+        const t = document.createElement('span');
+        t.className = 'hx-share-t';
+        t.textContent = hx.fmt.pct1(r.anteil_2027);
+        c.append(bar, t);
+      }
+      tr.append(c);
+      return tr;
+    };
+    ordered.forEach((r) => tbody.append(zeile(r, r.ebene === 'davon' ? 'hx-davon' : '')));
+    const tfoot = document.createElement('tfoot');
+    const sum = (f) => haupt.some((r) => hx.ok(r[f])) ? haupt.reduce((t, r) => t + (r[f] || 0), 0) : null;
+    const pct = (x, y) => (y > 0 && x > 0 ? Math.round((x / y - 1) * 1000) / 10 : null);
+    const total = { pos: 'summe', label: 'Kosten insgesamt', ebene: 'summe', ist_2025: sum('ist_2025'), plan_2027: sum('plan_2027'), plan_2028: sum('plan_2028') };
+    const extern = s.data.some((r) => r.ebene !== 'erloese' && hx.ok(r.ist_2025) && hx.ok(r.plan_2027)) && s.data.every((r) => r.aenderung_2025_2027 === null);
+    total.aenderung_2025_2027 = extern ? null : pct(total.plan_2027, total.ist_2025);
+    tfoot.append(zeile(total, ''));
+    const erl = all.find((r) => r.ebene === 'erloese');
+    if (erl) tfoot.append(zeile(erl, 'hx-davon'));
+    table.append(thead, tbody, tfoot);
+    wrap.append(table);
+    const note = document.createElement('p');
+    note.className = 'hx-verlauf-note';
+    note.textContent = 'Tsd. €. Quelle: Ergebnisplan der Produktgruppe im Einzelplan-Band. „Anteil an internen Dienstleistungen der Behörde“ verteilt Kosten von Verwaltung und zentralen Diensten auf die Fachprodukte. Die Werte sind nicht um haushaltsinterne Verrechnungen bereinigt und liegen bei den Fachbehörden bis zu 1 % über dem Produktbericht.';
+    el.append(wrap, note);
+  });
+
+  dash.draw('kennzahlen_tabelle', (el) => {
+    const s = dash.data('kennzahlen_auswahl');
+    if (s.status !== 'ok' || !Array.isArray(s.data)) { hx.placeholder(el, s); return; }
+    el.replaceChildren();
+    if (!s.data.length) return;
+    const h = document.createElement('h4');
+    h.className = 'hx-sub-h';
+    h.textContent = 'Leistungskennzahlen der Produktgruppe';
+    const wrap = document.createElement('div');
+    wrap.className = 'hx-tablewrap';
+    const table = document.createElement('table');
+    table.className = 'hx-table';
+    table.dataset.source = 'kennzahlen_auswahl';
+    table.dataset.rowKey = 'code';
+    table.dataset.cols = '2';
+    const thead = document.createElement('thead');
+    const hr = document.createElement('tr');
+    for (const [f, label, cls] of [['name', 'Kennzahl', ''], ['ist_2025', 'Ist 2025', 'hx-r'], ['plan_2027', 'Plan 2027', 'hx-r'], ['plan_2028', 'Plan 2028', 'hx-r'], ['plan_2030', 'Plan 2030', 'hx-r']]) {
+      const th = document.createElement('th');
+      th.dataset.field = f;
+      th.textContent = label;
+      if (cls) th.className = cls;
+      hr.append(th);
+    }
+    thead.append(hr);
+    const tbody = document.createElement('tbody');
+    const einheit = (u) => (u === 'ANZ' ? 'Anzahl' : u);
+    const zahl = (v) => (hx.ok(v) ? hx.fmt.num(v) : '—');
+    for (const r of s.data) {
+      const tr = document.createElement('tr');
+      tr.dataset.key = r.code;
+      const td = document.createElement('td');
+      td.textContent = r.name;
+      const sub = document.createElement('span');
+      sub.className = 'hx-sub';
+      sub.textContent = einheit(r.einheit);
+      td.append(sub);
+      tr.append(td);
+      for (const v of [r.ist_2025, r.plan_2027, r.plan_2028, r.plan_2030]) {
+        const c = document.createElement('td');
+        c.className = 'hx-r';
+        c.textContent = zahl(v);
+        tr.append(c);
+      }
+      tbody.append(tr);
+    }
+    table.append(thead, tbody);
+    wrap.append(table);
+    el.append(h, wrap);
+  });
+
+  // Line chart: expenses and income 2024-2030.
+  dash.draw('entwicklung', (el) => {
+    const s = dash.data('eckwerte');
+    if (s.status !== 'ok' || !s.data.length) { hx.placeholder(el, s); return; }
+    const rows = s.data.map((r) => ({ ...r, jahr: Number(r.jahr), aufwand: Number(r.aufwand) / 1000, ertrag: Number(r.ertrag) / 1000 }));
+    el.replaceChildren();
+    const W = Math.max(300, el.clientWidth || 700);
+    const H = 300;
+    const svg = hx.svgFor(el, W, H, 'Liniendiagramm: Aufwand und Erträge 2024 bis 2030 in Milliarden Euro');
+    const last = rows[rows.length - 1];
+    const wEnd = Math.max(hx.textWidth(svg, hx.f1(last.aufwand), 'hx-lab'), hx.textWidth(svg, hx.f1(last.ertrag), 'hx-lab'));
+    const m = { t: 24, r: wEnd + 14, b: 30, l: 34 };
+    const x = d3.scalePoint(rows.map((r) => r.jahr), [m.l, W - m.r]).padding(0.25);
+    const lo = d3.min(rows, (r) => Math.min(r.aufwand, r.ertrag));
+    const hi = d3.max(rows, (r) => Math.max(r.aufwand, r.ertrag));
+    const y = d3.scaleLinear([Math.floor(lo - 1), Math.ceil(hi + 0.5)], [H - m.b, m.t]).nice();
+    const bw = x.step();
+    svg.append('rect').attr('x', x(2027) - bw / 2).attr('width', bw * 2).attr('y', m.t - 16).attr('height', H - m.b - m.t + 16)
+      .style('fill', 'var(--hx-panel)');
+    svg.append('text').attr('class', 'hx-lab-muted').attr('x', x(2027) + bw / 2).attr('y', m.t - 4).attr('text-anchor', 'middle').text('Doppelhaushalt');
+    svg.append('g').attr('class', 'hx-grid').selectAll('line').data(y.ticks(5)).join('line')
+      .attr('x1', m.l).attr('x2', W - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+    svg.append('g').attr('class', 'hx-axis').attr('transform', `translate(${m.l - 6},0)`)
+      .call(d3.axisLeft(y).ticks(5).tickSize(0).tickFormat((d) => hx.f0(d))).call((g) => g.select('.domain').remove());
+    svg.append('g').attr('class', 'hx-axis').attr('transform', `translate(0,${H - m.b})`)
+      .call(d3.axisBottom(x).tickSize(0).tickPadding(10).tickFormat((d) => String(d))).call((g) => g.select('.domain').remove());
+    [['aufwand', 'var(--hx-accent)'], ['ertrag', 'var(--hx-sky)']].forEach(([k, c]) => {
+      const line = d3.line().x((r) => x(r.jahr)).y((r) => y(r[k]));
+      svg.append('path').datum(rows.filter((r) => r.jahr <= 2028)).attr('d', line).style('fill', 'none').style('stroke', c).style('stroke-width', 2.5);
+      svg.append('path').datum(rows.filter((r) => r.jahr >= 2028)).attr('d', line).style('fill', 'none').style('stroke', c).style('stroke-width', 2.5).style('stroke-dasharray', '5 4');
+      svg.append('g').selectAll('circle').data(rows).join('circle')
+        .attr('cx', (r) => x(r.jahr)).attr('cy', (r) => y(r[k])).attr('r', 3.5)
+        .style('fill', c).style('stroke', 'var(--hx-bg)').style('stroke-width', 1.5);
+    });
+    let ya = y(last.aufwand);
+    let ye = y(last.ertrag);
+    if (Math.abs(ya - ye) < 15) { const mid = (ya + ye) / 2; ya = mid - 8; ye = mid + 8; }
+    svg.append('text').attr('class', 'hx-lab').attr('x', x(last.jahr) + 8).attr('y', ya).attr('dy', '0.35em').text(hx.f1(last.aufwand)).style('fill', 'var(--hx-accent)');
+    svg.append('text').attr('class', 'hx-lab').attr('x', x(last.jahr) + 8).attr('y', ye).attr('dy', '0.35em').text(hx.f1(last.ertrag)).style('fill', 'var(--hx-sky)');
+    const t = hx.tip(el);
+    svg.append('g').selectAll('rect').data(rows).join('rect')
+      .attr('x', (r) => x(r.jahr) - bw / 2).attr('width', bw).attr('y', m.t).attr('height', H - m.t - m.b)
+      .style('fill', 'transparent')
+      .on('pointermove', (event, r) => t.show(event, `${r.jahr} · ${r.art}`, [
+        ['Aufwand', hx.mio(r.aufwand * 1000)], ['Erträge', hx.mio(r.ertrag * 1000)], ['Jahresergebnis', hx.mio(r.jahresergebnis)],
+      ]))
+      .on('pointerleave', () => t.hide());
+  });
+
+  // Stacked columns: components of borrowing 2027-2030.
+  dash.draw('nka', (el) => {
+    const s = dash.data('finanzbericht');
+    if (s.status !== 'ok' || !s.data.length) { hx.placeholder(el, s); return; }
+    const keys = [['finanzielle_transaktionen', 'Finanzielle Transaktionen', 'var(--hx-accent)'], ['konjunktur', 'Konjunkturkomponente', 'var(--hx-sky)'], ['strukturkomponente', 'Strukturkomponente', 'var(--hx-pale)']];
+    const rows = s.data.map((r) => ({ jahr: Number(r.jahr), ...Object.fromEntries(keys.map(([k]) => [k, Number(r[k]) || 0])) }));
+    el.replaceChildren();
+    const W = Math.max(280, el.clientWidth || 480);
+    const H = 280;
+    const m = { t: 22, r: 4, b: 30, l: 44 };
+    const svg = hx.svgFor(el, W, H, 'Gestapelte Säulen: Kreditaufnahme nach Komponenten der Schuldenbremse 2027 bis 2030 in Millionen Euro');
+    const stack = d3.stack().keys(keys.map(([k]) => k))(rows);
+    const x = d3.scaleBand(rows.map((r) => r.jahr), [m.l, W - m.r]).padding(0.38);
+    const total = (r) => d3.sum(keys, ([k]) => r[k]);
+    const y = d3.scaleLinear([0, d3.max(rows, total) * 1.1], [H - m.b, m.t]).nice();
+    svg.append('g').attr('class', 'hx-grid').selectAll('line').data(y.ticks(4)).join('line')
+      .attr('x1', m.l).attr('x2', W - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+    svg.append('g').attr('class', 'hx-axis').attr('transform', `translate(${m.l - 6},0)`)
+      .call(d3.axisLeft(y).ticks(4).tickSize(0).tickFormat((d) => hx.f0(d))).call((g) => g.select('.domain').remove());
+    svg.append('g').attr('class', 'hx-axis').attr('transform', `translate(0,${H - m.b})`)
+      .call(d3.axisBottom(x).tickSize(0).tickPadding(10).tickFormat((d) => String(d))).call((g) => g.select('.domain').remove());
+    const t = hx.tip(el);
+    const groups = svg.append('g').attr('class', 'hx-bars');
+    stack.forEach((layer, i) => {
+      groups.append('g').selectAll('rect').data(layer).join('rect')
+        .attr('class', 'hx-hit')
+        .attr('x', (d) => x(d.data.jahr)).attr('width', x.bandwidth())
+        .attr('y', (d) => y(d[1])).attr('height', (d) => Math.max(0, y(d[0]) - y(d[1]) - 1))
+        .style('fill', keys[i][2])
+        .on('pointermove', (event, d) => t.show(event, `Kreditaufnahme ${d.data.jahr}`, [
+          ...keys.map(([k, label]) => [label, hx.mio(d.data[k])]), ['Summe', hx.mio(total(d.data))],
+        ]))
+        .on('pointerleave', () => t.hide());
+    });
+    svg.append('g').selectAll('text').data(rows).join('text').attr('class', 'hx-lab')
+      .attr('x', (r) => x(r.jahr) + x.bandwidth() / 2).attr('y', (r) => y(total(r)) - 7).attr('text-anchor', 'middle')
+      .text((r) => hx.f0(total(r)));
+  });
+
+  // Columns: interest expense 2024-2030.
+  dash.draw('zinschart', (el) => {
+    const s = dash.data('eckwerte');
+    if (s.status !== 'ok' || !s.data.length) { hx.placeholder(el, s); return; }
+    const rows = s.data.map((r) => ({ jahr: Number(r.jahr), art: r.art, zinsen: Number(r.zinsen) }));
+    el.replaceChildren();
+    const W = Math.max(280, el.clientWidth || 480);
+    const H = 280;
+    const m = { t: 22, r: 4, b: 30, l: 4 };
+    const svg = hx.svgFor(el, W, H, 'Säulendiagramm: Zinsaufwand 2024 bis 2030 in Millionen Euro');
+    const x = d3.scaleBand(rows.map((r) => r.jahr), [m.l, W - m.r]).padding(0.32);
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => r.zinsen) * 1.12], [H - m.b, m.t]);
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).style('stroke', 'var(--hx-muted)');
+    svg.append('g').attr('class', 'hx-axis').attr('transform', `translate(0,${H - m.b})`)
+      .call(d3.axisBottom(x).tickSize(0).tickPadding(10).tickFormat((d) => String(d))).call((g) => g.select('.domain').remove());
+    const t = hx.tip(el);
+    svg.append('g').attr('class', 'hx-bars').selectAll('rect').data(rows).join('rect')
+      .attr('class', 'hx-hit')
+      .attr('x', (r) => x(r.jahr)).attr('width', x.bandwidth()).attr('y', (r) => y(r.zinsen)).attr('height', (r) => y(0) - y(r.zinsen))
+      .attr('rx', 2)
+      .style('fill', (r) => (r.jahr === 2027 || r.jahr === 2028 ? 'var(--hx-accent)' : 'var(--hx-slate)'))
+      .on('pointermove', (event, r) => t.show(event, `${r.jahr} · ${r.art}`, [['Zinsaufwand', hx.mio(r.zinsen)]]))
+      .on('pointerleave', () => t.hide());
+    svg.append('g').selectAll('text').data(rows).join('text').attr('class', 'hx-lab')
+      .attr('x', (r) => x(r.jahr) + x.bandwidth() / 2).attr('y', (r) => y(r.zinsen) - 7).attr('text-anchor', 'middle')
+      .text((r) => hx.f0(r.zinsen));
+  });
+
+  // Grouped bars: investment payments per Einzelplan, 2027 and 2028.
+  dash.draw('invest', (el) => {
+    const s = dash.data('einzelplaene');
+    if (s.status !== 'ok' || !s.data.length) { hx.placeholder(el, s); return; }
+    const rows = s.data
+      .map((r) => ({ code: r.code, kurz: r.kurz, name: r.name, a: Number(r.invest_aus_2027) || 0, b: Number(r.invest_aus_2028) || 0 }))
+      .filter((r) => r.a >= 1 || r.b >= 1)
+      .sort((p, q) => q.a - p.a);
+    el.replaceChildren();
+    const W = Math.max(300, el.clientWidth || 700);
+    const rowH = 30;
+    const svg = hx.svgFor(el, W, 10, 'Balkendiagramm: Investitionsauszahlungen je Einzelplan 2027 und 2028 in Millionen Euro');
+    const wLabel = d3.max(rows, (r) => hx.textWidth(svg, r.kurz, 'hx-lab'));
+    const wVal = hx.textWidth(svg, hx.f0(d3.max(rows, (r) => Math.max(r.a, r.b))), 'hx-lab-muted');
+    const m = { t: 4, r: wVal + 10, b: 28, l: wLabel + 12 };
+    const H = m.t + m.b + rows.length * rowH;
+    svg.attr('viewBox', `0 0 ${W} ${H}`);
+    const x = d3.scaleLinear([0, d3.max(rows, (r) => Math.max(r.a, r.b))], [m.l, W - m.r]).nice();
+    const y = d3.scaleBand(rows.map((r) => r.code), [m.t, H - m.b]).padding(0.18);
+    const yi = d3.scaleBand(['a', 'b'], [0, y.bandwidth()]).padding(0.06);
+    svg.append('g').attr('class', 'hx-grid').selectAll('line').data(x.ticks(W < 520 ? 3 : 6)).join('line')
+      .attr('x1', (d) => x(d)).attr('x2', (d) => x(d)).attr('y1', m.t).attr('y2', H - m.b);
+    svg.append('g').attr('class', 'hx-axis').attr('transform', `translate(0,${H - m.b})`)
+      .call(d3.axisBottom(x).ticks(W < 520 ? 3 : 6).tickSize(0).tickPadding(10).tickFormat((d) => hx.f0(d))).call((g) => g.select('.domain').remove());
+    const t = hx.tip(el);
+    const g = svg.append('g').attr('class', 'hx-bars').selectAll('g').data(rows).join('g')
+      .attr('class', 'hx-hit').attr('transform', (r) => `translate(0,${y(r.code)})`);
+    g.append('rect').attr('x', 0).attr('width', W).attr('height', y.bandwidth()).style('fill', 'transparent');
+    [['a', 'var(--hx-accent)'], ['b', 'var(--hx-sky)']].forEach(([k, c]) => {
+      g.append('rect').attr('x', m.l).attr('y', yi(k)).attr('height', yi.bandwidth()).attr('rx', 2)
+        .attr('width', (r) => Math.max(0, x(r[k]) - m.l)).style('fill', c);
+    });
+    g.append('text').attr('class', 'hx-lab').attr('x', m.l - 10).attr('y', y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text((r) => r.kurz);
+    g.append('text').attr('class', 'hx-lab-muted').attr('x', (r) => x(r.a) + 6).attr('y', yi('a') + yi.bandwidth() / 2).attr('dy', '0.35em').text((r) => hx.f0(r.a));
+    g.on('pointermove', (event, r) => t.show(event, `${r.code} ${r.name}`, [['Plan 2027', hx.mio(r.a)], ['Plan 2028', hx.mio(r.b)]]))
+      .on('pointerleave', () => t.hide());
+  });
+
+  // Stacked tables on narrow screens: every value cell carries its column
+  // heading as data-label, read by the container query in the stylesheet.
+  (() => {
+    const root = document.querySelector('.hx');
+    if (!root) return;
+    const label = () => {
+      for (const t of root.querySelectorAll('table.hx-table')) {
+        const heads = [...t.querySelectorAll('thead th')].map((th) => th.textContent.trim());
+        t.classList.add('hx-stack');
+        const values = heads.length - 1 - (t.querySelector('td.hx-st-hide') ? 1 : 0);
+        t.style.setProperty('--hx-cols', t.dataset.cols || String(Math.max(1, Math.min(3, values))));
+        for (const tr of t.querySelectorAll('tbody tr, tfoot tr')) {
+          [...tr.children].forEach((td, i) => {
+            if (i === 0 || td.classList.contains('hx-st-head') || td.classList.contains('hx-st-hide') || !heads[i]) return;
+            if (td.dataset.label !== heads[i]) td.dataset.label = heads[i];
+          });
+        }
+      }
+    };
+    new MutationObserver(label).observe(root, { childList: true, subtree: true });
+    label();
+  })();
+</script>

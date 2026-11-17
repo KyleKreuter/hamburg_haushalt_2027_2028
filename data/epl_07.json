@@ -1,0 +1,6690 @@
+{
+ "quelle": "finale-fassung-07-hhp-ep-3-2-data.pdf",
+ "produktgruppen": [
+  {
+   "epl": "3.2",
+   "pg": "246.01",
+   "name": "Steuerung und Service",
+   "seite": 30,
+   "ergebnisplan": {
+    "1": [
+     463.0,
+     291.0,
+     120.0,
+     53.0,
+     40.0,
+     40.0,
+     40.0
+    ],
+    "2": [
+     3783.0,
+     3199.0,
+     3317.0,
+     2973.0,
+     3095.0,
+     2969.0,
+     2969.0
+    ],
+    "2a": [
+     897.0,
+     786.0,
+     960.0,
+     680.0,
+     680.0,
+     680.0,
+     680.0
+    ],
+    "2b": [
+     1191.0,
+     1229.0,
+     894.0,
+     940.0,
+     940.0,
+     940.0,
+     940.0
+    ],
+    "2c": [
+     129.0,
+     58.0,
+     240.0,
+     147.0,
+     147.0,
+     147.0,
+     147.0
+    ],
+    "3": [
+     7339.0,
+     8277.0,
+     8813.0,
+     9139.0,
+     9325.0,
+     9428.0,
+     9446.0
+    ],
+    "3a": [
+     3233.0,
+     3511.0,
+     3460.0,
+     1627.0,
+     1673.0,
+     1715.0,
+     1761.0
+    ],
+    "3b": [
+     1967.0,
+     2310.0,
+     2647.0,
+     4220.0,
+     4299.0,
+     4327.0,
+     4304.0
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "3d": [
+     753.0,
+     870.0,
+     884.0,
+     645.0,
+     657.0,
+     670.0,
+     677.0
+    ],
+    "3e": [
+     1386.0,
+     1586.0,
+     1822.0,
+     2647.0,
+     2696.0,
+     2716.0,
+     2704.0
+    ],
+    "4": [
+     1488.0,
+     1673.0,
+     1378.0,
+     1351.0,
+     1351.0,
+     1351.0,
+     1351.0
+    ],
+    "5": [
+     3683.0,
+     4027.0,
+     4709.0,
+     5474.0,
+     6066.0,
+     5656.0,
+     6511.0
+    ],
+    "6": [
+     9967.0,
+     36480.0,
+     60.0,
+     27355.0,
+     14323.0,
+     1312.0,
+     33.0
+    ],
+    "7": [
+     -25797.0,
+     -53365.0,
+     -18157.0,
+     -46239.0,
+     -34119.0,
+     -20676.0,
+     -20270.0
+    ],
+    "8": [
+     714.0,
+     47.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     43678.0,
+     6993.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     -42964.0,
+     -6946.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -68761.0,
+     -60311.0,
+     -18157.0,
+     -46239.0,
+     -34119.0,
+     -20676.0,
+     -20270.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -68761.0,
+     -60311.0,
+     -18157.0,
+     -46239.0,
+     -34119.0,
+     -20676.0,
+     -20270.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Intendanzen und sonst. interne Produkte",
+     "ipr": "INT",
+     "e1": [
+      324.0,
+      188.0,
+      26.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0
+     ],
+     "k1": [
+      11789.0,
+      12194.0,
+      12270.0,
+      12348.0,
+      12676.0,
+      12647.0,
+      12604.0
+     ],
+     "e2": [
+      -324.0,
+      -188.0,
+      null,
+      -40.0,
+      -40.0,
+      -40.0,
+      -40.0
+     ],
+     "k2": [
+      -11789.0,
+      -12194.0,
+      null,
+      -12348.0,
+      -12676.0,
+      -12647.0,
+      -12604.0
+     ]
+    },
+    {
+     "produkt": "Zentrales IT-Budget Hochschulen",
+     "ipr": "321",
+     "e1": [
+      144.0,
+      106.0,
+      94.0,
+      13.0,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      5039.0,
+      5528.0,
+      6007.0,
+      6627.0,
+      7193.0,
+      6796.0,
+      7706.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      504.0,
+      516.0,
+      525.0,
+      531.0
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      2950.0,
+      3086.0,
+      3366.0,
+      3428.0
+     ]
+    },
+    {
+     "produkt": "Beteiligungsergebnisse",
+     "ipr": "911",
+     "e1": [
+      710.0,
+      44.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      53111.0,
+      42926.0,
+      null,
+      27317.0,
+      14290.0,
+      1274.0,
+      null
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_246_01_008",
+     "name": "Kosten des Intendanzbereichs Personal pro VZÄ im Einzelplan",
+     "einheit": "Tsd. EUR",
+     "2024": 5.48,
+     "2025": 6.81,
+     "2026": 5.3,
+     "2027": 8.3,
+     "2028": 8.3,
+     "2029": 8.5,
+     "2030": 8.5
+    },
+    {
+     "code": "B_246_01_009",
+     "name": "Anteil der Kosten der Produktgruppe Steuerung und Service am Gesamtvolumen des Einzelplans",
+     "einheit": "%",
+     "2024": 1.59,
+     "2025": 3.04,
+     "2026": 1.5,
+     "2027": 1.5,
+     "2028": 1.5,
+     "2029": 1.5,
+     "2030": 1.5
+    },
+    {
+     "code": "B_246_01_007",
+     "name": "Kosten des Intendanzbereichs IT pro Bildschirmarbeitsplatz im Einzelplan",
+     "einheit": "Tsd. EUR",
+     "2024": 3.6,
+     "2025": 3.8,
+     "2026": 4.1,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "246.03",
+   "name": "Bau- und Investitionsplanung",
+   "seite": 37,
+   "ergebnisplan": {
+    "1": [
+     30602.0,
+     36796.0,
+     34736.0,
+     35233.0,
+     35609.0,
+     34929.0,
+     33383.0
+    ],
+    "2": [
+     41291.0,
+     47857.0,
+     100323.0,
+     91014.0,
+     69329.0,
+     79032.0,
+     80435.0
+    ],
+    "2a": [
+     31834.0,
+     33708.0,
+     58571.0,
+     59420.0,
+     61002.0,
+     68591.0,
+     68981.0
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     7.0,
+     7.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     1778.0,
+     2174.0,
+     2052.0,
+     2605.0,
+     2663.0,
+     2458.0,
+     2509.0
+    ],
+    "3a": [
+     886.0,
+     1215.0,
+     914.0,
+     611.0,
+     628.0,
+     645.0,
+     661.0
+    ],
+    "3b": [
+     382.0,
+     383.0,
+     533.0,
+     1091.0,
+     1112.0,
+     977.0,
+     994.0
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     194.0,
+     258.0,
+     222.0,
+     206.0,
+     212.0,
+     205.0,
+     211.0
+    ],
+    "3e": [
+     315.0,
+     318.0,
+     383.0,
+     697.0,
+     711.0,
+     631.0,
+     643.0
+    ],
+    "4": [
+     9115.0,
+     20366.0,
+     39321.0,
+     30604.0,
+     22234.0,
+     31833.0,
+     26631.0
+    ],
+    "5": [
+     90913.0,
+     78212.0,
+     71029.0,
+     60126.0,
+     59417.0,
+     56098.0,
+     50800.0
+    ],
+    "6": [
+     3472.0,
+     874.0,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "7": [
+     -115968.0,
+     -112686.0,
+     -177989.0,
+     -149116.0,
+     -118034.0,
+     -134493.0,
+     -126993.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -115968.0,
+     -112686.0,
+     -177989.0,
+     -149116.0,
+     -118034.0,
+     -134493.0,
+     -126993.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -115968.0,
+     -112686.0,
+     -177989.0,
+     -149116.0,
+     -118034.0,
+     -134493.0,
+     -126993.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Bau- und Investitionsplanung",
+     "ipr": "323",
+     "e1": [
+      29783.0,
+      32535.0,
+      34468.0,
+      34958.0,
+      35301.0,
+      34582.0,
+      33075.0
+     ],
+     "k1": [
+      130213.0,
+      125355.0,
+      147590.0,
+      140179.0,
+      106989.0,
+      110538.0,
+      101398.0
+     ],
+     "e2": [
+      200.0,
+      211.0,
+      null,
+      149.0,
+      153.0,
+      143.0,
+      147.0
+     ],
+     "k2": [
+      1479.0,
+      1660.0,
+      null,
+      2641.0,
+      2729.0,
+      2721.0,
+      2748.0
+     ]
+    },
+    {
+     "produkt": "Mieter-Vermieter-Modelle",
+     "ipr": "323",
+     "e1": [
+      819.0,
+      4261.0,
+      268.0,
+      275.0,
+      308.0,
+      347.0,
+      308.0
+     ],
+     "k1": [
+      16356.0,
+      24128.0,
+      65135.0,
+      44171.0,
+      46653.0,
+      58884.0,
+      58978.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_246_03_011",
+     "name": "Mitteleinsatz für Hochschulbau im Mieter-Vermieter-Modell",
+     "einheit": "Tsd. EUR",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": 0.0,
+     "2028": 20483.0,
+     "2029": 0.0,
+     "2030": 247360.0
+    },
+    {
+     "code": "B_246_03_012",
+     "name": "Investitionen Hochschulbau",
+     "einheit": "Tsd. EUR",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": 21085.0,
+     "2028": 15280.0,
+     "2029": 0.0,
+     "2030": 0.0
+    },
+    {
+     "code": "B_246_03_013",
+     "name": "laufende Projekte der",
+     "einheit": "ANZ",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": 5.0,
+     "2028": 3.0,
+     "2029": 3.0,
+     "2030": 2.0
+    },
+    {
+     "code": "B_246_03_014",
+     "name": "laufende Projekte der",
+     "einheit": "ANZ",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": 5.0,
+     "2028": 5.0,
+     "2029": 5.0,
+     "2030": 4.0
+    },
+    {
+     "code": "B_246_03_015",
+     "name": "Projekte im Betrieb",
+     "einheit": "ANZ",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": 12.0,
+     "2028": 14.0,
+     "2029": 14.0,
+     "2030": 16.0
+    },
+    {
+     "code": "B_246_03_006",
+     "name": "Investitionsvolumen für Hochschulbau (inkl. MVM)",
+     "einheit": "Tsd. EUR",
+     "2024": 6746.0,
+     "2025": 2576.0,
+     "2026": 285740.0,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    },
+    {
+     "code": "B_246_03_009",
+     "name": "Anzahl der Mieter-Vermieter-Modelle",
+     "einheit": "ANZ",
+     "2024": 9.0,
+     "2025": 9.0,
+     "2026": 11.0,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "246.04",
+   "name": "Zentraler Ansatz",
+   "seite": 45,
+   "ergebnisplan": {
+    "1": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "5": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "6": [
+     null,
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "7": [
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "12": [
+     null,
+     null,
+     7991.0,
+     6290.0,
+     3747.0,
+     3793.0,
+     3833.0
+    ],
+    "13": [
+     null,
+     null,
+     -50953.0,
+     -35584.0,
+     -34460.0,
+     -34935.0,
+     -34884.0
+    ],
+    "14": [
+     null,
+     null,
+     42962.0,
+     29294.0,
+     30713.0,
+     31142.0,
+     31051.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Zentraler Ansatz",
+     "ipr": "992",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      null,
+      null,
+      -42962.0,
+      -29294.0,
+      -30713.0,
+      -31142.0,
+      -31051.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": []
+  },
+  {
+   "epl": "3.2",
+   "pg": "247.11",
+   "name": "Grundsatz Hochschulen",
+   "seite": 61,
+   "ergebnisplan": {
+    "1": [
+     69792.0,
+     67814.0,
+     73324.0,
+     77609.0,
+     69730.0,
+     69730.0,
+     69730.0
+    ],
+    "2": [
+     57.0,
+     152.0,
+     54.0,
+     70.0,
+     70.0,
+     70.0,
+     70.0
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     50.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "3": [
+     3679.0,
+     3969.0,
+     4161.0,
+     4645.0,
+     4844.0,
+     4919.0,
+     4994.0
+    ],
+    "3a": [
+     992.0,
+     1237.0,
+     1257.0,
+     782.0,
+     804.0,
+     825.0,
+     845.0
+    ],
+    "3b": [
+     988.0,
+     960.0,
+     1043.0,
+     1578.0,
+     1608.0,
+     1637.0,
+     1666.0
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     1041.0,
+     1135.0,
+     1151.0,
+     1283.0,
+     1411.0,
+     1417.0,
+     1424.0
+    ],
+    "3e": [
+     659.0,
+     637.0,
+     710.0,
+     1002.0,
+     1021.0,
+     1040.0,
+     1059.0
+    ],
+    "4": [
+     74468.0,
+     74008.0,
+     79157.0,
+     81231.0,
+     72885.0,
+     71371.0,
+     71371.0
+    ],
+    "5": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "6": [
+     184.0,
+     171.0,
+     160.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "7": [
+     -8597.0,
+     -10487.0,
+     -10208.0,
+     -8337.0,
+     -8069.0,
+     -6630.0,
+     -6705.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -8597.0,
+     -10487.0,
+     -10208.0,
+     -8337.0,
+     -8069.0,
+     -6630.0,
+     -6705.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -8597.0,
+     -10487.0,
+     -10208.0,
+     -8337.0,
+     -8069.0,
+     -6630.0,
+     -6705.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Grundsatz Hochschulen",
+     "ipr": "323",
+     "e1": [
+      810.0,
+      1094.0,
+      875.0,
+      1076.0,
+      1197.0,
+      1197.0,
+      1197.0
+     ],
+     "k1": [
+      9826.0,
+      10623.0,
+      11083.0,
+      9413.0,
+      9266.0,
+      7827.0,
+      7902.0
+     ],
+     "e2": [
+      325.0,
+      322.0,
+      null,
+      96.0,
+      100.0,
+      102.0,
+      104.0
+     ],
+     "k2": [
+      2412.0,
+      2618.0,
+      null,
+      3839.0,
+      3962.0,
+      4005.0,
+      4012.0
+     ]
+    },
+    {
+     "produkt": "Zukunftsvertrag Studium u. Lehre stärken",
+     "ipr": "323",
+     "e1": [
+      68063.0,
+      66184.0,
+      64359.0,
+      68281.0,
+      60281.0,
+      60281.0,
+      60281.0
+     ],
+     "k1": [
+      68063.0,
+      66184.0,
+      64359.0,
+      68281.0,
+      60281.0,
+      60281.0,
+      60281.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      85.0,
+      89.0,
+      91.0,
+      94.0
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      500.0,
+      534.0,
+      585.0,
+      604.0
+     ]
+    },
+    {
+     "produkt": "LOM",
+     "ipr": "323",
+     "e1": [
+      919.0,
+      536.0,
+      8090.0,
+      8252.0,
+      8252.0,
+      8252.0,
+      8252.0
+     ],
+     "k1": [
+      500.0,
+      1494.0,
+      8090.0,
+      8252.0,
+      8252.0,
+      8252.0,
+      8252.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      85.0,
+      89.0,
+      91.0,
+      94.0
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      500.0,
+      534.0,
+      585.0,
+      604.0
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_247_11_001",
+     "name": "Anzahl der Studierenden in Hamburg",
+     "einheit": "ANZ",
+     "2024": 121397.0,
+     "2025": 121518.0,
+     "2026": 118000.0,
+     "2027": 120000.0,
+     "2028": 120000.0,
+     "2029": 120000.0,
+     "2030": 120000.0
+    },
+    {
+     "code": "G_247_11_002",
+     "name": "Frauenanteil an den Studierenden in Hamburg",
+     "einheit": "%",
+     "2024": 54.2,
+     "2025": 55.2,
+     "2026": 50.0,
+     "2027": 50.0,
+     "2028": 50.0,
+     "2029": 50.0,
+     "2030": 50.0
+    },
+    {
+     "code": "B_247_11_003",
+     "name": "Anzahl der Studierenden an Hochschulen in Trägerschaft des Landes in Verantwortung der für Wissenschaft zuständigen Behörde",
+     "einheit": "ANZ",
+     "2024": 71927.0,
+     "2025": 70329.0,
+     "2026": 71000.0,
+     "2027": 71000.0,
+     "2028": 71000.0,
+     "2029": 71000.0,
+     "2030": 71000.0
+    },
+    {
+     "code": "G_247_11_004",
+     "name": "Frauenanteil an den Studierenden an Hochschulen in Trägerschaft des Landes in Verantwortung der für Wissenschaft zuständigen Behörde",
+     "einheit": "%",
+     "2024": 51.1,
+     "2025": 51.8,
+     "2026": 50.0,
+     "2027": 50.0,
+     "2028": 50.0,
+     "2029": 50.0,
+     "2030": 50.0
+    },
+    {
+     "code": "B_247_11_005",
+     "name": "Anzahl der Studierenden im 1. HS in Hamburg",
+     "einheit": "ANZ",
+     "2024": 19677.0,
+     "2025": 19306.0,
+     "2026": 18600.0,
+     "2027": 19000.0,
+     "2028": 19000.0,
+     "2029": 19000.0,
+     "2030": 19000.0
+    },
+    {
+     "code": "G_247_11_006",
+     "name": "Frauenanteil an den Studierenden im 1. HS in Hamburg",
+     "einheit": "%",
+     "2024": 54.7,
+     "2025": 54.4,
+     "2026": 50.0,
+     "2027": 50.0,
+     "2028": 50.0,
+     "2029": 50.0,
+     "2030": 50.0
+    },
+    {
+     "code": "B_247_11_007",
+     "name": "Anzahl der Studierenden im 1. HS an Hochschulen in Trägerschaft des Landes in Verantwortung der für Wissenschaft zuständigen Behörde",
+     "einheit": "ANZ",
+     "2024": 10905.0,
+     "2025": 10735.0,
+     "2026": 10500.0,
+     "2027": 10500.0,
+     "2028": 10500.0,
+     "2029": 10500.0,
+     "2030": 10500.0
+    },
+    {
+     "code": "G_247_11_008",
+     "name": "Frauenanteil an den Studierenden im 1. HS an Hochschulen in Trägerschaft des Landes in Verantwortung der für Wissenschaft zuständigen Behörde",
+     "einheit": "%",
+     "2024": 51.4,
+     "2025": 51.0,
+     "2026": 50.0,
+     "2027": 50.0,
+     "2028": 50.0,
+     "2029": 50.0,
+     "2030": 50.0
+    },
+    {
+     "code": "G_247_11_009",
+     "name": "Frauenanteil an Promotionen an Hochschulen in Trägerschaft des Landes in Verantwortung der für Wissenschaft zuständigen Behörde",
+     "einheit": "%",
+     "2024": 49.5,
+     "2025": 50.2,
+     "2026": 50.0,
+     "2027": 50.0,
+     "2028": 50.0,
+     "2029": 50.0,
+     "2030": 50.0
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "247.12",
+   "name": "Hochschulen I",
+   "seite": 71,
+   "ergebnisplan": {
+    "1": [
+     3004.0,
+     180.0,
+     13.0,
+     13.0,
+     13.0,
+     13.0,
+     13.0
+    ],
+    "2": [
+     null,
+     2674.0,
+     260.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     486626.0,
+     530842.0,
+     520563.0,
+     532549.0,
+     518640.0,
+     531715.0,
+     531715.0
+    ],
+    "5": [
+     15831.0,
+     16555.0,
+     17095.0,
+     18781.0,
+     19067.0,
+     19353.0,
+     19241.0
+    ],
+    "6": [
+     18.0,
+     12.0,
+     null,
+     398.0,
+     398.0,
+     398.0,
+     398.0
+    ],
+    "7": [
+     -499472.0,
+     -549903.0,
+     -537905.0,
+     -551715.0,
+     -538092.0,
+     -551453.0,
+     -551341.0
+    ],
+    "8": [
+     3.0,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     3.0,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -499469.0,
+     -549903.0,
+     -537905.0,
+     -551715.0,
+     -538092.0,
+     -551453.0,
+     -551341.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -499469.0,
+     -549903.0,
+     -537905.0,
+     -551715.0,
+     -538092.0,
+     -551453.0,
+     -551341.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Universität Hamburg",
+     "ipr": "323",
+     "e1": [
+      835.0,
+      104.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      351904.0,
+      385003.0,
+      370564.0,
+      380545.0,
+      379137.0,
+      380130.0,
+      379962.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "TU Hamburg",
+     "ipr": "323",
+     "e1": [
+      1512.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      105251.0,
+      114304.0,
+      119171.0,
+      121902.0,
+      121798.0,
+      122158.0,
+      122225.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "HafenCity Universität",
+     "ipr": "323",
+     "e1": [
+      39.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      25195.0,
+      25672.0,
+      27115.0,
+      27713.0,
+      15585.0,
+      27593.0,
+      27585.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "SUB Hamburg",
+     "ipr": "321",
+     "e1": [
+      88.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      18898.0,
+      21258.0,
+      19601.0,
+      20017.0,
+      20033.0,
+      20033.0,
+      20029.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Sonstige Förderungen Hochschulen I",
+     "ipr": "323",
+     "e1": [
+      533.0,
+      76.0,
+      13.0,
+      13.0,
+      13.0,
+      13.0,
+      13.0
+     ],
+     "k1": [
+      1228.0,
+      3845.0,
+      1467.0,
+      1552.0,
+      1552.0,
+      1552.0,
+      1552.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_247_12_001",
+     "name": "Studienanfängerinnen und -anfänger im 1. Fachsemester (UHH)",
+     "einheit": "ANZ",
+     "2024": 9584.0,
+     "2025": 9823.0,
+     "2026": 9485.0,
+     "2027": 9485.0,
+     "2028": 9485.0,
+     "2029": 9485.0,
+     "2030": 9485.0
+    },
+    {
+     "code": "B_247_12_002",
+     "name": "Studienanfängerinnen und -anfänger in Bachelor-Studiengängen im 1. FS (UHH)",
+     "einheit": "ANZ",
+     "2024": 5728.0,
+     "2025": 5790.0,
+     "2026": 5860.0,
+     "2027": 5860.0,
+     "2028": 5860.0,
+     "2029": 5860.0,
+     "2030": 5860.0
+    },
+    {
+     "code": "B_247_12_003",
+     "name": "Studienanfängerinnen und -anfänger in anderen grundständigen Studiengängen (sonstige Examens-Studiengänge) im 1. FS (UHH)",
+     "einheit": "ANZ",
+     "2024": 716.0,
+     "2025": 709.0,
+     "2026": 710.0,
+     "2027": 710.0,
+     "2028": 710.0,
+     "2029": 710.0,
+     "2030": 710.0
+    },
+    {
+     "code": "B_247_12_004",
+     "name": "Studienanfängerinnen und -anfänger in Master-Studiengängen im 1. FS (UHH)",
+     "einheit": "ANZ",
+     "2024": 3140.0,
+     "2025": 3324.0,
+     "2026": 2915.0,
+     "2027": 2915.0,
+     "2028": 2915.0,
+     "2029": 2915.0,
+     "2030": 2915.0
+    },
+    {
+     "code": "B_247_12_005",
+     "name": "Absolventinnen und Absolventen (UHH)",
+     "einheit": "ANZ",
+     "2024": 5329.0,
+     "2025": 5177.0,
+     "2026": 4520.0,
+     "2027": 4910.0,
+     "2028": 4690.0,
+     "2029": 4600.0,
+     "2030": 4540.0
+    },
+    {
+     "code": "B_247_12_006",
+     "name": "davon Bachelorabsolventinnen und -absolventen (UHH)",
+     "einheit": "ANZ",
+     "2024": 2551.0,
+     "2025": 2621.0,
+     "2026": 2190.0,
+     "2027": 2310.0,
+     "2028": 2370.0,
+     "2029": 2380.0,
+     "2030": 2370.0
+    },
+    {
+     "code": "B_247_12_007",
+     "name": "davon Masterabsolventinnen und -absolventen (UHH)",
+     "einheit": "ANZ",
+     "2024": 2318.0,
+     "2025": 2243.0,
+     "2026": 2040.0,
+     "2027": 2320.0,
+     "2028": 2040.0,
+     "2029": 1930.0,
+     "2030": 1900.0
+    },
+    {
+     "code": "B_247_12_008",
+     "name": "davon Absolventinnen und Absolventen von sonstigen Examen (inkl. Diplom) (UHH)",
+     "einheit": "ANZ",
+     "2024": 456.0,
+     "2025": 313.0,
+     "2026": 290.0,
+     "2027": 280.0,
+     "2028": 280.0,
+     "2029": 290.0,
+     "2030": 270.0
+    },
+    {
+     "code": "B_247_12_009",
+     "name": "Studienanfängerinnen und -anfänger im 1. Fachsemester (TUHH)",
+     "einheit": "ANZ",
+     "2024": 2113.0,
+     "2025": 2165.0,
+     "2026": 2513.0,
+     "2027": 2513.0,
+     "2028": 2513.0,
+     "2029": 2513.0,
+     "2030": 2513.0
+    },
+    {
+     "code": "B_247_12_010",
+     "name": "Studienanfängerinnen und -anfänger in Bachelor-Studiengängen im 1. FS (TUHH)",
+     "einheit": "ANZ",
+     "2024": 1225.0,
+     "2025": 1475.0,
+     "2026": 1671.0,
+     "2027": 1671.0,
+     "2028": 1671.0,
+     "2029": 1671.0,
+     "2030": 1671.0
+    },
+    {
+     "code": "B_247_12_011",
+     "name": "Studienanfängerinnen und -anfänger in Master-Studiengängen im 1. FS (TUHH)",
+     "einheit": "ANZ",
+     "2024": 888.0,
+     "2025": 690.0,
+     "2026": 842.0,
+     "2027": 842.0,
+     "2028": 842.0,
+     "2029": 842.0,
+     "2030": 842.0
+    },
+    {
+     "code": "B_247_12_012",
+     "name": "Absolventinnen und Absolventen (TUHH)",
+     "einheit": "ANZ",
+     "2024": 1032.0,
+     "2025": 1029.0,
+     "2026": 850.0,
+     "2027": 925.0,
+     "2028": 925.0,
+     "2029": 925.0,
+     "2030": 925.0
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "247.13",
+   "name": "Hochschulen II",
+   "seite": 83,
+   "ergebnisplan": {
+    "1": [
+     568.0,
+     120.0,
+     103.0,
+     103.0,
+     103.0,
+     103.0,
+     103.0
+    ],
+    "2": [
+     null,
+     15.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     133811.0,
+     145461.0,
+     146490.0,
+     149276.0,
+     148315.0,
+     148352.0,
+     148356.0
+    ],
+    "5": [
+     3358.0,
+     3470.0,
+     3445.0,
+     3825.0,
+     3825.0,
+     3825.0,
+     3742.0
+    ],
+    "6": [
+     0.0,
+     2.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     -136601.0,
+     -148828.0,
+     -149833.0,
+     -152998.0,
+     -152037.0,
+     -152074.0,
+     -151995.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -136601.0,
+     -148828.0,
+     -149833.0,
+     -152998.0,
+     -152037.0,
+     -152074.0,
+     -151995.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -136601.0,
+     -148828.0,
+     -149833.0,
+     -152998.0,
+     -152037.0,
+     -152074.0,
+     -151995.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "HAW Hamburg",
+     "ipr": "323",
+     "e1": [
+      261.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      101140.0,
+      110715.0,
+      111960.0,
+      114475.0,
+      113589.0,
+      113592.0,
+      113524.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "HFBK Hamburg",
+     "ipr": "323",
+     "e1": [
+      39.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      11842.0,
+      12891.0,
+      13135.0,
+      13412.0,
+      13395.0,
+      13427.0,
+      13421.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "HfMT Hamburg",
+     "ipr": "323",
+     "e1": [
+      166.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      21810.0,
+      22237.0,
+      21914.0,
+      22431.0,
+      22373.0,
+      22375.0,
+      22370.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Sonstige Förderungen Hochschulen II",
+     "ipr": "323",
+     "e1": [
+      103.0,
+      120.0,
+      103.0,
+      103.0,
+      103.0,
+      103.0,
+      103.0
+     ],
+     "k1": [
+      2377.0,
+      3104.0,
+      2927.0,
+      2783.0,
+      2783.0,
+      2783.0,
+      2783.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_247_13_001",
+     "name": "Studienanfängerinnen und -anfänger im 1. Fachsemester (HAW)",
+     "einheit": "ANZ",
+     "2024": 4343.0,
+     "2025": 4384.0,
+     "2026": 4410.0,
+     "2027": 4410.0,
+     "2028": 4410.0,
+     "2029": 4410.0,
+     "2030": 4410.0
+    },
+    {
+     "code": "B_247_13_002",
+     "name": "Studienanfängerinnen und -anfänger in Bachelor-Studiengängen im 1. FS (HAW)",
+     "einheit": "ANZ",
+     "2024": 3463.0,
+     "2025": 3548.0,
+     "2026": 3510.0,
+     "2027": 3510.0,
+     "2028": 3510.0,
+     "2029": 3510.0,
+     "2030": 3510.0
+    },
+    {
+     "code": "B_247_13_003",
+     "name": "Studienanfängerinnen und -anfänger in Master-Studiengängen im 1. FS (HAW)",
+     "einheit": "ANZ",
+     "2024": 880.0,
+     "2025": 836.0,
+     "2026": 900.0,
+     "2027": 900.0,
+     "2028": 900.0,
+     "2029": 900.0,
+     "2030": 900.0
+    },
+    {
+     "code": "B_247_13_004",
+     "name": "Absolventinnen und Absolventen (HAW)",
+     "einheit": "ANZ",
+     "2024": 2655.0,
+     "2025": 2455.0,
+     "2026": 2305.0,
+     "2027": 2300.0,
+     "2028": 2276.0,
+     "2029": 2280.0,
+     "2030": 2271.0
+    },
+    {
+     "code": "B_247_13_005",
+     "name": "davon Bachelorabsolventinnen und -absolventen (HAW)",
+     "einheit": "ANZ",
+     "2024": 1984.0,
+     "2025": 1829.0,
+     "2026": 1753.0,
+     "2027": 1721.0,
+     "2028": 1727.0,
+     "2029": 1728.0,
+     "2030": 1721.0
+    },
+    {
+     "code": "B_247_13_006",
+     "name": "davon Masterabsolventinnen und -absolventen (HAW)",
+     "einheit": "ANZ",
+     "2024": 671.0,
+     "2025": 626.0,
+     "2026": 552.0,
+     "2027": 579.0,
+     "2028": 549.0,
+     "2029": 552.0,
+     "2030": 550.0
+    },
+    {
+     "code": "B_247_13_007",
+     "name": "Studienanfängerinnen und -anfänger im 1. Fachsemester (HFBK)",
+     "einheit": "ANZ",
+     "2024": 229.0,
+     "2025": 230.0,
+     "2026": 190.0,
+     "2027": 180.0,
+     "2028": 172.0,
+     "2029": 168.0,
+     "2030": 168.0
+    },
+    {
+     "code": "B_247_13_008",
+     "name": "Studienanfängerinnen und -anfänger in Bachelor-Studiengängen im 1. FS (HFBK)",
+     "einheit": "ANZ",
+     "2024": 114.0,
+     "2025": 122.0,
+     "2026": 106.0,
+     "2027": 96.0,
+     "2028": 88.0,
+     "2029": 84.0,
+     "2030": 84.0
+    },
+    {
+     "code": "B_247_13_009",
+     "name": "Studienanfängerinnen und -anfänger in Master-Studiengängen im 1. FS (HFBK)",
+     "einheit": "ANZ",
+     "2024": 115.0,
+     "2025": 108.0,
+     "2026": 84.0,
+     "2027": 84.0,
+     "2028": 84.0,
+     "2029": 84.0,
+     "2030": 84.0
+    },
+    {
+     "code": "B_247_13_010",
+     "name": "Absolventinnen und Absolventen (HFBK)",
+     "einheit": "ANZ",
+     "2024": 189.0,
+     "2025": 183.0,
+     "2026": 126.0,
+     "2027": 126.0,
+     "2028": 126.0,
+     "2029": 130.0,
+     "2030": 132.0
+    },
+    {
+     "code": "B_247_13_011",
+     "name": "davon Bachelorabsolventinnen und -absolventen (HFBK)",
+     "einheit": "ANZ",
+     "2024": 96.0,
+     "2025": 101.0,
+     "2026": 63.0,
+     "2027": 63.0,
+     "2028": 63.0,
+     "2029": 63.0,
+     "2030": 63.0
+    },
+    {
+     "code": "B_247_13_012",
+     "name": "davon Masterabsolventinnen und -absolventen (HFBK)",
+     "einheit": "ANZ",
+     "2024": 93.0,
+     "2025": 82.0,
+     "2026": 63.0,
+     "2027": 63.0,
+     "2028": 63.0,
+     "2029": 67.0,
+     "2030": 69.0
+    },
+    {
+     "code": "B_247_13_013",
+     "name": "Studienanfängerinnen und -anfänger im 1. Fachsemester (HfMT)",
+     "einheit": "ANZ",
+     "2024": 277.0,
+     "2025": 293.0,
+     "2026": 280.0,
+     "2027": 289.0,
+     "2028": 289.0,
+     "2029": 312.0,
+     "2030": 312.0
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "247.14",
+   "name": "Grundsatz Forschung",
+   "seite": 91,
+   "ergebnisplan": {
+    "1": [
+     12274.0,
+     9278.0,
+     9149.0,
+     11250.0,
+     11250.0,
+     11250.0,
+     11250.0
+    ],
+    "2": [
+     274.0,
+     385.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     2.0,
+     3.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     2916.0,
+     3201.0,
+     3420.0,
+     3591.0,
+     3665.0,
+     3739.0,
+     3811.0
+    ],
+    "3a": [
+     970.0,
+     1100.0,
+     1077.0,
+     716.0,
+     736.0,
+     755.0,
+     774.0
+    ],
+    "3b": [
+     1040.0,
+     1094.0,
+     1233.0,
+     1599.0,
+     1628.0,
+     1658.0,
+     1687.0
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     233.0,
+     286.0,
+     301.0,
+     266.0,
+     272.0,
+     278.0,
+     284.0
+    ],
+    "3e": [
+     672.0,
+     721.0,
+     809.0,
+     1010.0,
+     1029.0,
+     1048.0,
+     1066.0
+    ],
+    "4": [
+     64756.0,
+     65895.0,
+     64430.0,
+     75280.0,
+     73411.0,
+     74881.0,
+     76642.0
+    ],
+    "5": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "6": [
+     5.0,
+     4.0,
+     3.0,
+     3.0,
+     3.0,
+     3.0,
+     3.0
+    ],
+    "7": [
+     -55676.0,
+     -60206.0,
+     -58704.0,
+     -67624.0,
+     -65829.0,
+     -67373.0,
+     -69206.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -55676.0,
+     -60206.0,
+     -58704.0,
+     -67624.0,
+     -65829.0,
+     -67373.0,
+     -69206.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -55676.0,
+     -60206.0,
+     -58704.0,
+     -67624.0,
+     -65829.0,
+     -67373.0,
+     -69206.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Grundsatz Forschung",
+     "ipr": "322",
+     "e1": [
+      3670.0,
+      436.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      9298.0,
+      8556.0,
+      6996.0,
+      6557.0,
+      5850.0,
+      5516.0,
+      5549.0
+     ],
+     "e2": [
+      336.0,
+      333.0,
+      null,
+      58.0,
+      59.0,
+      60.0,
+      62.0
+     ],
+     "k2": [
+      2709.0,
+      2940.0,
+      null,
+      2830.0,
+      2911.0,
+      2936.0,
+      2939.0
+     ]
+    },
+    {
+     "produkt": "Landesforschungsförderung",
+     "ipr": "323",
+     "e1": [
+      54.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      3108.0,
+      2250.0,
+      4000.0,
+      3150.0,
+      830.0,
+      830.0,
+      830.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      50.0,
+      51.0,
+      52.0,
+      54.0
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      290.0,
+      303.0,
+      334.0,
+      346.0
+     ]
+    },
+    {
+     "produkt": "Exzellenzstrategie Bund und Länder",
+     "ipr": "323",
+     "e1": [
+      8550.0,
+      8798.0,
+      9149.0,
+      11250.0,
+      11250.0,
+      11250.0,
+      11250.0
+     ],
+     "k1": [
+      27965.0,
+      29057.0,
+      28631.0,
+      37677.0,
+      37704.0,
+      37732.0,
+      37732.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      50.0,
+      51.0,
+      52.0,
+      54.0
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      290.0,
+      303.0,
+      334.0,
+      346.0
+     ]
+    },
+    {
+     "produkt": "DFG",
+     "ipr": "323",
+     "e1": [
+      null,
+      45.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      27580.0,
+      29622.0,
+      28226.0,
+      31490.0,
+      32695.0,
+      34545.0,
+      36345.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      50.0,
+      51.0,
+      52.0,
+      54.0
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      290.0,
+      303.0,
+      334.0,
+      346.0
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_247_14_001",
+     "name": "Anzahl der großen Forschungs-Verbundvorhaben und koordinierten Programme (regionale und überregionale Förderung)",
+     "einheit": "ANZ",
+     "2024": 287.0,
+     "2025": 295.0,
+     "2026": 240.0,
+     "2027": 285.0,
+     "2028": 280.0,
+     "2029": 280.0,
+     "2030": 280.0
+    },
+    {
+     "code": "G_247_14_002",
+     "name": "Frauenanteil an Sprecherinnen und Sprechern in Forschungs-Verbundvorhaben",
+     "einheit": "%",
+     "2024": 26.8,
+     "2025": 27.5,
+     "2026": 27.0,
+     "2027": 28.0,
+     "2028": 28.5,
+     "2029": 29.0,
+     "2030": 29.5
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "247.15",
+   "name": "Forschungseinrichtungen",
+   "seite": 102,
+   "ergebnisplan": {
+    "1": [
+     32323.0,
+     33398.0,
+     33491.0,
+     34596.0,
+     35038.0,
+     35379.0,
+     35649.0
+    ],
+    "2": [
+     1029.0,
+     890.0,
+     578.0,
+     640.0,
+     640.0,
+     640.0,
+     640.0
+    ],
+    "2a": [
+     578.0,
+     685.0,
+     578.0,
+     640.0,
+     640.0,
+     640.0,
+     640.0
+    ],
+    "2b": [
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     134071.0,
+     140854.0,
+     145398.0,
+     150919.0,
+     156219.0,
+     159089.0,
+     165439.0
+    ],
+    "5": [
+     null,
+     null,
+     1323.0,
+     700.0,
+     2213.0,
+     2213.0,
+     3563.0
+    ],
+    "6": [
+     95.0,
+     528.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     -102872.0,
+     -108874.0,
+     -113808.0,
+     -117663.0,
+     -124034.0,
+     -126563.0,
+     -133994.0
+    ],
+    "8": [
+     7.0,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     7.0,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -102865.0,
+     -108874.0,
+     -113808.0,
+     -117663.0,
+     -124034.0,
+     -126563.0,
+     -133994.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -102865.0,
+     -108874.0,
+     -113808.0,
+     -117663.0,
+     -124034.0,
+     -126563.0,
+     -133994.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Von Hamburg geförderte Einrichtungen",
+     "ipr": "322",
+     "e1": [
+      700.0,
+      715.0,
+      578.0,
+      640.0,
+      640.0,
+      640.0,
+      640.0
+     ],
+     "k1": [
+      7393.0,
+      8076.0,
+      7426.0,
+      7482.0,
+      7482.0,
+      7482.0,
+      7482.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "HEREON",
+     "ipr": "322",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      2657.0,
+      2971.0,
+      3077.0,
+      3199.0,
+      3485.0,
+      3510.0,
+      3610.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "DESY",
+     "ipr": "322",
+     "e1": [
+      null,
+      92.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      28235.0,
+      32555.0,
+      29087.0,
+      29960.0,
+      30859.0,
+      30057.0,
+      32490.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "MPG",
+     "ipr": "322",
+     "e1": [
+      6.0,
+      4.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      24361.0,
+      27292.0,
+      29553.0,
+      31523.0,
+      32468.0,
+      33442.0,
+      34445.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "LIV",
+     "ipr": "322",
+     "e1": [
+      9410.0,
+      9906.0,
+      9933.0,
+      10084.0,
+      10157.0,
+      10229.0,
+      10306.0
+     ],
+     "k1": [
+      19301.0,
+      19246.0,
+      19442.0,
+      19520.0,
+      20198.0,
+      20793.0,
+      21506.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "BNITM",
+     "ipr": "322",
+     "e1": [
+      12328.0,
+      13124.0,
+      13500.0,
+      13803.0,
+      13926.0,
+      14040.0,
+      14158.0
+     ],
+     "k1": [
+      24811.0,
+      25268.0,
+      28804.0,
+      30389.0,
+      31348.0,
+      32216.0,
+      33209.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "GIGA",
+     "ipr": "322",
+     "e1": [
+      4874.0,
+      4607.0,
+      4609.0,
+      4625.0,
+      4642.0,
+      4661.0,
+      4682.0
+     ],
+     "k1": [
+      8941.0,
+      8553.0,
+      9022.0,
+      9098.0,
+      9468.0,
+      9746.0,
+      10132.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Sonst. Gemeinsch. finanz.Einricht.",
+     "ipr": "322",
+     "e1": [
+      517.0,
+      764.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      2232.0,
+      1835.0,
+      4110.0,
+      3646.0,
+      5221.0,
+      5284.0,
+      6698.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "FhG",
+     "ipr": "322",
+     "e1": [
+      null,
+      15.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      6397.0,
+      3313.0,
+      2446.0,
+      1200.0,
+      1300.0,
+      1400.0,
+      1500.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "HBI",
+     "ipr": "322",
+     "e1": [
+      1162.0,
+      1170.0,
+      1871.0,
+      2444.0,
+      2673.0,
+      2809.0,
+      2863.0
+     ],
+     "k1": [
+      3385.0,
+      4415.0,
+      4906.0,
+      6111.0,
+      6692.0,
+      7106.0,
+      7316.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "LIB",
+     "ipr": "322",
+     "e1": [
+      3000.0,
+      3000.0,
+      3000.0,
+      3000.0,
+      3000.0,
+      3000.0,
+      3000.0
+     ],
+     "k1": [
+      5321.0,
+      6793.0,
+      6430.0,
+      6990.0,
+      7201.0,
+      7425.0,
+      7640.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "ZBW",
+     "ipr": "322",
+     "e1": [
+      334.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      2162.0,
+      1957.0,
+      2996.0,
+      3141.0,
+      3350.0,
+      3481.0,
+      3614.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_247_15_001",
+     "name": "Anzahl der von Hamburg regional dauerhaft geförderten Einrichtungen",
+     "einheit": "ANZ",
+     "2024": 6.0,
+     "2025": 6.0,
+     "2026": 6.0,
+     "2027": 5.0,
+     "2028": 5.0,
+     "2029": 5.0,
+     "2030": 5.0
+    },
+    {
+     "code": "B_247_15_002",
+     "name": "Gesamthöhe der institutionellen Zuwendungen der von Hamburg regional dauerhaft geförderten Forschungseinrichtungen",
+     "einheit": "Tsd. EUR",
+     "2024": 6667.0,
+     "2025": 7416.0,
+     "2026": 6596.0,
+     "2027": 6842.0,
+     "2028": 6842.0,
+     "2029": 6842.0,
+     "2030": 6842.0
+    },
+    {
+     "code": "B_247_15_003",
+     "name": "Anzahl der überregional geförderten in Hamburg ansässigen Forschungseinrichtungen und Beteiligungen",
+     "einheit": "ANZ",
+     "2024": 16.0,
+     "2025": 16.0,
+     "2026": 16.0,
+     "2027": 16.0,
+     "2028": 16.0,
+     "2029": 16.0,
+     "2030": 16.0
+    },
+    {
+     "code": "B_247_15_004",
+     "name": "Gesamthöhe der institutionellen Zuwendungen der überregional geförderten in Hamburg ansässigen Forschungseinrichtungen und Beteiligungen",
+     "einheit": "Tsd. EUR",
+     "2024": 115261.0,
+     "2025": 121449.0,
+     "2026": 125211.0,
+     "2027": 131076.0,
+     "2028": 135086.0,
+     "2029": 136832.0,
+     "2030": 141841.0
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "247.16",
+   "name": "Hochschulmedizin",
+   "seite": 112,
+   "ergebnisplan": {
+    "1": [
+     80.0,
+     69.0,
+     146.0,
+     1231.0,
+     1231.0,
+     1231.0,
+     1231.0
+    ],
+    "2": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     244020.0,
+     287580.0,
+     318358.0,
+     320607.0,
+     322528.0,
+     324624.0,
+     325580.0
+    ],
+    "5": [
+     34577.0,
+     36397.0,
+     37519.0,
+     37737.0,
+     45454.0,
+     49519.0,
+     46883.0
+    ],
+    "6": [
+     25.0,
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     -278541.0,
+     -323908.0,
+     -355730.0,
+     -357113.0,
+     -366751.0,
+     -372912.0,
+     -371232.0
+    ],
+    "8": [
+     536.0,
+     709.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "10": [
+     536.0,
+     709.0,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "11": [
+     -278005.0,
+     -323199.0,
+     -355730.0,
+     -357113.0,
+     -366751.0,
+     -372912.0,
+     -371232.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -278005.0,
+     -323199.0,
+     -355730.0,
+     -357113.0,
+     -366751.0,
+     -372912.0,
+     -371232.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "UKE",
+     "ipr": "325",
+     "e1": [
+      613.0,
+      741.0,
+      146.0,
+      1231.0,
+      1231.0,
+      1231.0,
+      1231.0
+     ],
+     "k1": [
+      276878.0,
+      322469.0,
+      354404.0,
+      356776.0,
+      366430.0,
+      372591.0,
+      370911.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Gesundheitsforschung",
+     "ipr": "322",
+     "e1": [
+      4.0,
+      37.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      1744.0,
+      1508.0,
+      1473.0,
+      1568.0,
+      1552.0,
+      1552.0,
+      1552.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_247_16_001",
+     "name": "Studienanfängerinnen und -anfänger im 1. Fachsemester (UKE)",
+     "einheit": "ANZ",
+     "2024": 432.0,
+     "2025": 440.0,
+     "2026": 422.0,
+     "2027": 422.0,
+     "2028": 422.0,
+     "2029": 422.0,
+     "2030": 422.0
+    },
+    {
+     "code": "B_247_16_002",
+     "name": "Absolventinnen und Absolventen (UKE)",
+     "einheit": "ANZ",
+     "2024": 414.0,
+     "2025": 397.0,
+     "2026": 380.0,
+     "2027": 380.0,
+     "2028": 380.0,
+     "2029": 380.0,
+     "2030": 380.0
+    },
+    {
+     "code": "B_247_16_003",
+     "name": "Beteiligung an Strukturen der vernetzten Gesundheitsforschung",
+     "einheit": "ANZ",
+     "2024": 4.0,
+     "2025": 4.0,
+     "2026": 4.0,
+     "2027": 4.0,
+     "2028": 4.0,
+     "2029": 4.0,
+     "2030": 4.0
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "247.17",
+   "name": "Infrastruktur für Studierende und BAföG",
+   "seite": 117,
+   "ergebnisplan": {
+    "1": [
+     101520.0,
+     98177.0,
+     114596.0,
+     119596.0,
+     119596.0,
+     119596.0,
+     119596.0
+    ],
+    "2": [
+     449.0,
+     430.0,
+     696.0,
+     600.0,
+     639.0,
+     728.0,
+     732.0
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     414.0,
+     425.0,
+     596.0,
+     600.0,
+     639.0,
+     728.0,
+     732.0
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     110896.0,
+     105795.0,
+     129781.0,
+     134095.0,
+     134222.0,
+     134222.0,
+     134222.0
+    ],
+    "5": [
+     null,
+     null,
+     null,
+     44.0,
+     44.0,
+     44.0,
+     44.0
+    ],
+    "6": [
+     887.0,
+     1128.0,
+     1540.0,
+     820.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "7": [
+     -10713.0,
+     -9176.0,
+     -17421.0,
+     -15962.0,
+     -15309.0,
+     -15398.0,
+     -15402.0
+    ],
+    "8": [
+     null,
+     10.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     10.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -10713.0,
+     -9167.0,
+     -17421.0,
+     -15962.0,
+     -15309.0,
+     -15398.0,
+     -15402.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -10713.0,
+     -9167.0,
+     -17421.0,
+     -15962.0,
+     -15309.0,
+     -15398.0,
+     -15402.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Förd. des soz. Umfelds der Studierenden",
+     "ipr": "324",
+     "e1": [
+      152.0,
+      716.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      7186.0,
+      5321.0,
+      4195.0,
+      3597.0,
+      3583.0,
+      3583.0,
+      3583.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Finanz. Fö. der Studierenden",
+     "ipr": "324",
+     "e1": [
+      300.0,
+      31.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      2251.0,
+      2475.0,
+      2916.0,
+      2412.0,
+      1734.0,
+      1734.0,
+      1734.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "BAföG",
+     "ipr": "511",
+     "e1": [
+      101067.0,
+      97439.0,
+      114596.0,
+      119596.0,
+      119596.0,
+      119596.0,
+      119596.0
+     ],
+     "k1": [
+      102795.0,
+      99558.0,
+      124906.0,
+      129549.0,
+      129588.0,
+      129677.0,
+      129681.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_247_17_001",
+     "name": "Versorgungsquote der Studierenden mit Plätzen für das studentische Wohnen (StW und gemeinnützige Träger)",
+     "einheit": "%",
+     "2024": 7.5,
+     "2025": 7.6,
+     "2026": 8.5,
+     "2027": 8.5,
+     "2028": 8.5,
+     "2029": 8.5,
+     "2030": 8.5
+    },
+    {
+     "code": "B_247_17_002",
+     "name": "davon Versorgungsquote des Studierendenwerks",
+     "einheit": "%",
+     "2024": 6.0,
+     "2025": 6.1,
+     "2026": 6.9,
+     "2027": 6.9,
+     "2028": 6.9,
+     "2029": 6.9,
+     "2030": 6.9
+    },
+    {
+     "code": "G_247_17_003",
+     "name": "Anteil der an Frauen vergebenen Wohnheimplätze (StW und gemeinnützige Träger)",
+     "einheit": "%",
+     "2024": 48.0,
+     "2025": 49.2,
+     "2026": 50.0,
+     "2027": 50.0,
+     "2028": 50.0,
+     "2029": 50.0,
+     "2030": 50.0
+    },
+    {
+     "code": "G_247_17_004",
+     "name": "Anteil der an Frauen vergebenen Wohnheimplätze des Studierendenwerks",
+     "einheit": "%",
+     "2024": 48.0,
+     "2025": 48.9,
+     "2026": 50.0,
+     "2027": 50.0,
+     "2028": 50.0,
+     "2029": 50.0,
+     "2030": 50.0
+    },
+    {
+     "code": "G_247_17_005",
+     "name": "Anteil der an Frauen vergebenen landesspezifischen Stipendien",
+     "einheit": "%",
+     "2024": 48.9,
+     "2025": 49.8,
+     "2026": 50.0,
+     "2027": 50.0,
+     "2028": 50.0,
+     "2029": 50.0,
+     "2030": 50.0
+    },
+    {
+     "code": "B_247_17_006",
+     "name": "Anzahl der BAföG-Bestandsfälle",
+     "einheit": "ANZ",
+     "2024": 22090.0,
+     "2025": 21014.0,
+     "2026": 22000.0,
+     "2027": 22000.0,
+     "2028": 22000.0,
+     "2029": 22000.0,
+     "2030": 22000.0
+    },
+    {
+     "code": "B_247_17_008",
+     "name": "Anzahl der Wohnheimplätze des Studierendenwerks Hamburg",
+     "einheit": "ANZ",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": 4784.0,
+     "2028": 4917.0,
+     "2029": 4917.0,
+     "2030": 4917.0
+    },
+    {
+     "code": "B_247_17_009",
+     "name": "davon: Anzahl der an volljährige Auszubildende vermieteten Wohnheimplätze des Studierendenwerks Hamburg",
+     "einheit": "ANZ",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": 265.0,
+     "2028": 305.0,
+     "2029": 305.0,
+     "2030": 305.0
+    },
+    {
+     "code": "B_247_17_007",
+     "name": "Anzahl der BAföG-Bewilligungen (Förderfälle)",
+     "einheit": "ANZ",
+     "2024": 17492.0,
+     "2025": 16900.0,
+     "2026": 18000.0,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "247.18",
+   "name": "Hamburgisches Krebsregister",
+   "seite": 125,
+   "ergebnisplan": {
+    "1": [
+     3190.0,
+     3689.0,
+     3670.0,
+     4293.0,
+     4110.0,
+     4137.0,
+     4181.0
+    ],
+    "2": [
+     830.0,
+     1146.0,
+     1097.0,
+     1538.0,
+     1363.0,
+     1363.0,
+     1363.0
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     202.0,
+     206.0,
+     210.0,
+     286.0,
+     255.0,
+     255.0,
+     255.0
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     2926.0,
+     2998.0,
+     3580.0,
+     3705.0,
+     3805.0,
+     3905.0,
+     4001.0
+    ],
+    "3a": [
+     2232.0,
+     2284.0,
+     2653.0,
+     2724.0,
+     2799.0,
+     2873.0,
+     2945.0
+    ],
+    "3b": [
+     53.0,
+     32.0,
+     112.0,
+     128.0,
+     131.0,
+     133.0,
+     136.0
+    ],
+    "3c": [
+     1.0,
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     438.0,
+     487.0,
+     550.0,
+     585.0,
+     601.0,
+     617.0,
+     633.0
+    ],
+    "3e": [
+     202.0,
+     195.0,
+     265.0,
+     268.0,
+     274.0,
+     281.0,
+     288.0
+    ],
+    "4": [
+     9.0,
+     10.0,
+     21.0,
+     21.0,
+     21.0,
+     21.0,
+     21.0
+    ],
+    "5": [
+     17.0,
+     17.0,
+     7.0,
+     5.0,
+     3.0,
+     1.0,
+     0.0
+    ],
+    "6": [
+     268.0,
+     448.0,
+     316.0,
+     419.0,
+     412.0,
+     412.0,
+     412.0
+    ],
+    "7": [
+     -859.0,
+     -929.0,
+     -1351.0,
+     -1395.0,
+     -1494.0,
+     -1565.0,
+     -1616.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -859.0,
+     -929.0,
+     -1351.0,
+     -1395.0,
+     -1494.0,
+     -1565.0,
+     -1616.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -859.0,
+     -929.0,
+     -1351.0,
+     -1395.0,
+     -1494.0,
+     -1565.0,
+     -1616.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Hamburgisches Krebsregister",
+     "ipr": "611",
+     "e1": [
+      3190.0,
+      3689.0,
+      3670.0,
+      4293.0,
+      4110.0,
+      4137.0,
+      4181.0
+     ],
+     "k1": [
+      4049.0,
+      4618.0,
+      5021.0,
+      5687.0,
+      5604.0,
+      5702.0,
+      5797.0
+     ],
+     "e2": [
+      355.0,
+      317.0,
+      null,
+      212.0,
+      219.0,
+      226.0,
+      233.0
+     ],
+     "k2": [
+      3537.0,
+      3688.0,
+      null,
+      3689.0,
+      3819.0,
+      3948.0,
+      3997.0
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_247_18_001",
+     "name": "An das Hamburgische Krebsregister gemeldete Neuerkrankungsfälle",
+     "einheit": "ANZ",
+     "2024": 28185.0,
+     "2025": 33881.0,
+     "2026": 32000.0,
+     "2027": 32000.0,
+     "2028": 32000.0,
+     "2029": 32000.0,
+     "2030": 32000.0
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "247.90",
+   "name": "Zentrale Programme Hochschulübergreifende Angelegenheiten",
+   "seite": 129,
+   "ergebnisplan": {
+    "1": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "6": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "12": [
+     null,
+     null,
+     16627.0,
+     15729.0,
+     15457.0,
+     15270.0,
+     15285.0
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     null,
+     null,
+     -16627.0,
+     -15729.0,
+     -15457.0,
+     -15270.0,
+     -15285.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "ZP Hochschulübergr. Angelegenheiten",
+     "ipr": "992",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      null,
+      null,
+      16627.0,
+      15729.0,
+      15457.0,
+      15270.0,
+      15285.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": []
+  },
+  {
+   "epl": "3.2",
+   "pg": "298.01",
+   "name": "Bezirksverwaltung",
+   "seite": 144,
+   "ergebnisplan": {
+    "1": [
+     2141.0,
+     1949.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     843.0,
+     1588.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     null,
+     572.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     499.0,
+     555.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     123.0,
+     136.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     5954.0,
+     6360.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     1588.0,
+     1850.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     2385.0,
+     2442.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     458.0,
+     521.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     1523.0,
+     1548.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     0.0,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "6": [
+     1412.0,
+     1719.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     -6068.0,
+     -7719.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "8": [
+     0.0,
+     1.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     131.0,
+     53.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     -131.0,
+     -52.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -6199.0,
+     -7771.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -6199.0,
+     -7771.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "produkte": [],
+   "kennzahlen": [
+    {
+     "code": "B_298_01_001",
+     "name": "Anteil der Personalkosten der Bezirksaufsicht an den Gesamtpersonalkosten der Bezirksämter",
+     "einheit": "%",
+     "2024": 0.65,
+     "2025": 0.62,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    },
+    {
+     "code": "B_298_01_002",
+     "name": "Abrechnungsverfahren, die in die Verjährung gefallen sind",
+     "einheit": "ANZ",
+     "2024": 0.0,
+     "2025": 0.0,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "298.02",
+   "name": "Digitalisierung und IT der Bezirksämter",
+   "seite": 149,
+   "ergebnisplan": {
+    "1": [
+     24930.0,
+     23402.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     22961.0,
+     24431.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     22950.0,
+     24417.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     6.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     4475.0,
+     5173.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     2493.0,
+     3062.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     808.0,
+     800.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     525.0,
+     662.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     649.0,
+     649.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     106.0,
+     100.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "6": [
+     3354.0,
+     2639.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     -5966.0,
+     -8941.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -5966.0,
+     -8941.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -5966.0,
+     -8941.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "produkte": [],
+   "kennzahlen": [
+    {
+     "code": "B_298_02_001",
+     "name": "Anzahl beantragter (Vor-) Projekte",
+     "einheit": "ANZ",
+     "2024": 9.0,
+     "2025": 12.0,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    },
+    {
+     "code": "B_298_02_002",
+     "name": "Anzahl bewilliger und finanzierter Projekte",
+     "einheit": "ANZ",
+     "2024": 7.0,
+     "2025": 7.0,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    },
+    {
+     "code": "B_298_02_003",
+     "name": "Anzahl der Bildschirmarbeitsplätze in der Bezirksverwaltung",
+     "einheit": "ANZ",
+     "2024": 8542.0,
+     "2025": 8520.0,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    },
+    {
+     "code": "B_298_02_004",
+     "name": "IT-Betriebsaufwand je Bildschirmarbeitsplatz in der Bezirksverwaltung",
+     "einheit": "EUR",
+     "2024": 2375.0,
+     "2025": 2659.0,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    },
+    {
+     "code": "B_298_02_005",
+     "name": "Betreute Bildschirmarbeitsplätze in der Bezirksverwaltung je VZÄ der Aufgabeneinheit IT der Bezirksämter",
+     "einheit": "Anzahl Bil",
+     "2024": 375.0,
+     "2025": 373.0,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "298.03",
+   "name": "Hamburg Service",
+   "seite": 155,
+   "ergebnisplan": {
+    "1": [
+     32412.0,
+     29258.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     30616.0,
+     33673.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     2061.0,
+     2880.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     7209.0,
+     10410.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     1312.0,
+     1641.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     37184.0,
+     41044.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     22319.0,
+     24794.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     5250.0,
+     5664.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     3.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     4630.0,
+     5371.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     4986.0,
+     5210.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     147.0,
+     133.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "6": [
+     7656.0,
+     6413.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     -43192.0,
+     -52005.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     1.0,
+     1.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     -1.0,
+     -1.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -43192.0,
+     -52005.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -43192.0,
+     -52005.0,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Einwohnerangelegenheiten",
+     "ipr": "114",
+     "e1": [
+      27074.0,
+      24426.0,
+      0.0,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      50855.0,
+      55689.0,
+      0.0,
+      null,
+      null,
+      null,
+      null
+     ],
+     "e2": [
+      1903.0,
+      2018.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      7242.0,
+      8447.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "ZF Zentrales Meldewesen",
+     "ipr": "114",
+     "e1": [
+      1026.0,
+      1102.0,
+      0.0,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      1714.0,
+      1621.0,
+      0.0,
+      null,
+      null,
+      null,
+      null
+     ],
+     "e2": [
+      77.0,
+      74.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      293.0,
+      309.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Ausländerangelegenheiten",
+     "ipr": "115",
+     "e1": [
+      4311.0,
+      3729.0,
+      0.0,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      23036.0,
+      23953.0,
+      0.0,
+      null,
+      null,
+      null,
+      null
+     ],
+     "e2": [
+      1318.0,
+      1230.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      5016.0,
+      5149.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_298_03_001",
+     "name": "Ausgestellte Personaldokumente",
+     "einheit": "ANZ",
+     "2024": 393467.0,
+     "2025": 354634.0,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    },
+    {
+     "code": "B_298_03_002",
+     "name": "Erteilte Aufenthaltstitel",
+     "einheit": "ANZ",
+     "2024": 73232.0,
+     "2025": 65309.0,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    },
+    {
+     "code": "B_298_03_003",
+     "name": "Durchschnittliche Wartezeit der Terminkunden im Fachbereich Einwohnerwesen",
+     "einheit": "Min. je Ku",
+     "2024": 3.0,
+     "2025": 3.0,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "298.90",
+   "name": "ZP Zentrale Bezirksmittel",
+   "seite": 161,
+   "ergebnisplan": {
+    "1": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "6": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "12": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "ZP Zentrale Bezirksmittel",
+     "ipr": "992",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      null,
+      null,
+      0.0,
+      null,
+      null,
+      null,
+      null
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": []
+  },
+  {
+   "epl": "3.2",
+   "pg": "299.01",
+   "name": "Gleichstellung und gesellschaftlicher Zusammenhalt",
+   "seite": 174,
+   "ergebnisplan": {
+    "1": [
+     238.0,
+     35.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     523.0,
+     728.0,
+     965.0,
+     1016.0,
+     1016.0,
+     1016.0,
+     1016.0
+    ],
+    "2a": [
+     2.0,
+     1.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     5.0,
+     6.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     2476.0,
+     2668.0,
+     2380.0,
+     2656.0,
+     2720.0,
+     2443.0,
+     2369.0
+    ],
+    "3a": [
+     1232.0,
+     1359.0,
+     1288.0,
+     996.0,
+     1024.0,
+     1052.0,
+     978.0
+    ],
+    "3b": [
+     570.0,
+     571.0,
+     441.0,
+     825.0,
+     842.0,
+     655.0,
+     668.0
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     263.0,
+     320.0,
+     294.0,
+     270.0,
+     277.0,
+     269.0,
+     254.0
+    ],
+    "3e": [
+     411.0,
+     419.0,
+     357.0,
+     565.0,
+     577.0,
+     467.0,
+     469.0
+    ],
+    "4": [
+     2221.0,
+     2461.0,
+     1450.0,
+     1400.0,
+     1400.0,
+     1400.0,
+     1400.0
+    ],
+    "5": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "6": [
+     153.0,
+     95.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     -5135.0,
+     -5917.0,
+     -4795.0,
+     -5072.0,
+     -5136.0,
+     -4859.0,
+     -4785.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -5135.0,
+     -5917.0,
+     -4795.0,
+     -5072.0,
+     -5136.0,
+     -4859.0,
+     -4785.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -5135.0,
+     -5917.0,
+     -4795.0,
+     -5072.0,
+     -5136.0,
+     -4859.0,
+     -4785.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Antidiskriminierung und LSBTI",
+     "ipr": "542",
+     "e1": [
+      4.0,
+      1.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      3367.0,
+      3647.0,
+      3716.0,
+      3992.0,
+      4056.0,
+      3779.0,
+      3705.0
+     ],
+     "e2": [
+      247.0,
+      252.0,
+      null,
+      44.0,
+      45.0,
+      41.0,
+      40.0
+     ],
+     "k2": [
+      1036.0,
+      1161.0,
+      null,
+      2390.0,
+      2459.0,
+      2447.0,
+      2436.0
+     ]
+    },
+    {
+     "produkt": "Frauen und Gleichstellung",
+     "ipr": "542",
+     "e1": [
+      94.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      540.0,
+      470.0,
+      310.0,
+      310.0,
+      310.0,
+      310.0,
+      310.0
+     ],
+     "e2": [
+      16.0,
+      9.0,
+      null,
+      37.0,
+      38.0,
+      34.0,
+      33.0
+     ],
+     "k2": [
+      593.0,
+      613.0,
+      null,
+      214.0,
+      225.0,
+      218.0,
+      215.0
+     ]
+    },
+    {
+     "produkt": "Senior:innen und Demografie",
+     "ipr": "542",
+     "e1": [
+      4.0,
+      34.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      1153.0,
+      1320.0,
+      0.0,
+      null,
+      null,
+      null,
+      null
+     ],
+     "e2": [
+      6.0,
+      3.0,
+      null,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "k2": [
+      218.0,
+      226.0,
+      null,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "produkt": "Förderung des jüdischen Lebens",
+     "ipr": "542",
+     "e1": [
+      121.0,
+      0.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      199.0,
+      193.0,
+      505.0,
+      505.0,
+      505.0,
+      505.0,
+      505.0
+     ],
+     "e2": [
+      3.0,
+      2.0,
+      null,
+      37.0,
+      38.0,
+      34.0,
+      33.0
+     ],
+     "k2": [
+      108.0,
+      112.0,
+      null,
+      214.0,
+      225.0,
+      218.0,
+      215.0
+     ]
+    },
+    {
+     "produkt": "Gleichstellung behinderter Menschen",
+     "ipr": "542",
+     "e1": [
+      15.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      114.0,
+      321.0,
+      265.0,
+      265.0,
+      265.0,
+      265.0,
+      265.0
+     ],
+     "e2": [
+      12.0,
+      7.0,
+      null,
+      37.0,
+      38.0,
+      34.0,
+      33.0
+     ],
+     "k2": [
+      436.0,
+      451.0,
+      null,
+      214.0,
+      225.0,
+      218.0,
+      215.0
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "G_299_01_001",
+     "name": "Prüfung von Drucksachen (ohne",
+     "einheit": "ANZ",
+     "2024": 298.0,
+     "2025": 351.0,
+     "2026": 240.0,
+     "2027": 300.0,
+     "2028": 300.0,
+     "2029": 300.0,
+     "2030": 300.0
+    },
+    {
+     "code": "G_299_01_002",
+     "name": "Maßnahmen zur Sensibilisierung und Sichtbarkeit der Themenfelder Gleichstellung und geschlechtliche und sexuelle Vielfalt",
+     "einheit": "ANZ",
+     "2024": 7.0,
+     "2025": 9.0,
+     "2026": 3.0,
+     "2027": 4.0,
+     "2028": 4.0,
+     "2029": 4.0,
+     "2030": 4.0
+    },
+    {
+     "code": "G_299_01_003",
+     "name": "Anteil der Teilnehmenden an den Veranstaltungen zur Schulung, Fortbildung, Information und Unterstützung der Leitungen von Seniorinnen- und Seniorentreffs und Seniorinnen- und Seniorengruppen",
+     "einheit": "%",
+     "2024": 95.0,
+     "2025": 188.0,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    }
+   ]
+  },
+  {
+   "epl": "3.2",
+   "pg": "299.90",
+   "name": "Bezirkliche Zuweisungen",
+   "seite": 181,
+   "ergebnisplan": {
+    "1": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "6": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     null,
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "produkte": [],
+   "kennzahlen": []
+  }
+ ]
+}

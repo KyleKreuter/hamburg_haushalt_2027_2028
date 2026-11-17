@@ -1,0 +1,4842 @@
+{
+ "quelle": "finale-fassung-10-hhp-ep-6-1-data.pdf",
+ "produktgruppen": [
+  {
+   "epl": "6.1",
+   "pg": "286.11",
+   "name": "Verwaltung, Recht u Beteiligungen(VR)",
+   "seite": 29,
+   "ergebnisplan": {
+    "1": [
+     5174.0,
+     5981.0,
+     6293.0,
+     6110.0,
+     6182.0,
+     6224.0,
+     6240.0
+    ],
+    "2": [
+     12542.0,
+     11545.0,
+     11211.0,
+     12278.0,
+     12278.0,
+     12562.0,
+     12562.0
+    ],
+    "2a": [
+     5970.0,
+     6026.0,
+     6699.0,
+     6504.0,
+     6504.0,
+     6788.0,
+     6788.0
+    ],
+    "2b": [
+     3361.0,
+     2495.0,
+     2034.0,
+     2345.0,
+     2345.0,
+     2345.0,
+     2345.0
+    ],
+    "2c": [
+     2.0,
+     24.0,
+     108.0,
+     58.0,
+     58.0,
+     58.0,
+     58.0
+    ],
+    "3": [
+     15526.0,
+     17459.0,
+     17059.0,
+     18123.0,
+     18516.0,
+     18824.0,
+     18979.0
+    ],
+    "3a": [
+     6124.0,
+     7215.0,
+     6156.0,
+     7004.0,
+     7184.0,
+     7298.0,
+     7313.0
+    ],
+    "3b": [
+     4725.0,
+     5059.0,
+     5545.0,
+     5474.0,
+     5572.0,
+     5669.0,
+     5751.0
+    ],
+    "3c": [
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     1471.0,
+     1744.0,
+     1626.0,
+     1872.0,
+     1916.0,
+     1945.0,
+     1953.0
+    ],
+    "3e": [
+     3206.0,
+     3441.0,
+     3732.0,
+     3773.0,
+     3844.0,
+     3912.0,
+     3962.0
+    ],
+    "4": [
+     null,
+     53.0,
+     100.0,
+     0.0,
+     100.0,
+     100.0,
+     0.0
+    ],
+    "5": [
+     105.0,
+     89.0,
+     96.0,
+     96.0,
+     111.0,
+     128.0,
+     141.0
+    ],
+    "6": [
+     3244.0,
+     3474.0,
+     3198.0,
+     2630.0,
+     2642.0,
+     2692.0,
+     2740.0
+    ],
+    "7": [
+     -26243.0,
+     -26638.0,
+     -25372.0,
+     -27017.0,
+     -27465.0,
+     -28081.0,
+     -28182.0
+    ],
+    "8": [
+     null,
+     0.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "10": [
+     null,
+     0.0,
+     -1.0,
+     -1.0,
+     -1.0,
+     -1.0,
+     -1.0
+    ],
+    "11": [
+     -26243.0,
+     -26638.0,
+     -25373.0,
+     -27018.0,
+     -27466.0,
+     -28082.0,
+     -28183.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -26243.0,
+     -26638.0,
+     -25373.0,
+     -27018.0,
+     -27466.0,
+     -28082.0,
+     -28183.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Ressourcensteuerung und Controlling",
+     "ipr": "INT",
+     "e1": [
+      295.0,
+      308.0,
+      321.0,
+      307.0,
+      310.0,
+      312.0,
+      315.0
+     ],
+     "k1": [
+      3033.0,
+      3426.0,
+      3037.0,
+      3150.0,
+      3211.0,
+      3275.0,
+      3338.0
+     ],
+     "e2": [
+      -295.0,
+      -308.0,
+      null,
+      -307.0,
+      -310.0,
+      -312.0,
+      -315.0
+     ],
+     "k2": [
+      -3033.0,
+      -3426.0,
+      null,
+      -3150.0,
+      -3211.0,
+      -3275.0,
+      -3338.0
+     ]
+    },
+    {
+     "produkt": "Rechtsangeleg.+Beteiligungsverwaltung",
+     "ipr": "INT",
+     "e1": [
+      1119.0,
+      1206.0,
+      1197.0,
+      1218.0,
+      1247.0,
+      1261.0,
+      1234.0
+     ],
+     "k1": [
+      3696.0,
+      4009.0,
+      3917.0,
+      3968.0,
+      4060.0,
+      4100.0,
+      3958.0
+     ],
+     "e2": [
+      -1119.0,
+      -1206.0,
+      null,
+      -1218.0,
+      -1247.0,
+      -1261.0,
+      -1234.0
+     ],
+     "k2": [
+      -3696.0,
+      -4009.0,
+      null,
+      -3968.0,
+      -4060.0,
+      -4100.0,
+      -3958.0
+     ]
+    },
+    {
+     "produkt": "IT",
+     "ipr": "INT",
+     "e1": [
+      102.0,
+      6.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      4505.0,
+      3791.0,
+      3279.0,
+      3653.0,
+      3649.0,
+      3682.0,
+      3713.0
+     ],
+     "e2": [
+      -102.0,
+      -6.0,
+      null,
+      0.0,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      -4505.0,
+      -3791.0,
+      null,
+      -3653.0,
+      -3649.0,
+      -3682.0,
+      -3713.0
+     ]
+    },
+    {
+     "produkt": "Personal",
+     "ipr": "INT",
+     "e1": [
+      143.0,
+      135.0,
+      107.0,
+      109.0,
+      112.0,
+      115.0,
+      117.0
+     ],
+     "k1": [
+      5377.0,
+      6039.0,
+      5677.0,
+      6318.0,
+      6415.0,
+      6510.0,
+      6609.0
+     ],
+     "e2": [
+      -143.0,
+      -135.0,
+      null,
+      -109.0,
+      -112.0,
+      -115.0,
+      -117.0
+     ],
+     "k2": [
+      -5377.0,
+      -6039.0,
+      null,
+      -6318.0,
+      -6415.0,
+      -6510.0,
+      -6609.0
+     ]
+    },
+    {
+     "produkt": "Interner Service",
+     "ipr": "INT",
+     "e1": [
+      3248.0,
+      4075.0,
+      4429.0,
+      4230.0,
+      4263.0,
+      4282.0,
+      4315.0
+     ],
+     "k1": [
+      11552.0,
+      11735.0,
+      12112.0,
+      12257.0,
+      12348.0,
+      12686.0,
+      12771.0
+     ],
+     "e2": [
+      -3248.0,
+      -4075.0,
+      null,
+      -4230.0,
+      -4263.0,
+      -4282.0,
+      -4315.0
+     ],
+     "k2": [
+      -11552.0,
+      -11735.0,
+      null,
+      -12257.0,
+      -12348.0,
+      -12686.0,
+      -12771.0
+     ]
+    },
+    {
+     "produkt": "Präsidialangelegenheiten, Innenrevision",
+     "ipr": "INT",
+     "e1": [
+      250.0,
+      214.0,
+      212.0,
+      206.0,
+      210.0,
+      214.0,
+      218.0
+     ],
+     "k1": [
+      2695.0,
+      3063.0,
+      3060.0,
+      3146.0,
+      3315.0,
+      3385.0,
+      3351.0
+     ],
+     "e2": [
+      -250.0,
+      -214.0,
+      null,
+      -206.0,
+      -210.0,
+      -214.0,
+      -218.0
+     ],
+     "k2": [
+      -2695.0,
+      -3063.0,
+      null,
+      -3146.0,
+      -3315.0,
+      -3385.0,
+      -3351.0
+     ]
+    },
+    {
+     "produkt": "Wohnungsbaukoordination",
+     "ipr": "422",
+     "e1": [
+      17.0,
+      38.0,
+      28.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0
+     ],
+     "k1": [
+      560.0,
+      555.0,
+      583.0,
+      636.0,
+      650.0,
+      669.0,
+      682.0
+     ],
+     "e2": [
+      47.0,
+      41.0,
+      null,
+      999.0,
+      1024.0,
+      1048.0,
+      1067.0
+     ],
+     "k2": [
+      179.0,
+      174.0,
+      null,
+      5850.0,
+      6127.0,
+      6722.0,
+      6888.0
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_286_11_004",
+     "name": "Genehmigte Wohneinheiten",
+     "einheit": "Stck.",
+     "2024": 6710.0,
+     "2025": 6734.0,
+     "2026": 10000.0,
+     "2027": 10000.0,
+     "2028": 10000.0,
+     "2029": 10000.0,
+     "2030": 10000.0
+    },
+    {
+     "code": "B_286_11_008",
+     "name": "Personalkosten Ressourcensteuerung/ Controlling/ Organisation im Verhältnis zu Personalkosten im Einzelplan",
+     "einheit": "%",
+     "2024": 5.2,
+     "2025": 6.1,
+     "2026": 5.6,
+     "2027": 5.5,
+     "2028": 5.5,
+     "2029": 5.5,
+     "2030": 5.6
+    },
+    {
+     "code": "G_286_11_009",
+     "name": "Anteil weiblicher Führungskräfte",
+     "einheit": "%",
+     "2024": 44.0,
+     "2025": 46.0,
+     "2026": 44.0,
+     "2027": 44.0,
+     "2028": 44.0,
+     "2029": 44.0,
+     "2030": 44.0
+    },
+    {
+     "code": "G_286_11_010",
+     "name": "Anteil weiblicher Nachwuchskräfte Technischer Dienst",
+     "einheit": "%",
+     "2024": 54.0,
+     "2025": 67.0,
+     "2026": 45.0,
+     "2027": 50.0,
+     "2028": 50.0,
+     "2029": 50.0,
+     "2030": 50.0
+    },
+    {
+     "code": "G_286_11_011",
+     "name": "Anteil weiblicher Mitglieder der FHH in Aufsichtsräten der zu steuernden unmittelbaren und mittelbaren Beteiligungen",
+     "einheit": "%",
+     "2024": 55.0,
+     "2025": 64.0,
+     "2026": 45.0,
+     "2027": 50.0,
+     "2028": 50.0,
+     "2029": 50.0,
+     "2030": 50.0
+    },
+    {
+     "code": "G_286_11_010",
+     "name": "Anteil weiblicher Nachwuchskräfte Technischer Dienst Die Kennzahl wird ab 2027 moderat erhöht, da der Trend der letzten Jahre einen Anstieg des Anteils weiblicher Nachwuchskräfte zeigt.",
+     "einheit": "",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    },
+    {
+     "code": "G_286_11_011",
+     "name": "Anteil weiblicher Mitglieder der FHH in Aufsichtsräten der zu steuernden unmittelbaren und mittelbaren Beteiligungen Die Kennzahl wird ab 2027 moderat erhöht, um eine Anpassung an den gestiegenen Anteil abzubilden.",
+     "einheit": "",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    }
+   ]
+  },
+  {
+   "epl": "6.1",
+   "pg": "286.12",
+   "name": "Zentraler Ansatz",
+   "seite": 37,
+   "ergebnisplan": {
+    "1": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "6": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     24658.0,
+     19703.0,
+     9128.0,
+     10015.0,
+     11211.0
+    ],
+    "10": [
+     null,
+     null,
+     -24658.0,
+     -19703.0,
+     -9128.0,
+     -10015.0,
+     -11211.0
+    ],
+    "11": [
+     null,
+     null,
+     -24658.0,
+     -19703.0,
+     -9128.0,
+     -10015.0,
+     -11211.0
+    ],
+    "12": [
+     null,
+     null,
+     12560.0,
+     7026.0,
+     7781.0,
+     7035.0,
+     7548.0
+    ],
+    "13": [
+     null,
+     null,
+     -10000.0,
+     -10000.0,
+     -10000.0,
+     -10000.0,
+     -10000.0
+    ],
+    "14": [
+     null,
+     null,
+     -27218.0,
+     -16729.0,
+     -6909.0,
+     -7050.0,
+     -8758.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Zentrale Verstärkungsmittel",
+     "ipr": "992",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      null,
+      null,
+      37218.0,
+      26729.0,
+      16909.0,
+      17050.0,
+      18758.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Globale Minderkosten",
+     "ipr": "992",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      null,
+      null,
+      -10000.0,
+      -10000.0,
+      -10000.0,
+      -10000.0,
+      -10000.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": []
+  },
+  {
+   "epl": "6.1",
+   "pg": "286.14",
+   "name": "Geoinformation und Vermessung",
+   "seite": 41,
+   "ergebnisplan": {
+    "1": [
+     null,
+     null,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "2": [
+     14466.0,
+     18256.0,
+     18571.0,
+     18850.0,
+     19134.0,
+     19422.0,
+     19422.0
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     49.0,
+     49.0,
+     49.0,
+     49.0,
+     49.0
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     10332.0,
+     9436.0,
+     4770.0,
+     4328.0,
+     4431.0,
+     4498.0,
+     4565.0
+    ],
+    "5": [
+     217.0,
+     229.0,
+     31.0,
+     146.0,
+     106.0,
+     null,
+     null
+    ],
+    "6": [
+     113.0,
+     1.0,
+     null,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "7": [
+     -25128.0,
+     -27921.0,
+     -23372.0,
+     -23324.0,
+     -23671.0,
+     -23920.0,
+     -23987.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -25128.0,
+     -27921.0,
+     -23372.0,
+     -23324.0,
+     -23671.0,
+     -23920.0,
+     -23987.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -25128.0,
+     -27921.0,
+     -23372.0,
+     -23324.0,
+     -23671.0,
+     -23920.0,
+     -23987.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Erstattungen an LGV",
+     "ipr": "423",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      25128.0,
+      27921.0,
+      23372.0,
+      23324.0,
+      23671.0,
+      23920.0,
+      23987.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      0.0,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_286_14_004",
+     "name": "Anzahl der für die Kaufpreissammlung ausgewerteten Kaufverträge",
+     "einheit": "ANZ",
+     "2024": 9102.0,
+     "2025": 10336.0,
+     "2026": 10000.0,
+     "2027": 10000.0,
+     "2028": 10000.0,
+     "2029": 10000.0,
+     "2030": 10000.0
+    },
+    {
+     "code": "B_286_14_005",
+     "name": "Auszüge aus dem Liegenschaftskataster und dem Baulastenverzeichnis",
+     "einheit": "ANZ",
+     "2024": 27559.0,
+     "2025": 32451.0,
+     "2026": 29000.0,
+     "2027": 31000.0,
+     "2028": 31000.0,
+     "2029": 31000.0,
+     "2030": 31000.0
+    },
+    {
+     "code": "B_286_14_006",
+     "name": "Anzahl der überregionalen Gremien, in denen der LGV ministerielle Aufgaben für Hamburg wahrnimmt",
+     "einheit": "ANZ",
+     "2024": 11.0,
+     "2025": 11.0,
+     "2026": 11.0,
+     "2027": 11.0,
+     "2028": 11.0,
+     "2029": 11.0,
+     "2030": 11.0
+    },
+    {
+     "code": "B_286_14_007",
+     "name": "Zugriffe auf die UDP_HH",
+     "einheit": "ANZ Mio.",
+     "2024": 1046.0,
+     "2025": 1075.0,
+     "2026": 1100.0,
+     "2027": 1100.0,
+     "2028": 1100.0,
+     "2029": 1100.0,
+     "2030": 1100.0
+    },
+    {
+     "code": "B_286_14_005",
+     "name": "Auszüge aus dem Liegenschaftskataster und dem Baulastenverzeichnis Die Kennzahl wird ab 2027 moderat erhöht. Mit einer zunehmenden Zahl von Bauanträgen und Genehmigungen ist entsprechend von einer steigenden Nachfrage nach Auszügen aus dem Liegenschaftskataster und dem Baulastenverzeichnis auszugehen.",
+     "einheit": "",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    }
+   ]
+  },
+  {
+   "epl": "6.1",
+   "pg": "286.15",
+   "name": "Bezirkliche Zuweisungen SuS",
+   "seite": 46,
+   "ergebnisplan": {
+    "1": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     null,
+     null,
+     254.0,
+     254.0,
+     254.0,
+     254.0,
+     254.0
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     32.0,
+     32.0,
+     32.0,
+     32.0,
+     32.0
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "6": [
+     null,
+     null,
+     36.0,
+     36.0,
+     36.0,
+     36.0,
+     36.0
+    ],
+    "7": [
+     null,
+     null,
+     -290.0,
+     -290.0,
+     -290.0,
+     -290.0,
+     -290.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     null,
+     null,
+     -290.0,
+     -290.0,
+     -290.0,
+     -290.0,
+     -290.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     null,
+     null,
+     -290.0,
+     -290.0,
+     -290.0,
+     -290.0,
+     -290.0
+    ]
+   },
+   "produkte": [],
+   "kennzahlen": []
+  },
+  {
+   "epl": "6.1",
+   "pg": "287.11",
+   "name": "Wohnen",
+   "seite": 57,
+   "ergebnisplan": {
+    "1": [
+     230199.0,
+     374037.0,
+     400815.0,
+     150755.0,
+     167779.0,
+     278307.0,
+     192047.0
+    ],
+    "2": [
+     1591.0,
+     1221.0,
+     1000.0,
+     944.0,
+     854.0,
+     1166.0,
+     805.0
+    ],
+    "2a": [
+     9.0,
+     4.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     92.0,
+     127.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     593.0,
+     162.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     4005.0,
+     4196.0,
+     4576.0,
+     5018.0,
+     5142.0,
+     5082.0,
+     5097.0
+    ],
+    "3a": [
+     2082.0,
+     2475.0,
+     2196.0,
+     2773.0,
+     2850.0,
+     2780.0,
+     2770.0
+    ],
+    "3b": [
+     831.0,
+     608.0,
+     1067.0,
+     875.0,
+     892.0,
+     909.0,
+     926.0
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     438.0,
+     540.0,
+     520.0,
+     650.0,
+     666.0,
+     653.0,
+     652.0
+    ],
+    "3e": [
+     655.0,
+     574.0,
+     793.0,
+     720.0,
+     734.0,
+     740.0,
+     749.0
+    ],
+    "4": [
+     183722.0,
+     203572.0,
+     269056.0,
+     341133.0,
+     397805.0,
+     350117.0,
+     358903.0
+    ],
+    "5": [
+     2233.0,
+     145.0,
+     212.0,
+     145.0,
+     145.0,
+     145.0,
+     145.0
+    ],
+    "6": [
+     10696.0,
+     7096.0,
+     1625.0,
+     3197.0,
+     4047.0,
+     1561.0,
+     1564.0
+    ],
+    "7": [
+     27951.0,
+     157807.0,
+     124346.0,
+     -199681.0,
+     -240214.0,
+     -79764.0,
+     -174466.0
+    ],
+    "8": [
+     42047.0,
+     39596.0,
+     6258.0,
+     15705.0,
+     20940.0,
+     5235.0,
+     4985.0
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     42047.0,
+     39596.0,
+     6258.0,
+     15705.0,
+     20940.0,
+     5235.0,
+     4985.0
+    ],
+    "11": [
+     69998.0,
+     197403.0,
+     130604.0,
+     -183976.0,
+     -219274.0,
+     -74529.0,
+     -169481.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     69998.0,
+     197403.0,
+     130604.0,
+     -183976.0,
+     -219274.0,
+     -74529.0,
+     -169481.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Verbesserung v. Rahmenb. d. Wohnungsbaus",
+     "ipr": "422",
+     "e1": [
+      217984.0,
+      354745.0,
+      327073.0,
+      103460.0,
+      125719.0,
+      218542.0,
+      132032.0
+     ],
+     "k1": [
+      180162.0,
+      213637.0,
+      273974.0,
+      347398.0,
+      405026.0,
+      354673.0,
+      363408.0
+     ],
+     "e2": [
+      596.0,
+      731.0,
+      null,
+      624.0,
+      633.0,
+      612.0,
+      601.0
+     ],
+     "k2": [
+      2823.0,
+      3210.0,
+      null,
+      2567.0,
+      2624.0,
+      2590.0,
+      2536.0
+     ]
+    },
+    {
+     "produkt": "Wohnungsbestandspolitik",
+     "ipr": "422",
+     "e1": [
+      54256.0,
+      58887.0,
+      80000.0,
+      63000.0,
+      63000.0,
+      65000.0,
+      65000.0
+     ],
+     "k1": [
+      21210.0,
+      1529.0,
+      1251.0,
+      1216.0,
+      1252.0,
+      1286.0,
+      1320.0
+     ],
+     "e2": [
+      198.0,
+      172.0,
+      null,
+      156.0,
+      159.0,
+      160.0,
+      162.0
+     ],
+     "k2": [
+      938.0,
+      757.0,
+      null,
+      620.0,
+      640.0,
+      668.0,
+      675.0
+     ]
+    },
+    {
+     "produkt": "Transparenz Wohnungsmarkt",
+     "ipr": "422",
+     "e1": [
+      5.0,
+      0.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      522.0,
+      688.0,
+      719.0,
+      1297.0,
+      1181.0,
+      1567.0,
+      1230.0
+     ],
+     "e2": [
+      116.0,
+      143.0,
+      null,
+      175.0,
+      177.0,
+      179.0,
+      180.0
+     ],
+     "k2": [
+      550.0,
+      630.0,
+      null,
+      1317.0,
+      1362.0,
+      1425.0,
+      1440.0
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_287_11_001",
+     "name": "Geförderte Mietwohnungsneubauten mit Mietpreis- und Belegungsbindung",
+     "einheit": "ANZ",
+     "2024": 3092.0,
+     "2025": 2742.0,
+     "2026": 3000.0,
+     "2027": 3000.0,
+     "2028": 3000.0,
+     "2029": 3000.0,
+     "2030": 3000.0
+    },
+    {
+     "code": "B_287_11_004",
+     "name": "Geförderte Modernisierungen",
+     "einheit": "ANZ",
+     "2024": 4557.0,
+     "2025": 6708.0,
+     "2026": 12830.0,
+     "2027": 10840.0,
+     "2028": 10840.0,
+     "2029": 10840.0,
+     "2030": 10840.0
+    },
+    {
+     "code": "B_287_11_025",
+     "name": "Wohnungen für vordringlich Wohnungsuchende durch Kooperationsverträge, Ankäufe von Belegungsbindungen sowie Mietwohnungsneubauförderung",
+     "einheit": "ANZ",
+     "2024": 2925.0,
+     "2025": 2792.0,
+     "2026": 2900.0,
+     "2027": 2700.0,
+     "2028": 2700.0,
+     "2029": 2700.0,
+     "2030": 2700.0
+    },
+    {
+     "code": "B_287_11_026",
+     "name": "Bestand Mietwohnungen mit Mietpreis- und Belegungsbindungen",
+     "einheit": "ANZ",
+     "2024": 79788.0,
+     "2025": 76533.0,
+     "2026": 77200.0,
+     "2027": 77300.0,
+     "2028": 77100.0,
+     "2029": 77100.0,
+     "2030": 77100.0
+    },
+    {
+     "code": "B_287_11_026",
+     "name": "\"Bestand Mietwohnungen mit Mitpreis- und Belegungsbindung\" Die Kennzahl bildet den Erhalt des Wohnungsbestandes mit Mietpreis- und Belegungsbindung ab und stellt damit die wesentliche kostenverursachende Größe für den Zins- und Verlustausgleich der IFB dar.",
+     "einheit": "",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    }
+   ]
+  },
+  {
+   "epl": "6.1",
+   "pg": "287.12",
+   "name": "Stadterneuerung und Bodenordnung",
+   "seite": 64,
+   "ergebnisplan": {
+    "1": [
+     5627.0,
+     1619.0,
+     1042.0,
+     1042.0,
+     1037.0,
+     1029.0,
+     1029.0
+    ],
+    "2": [
+     659.0,
+     623.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     160.0,
+     140.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     2.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     2994.0,
+     3163.0,
+     3510.0,
+     3312.0,
+     3454.0,
+     3540.0,
+     3322.0
+    ],
+    "3a": [
+     1228.0,
+     1386.0,
+     1339.0,
+     1515.0,
+     1559.0,
+     1602.0,
+     1412.0
+    ],
+    "3b": [
+     894.0,
+     781.0,
+     1085.0,
+     819.0,
+     871.0,
+     888.0,
+     904.0
+    ],
+    "3c": [
+     null,
+     1.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     280.0,
+     349.0,
+     346.0,
+     380.0,
+     392.0,
+     402.0,
+     364.0
+    ],
+    "3e": [
+     592.0,
+     645.0,
+     740.0,
+     598.0,
+     632.0,
+     648.0,
+     642.0
+    ],
+    "4": [
+     800.0,
+     75.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     91.0,
+     91.0,
+     90.0,
+     90.0,
+     83.0,
+     70.0,
+     70.0
+    ],
+    "6": [
+     3452.0,
+     2735.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     -2370.0,
+     -5067.0,
+     -2569.0,
+     -2371.0,
+     -2510.0,
+     -2591.0,
+     -2373.0
+    ],
+    "8": [
+     38.0,
+     38.0,
+     38.0,
+     38.0,
+     38.0,
+     38.0,
+     38.0
+    ],
+    "9": [
+     82.0,
+     1.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     -44.0,
+     37.0,
+     38.0,
+     38.0,
+     38.0,
+     38.0,
+     38.0
+    ],
+    "11": [
+     -2413.0,
+     -5030.0,
+     -2531.0,
+     -2333.0,
+     -2472.0,
+     -2553.0,
+     -2335.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -2413.0,
+     -5030.0,
+     -2531.0,
+     -2333.0,
+     -2472.0,
+     -2553.0,
+     -2335.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "RISE",
+     "ipr": "421",
+     "e1": [
+      5665.0,
+      1657.0,
+      1080.0,
+      1080.0,
+      1075.0,
+      1067.0,
+      1067.0
+     ],
+     "k1": [
+      6477.0,
+      4970.0,
+      1945.0,
+      1954.0,
+      2054.0,
+      2089.0,
+      1931.0
+     ],
+     "e2": [
+      364.0,
+      428.0,
+      null,
+      391.0,
+      405.0,
+      407.0,
+      382.0
+     ],
+     "k2": [
+      1948.0,
+      2069.0,
+      null,
+      2090.0,
+      2189.0,
+      2275.0,
+      2133.0
+     ]
+    },
+    {
+     "produkt": "Soziale Erhaltungsverordnung",
+     "ipr": "421",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      514.0,
+      385.0,
+      364.0,
+      344.0,
+      352.0,
+      362.0,
+      277.0
+     ],
+     "e2": [
+      70.0,
+      84.0,
+      null,
+      59.0,
+      60.0,
+      60.0,
+      47.0
+     ],
+     "k2": [
+      374.0,
+      406.0,
+      null,
+      311.0,
+      315.0,
+      323.0,
+      256.0
+     ]
+    },
+    {
+     "produkt": "Bodenordnung",
+     "ipr": "421",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      1087.0,
+      1331.0,
+      1301.0,
+      1114.0,
+      1141.0,
+      1169.0,
+      1194.0
+     ],
+     "e2": [
+      245.0,
+      366.0,
+      null,
+      253.0,
+      256.0,
+      258.0,
+      260.0
+     ],
+     "k2": [
+      1303.0,
+      1788.0,
+      null,
+      1361.0,
+      1399.0,
+      1463.0,
+      1467.0
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_287_12_001",
+     "name": "Anzahl der Fördergebiete der Integrierten Stadtteilentwicklung (RISE)",
+     "einheit": "Stck.",
+     "2024": 31.0,
+     "2025": 27.0,
+     "2026": 28.0,
+     "2027": 29.0,
+     "2028": 30.0,
+     "2029": 31.0,
+     "2030": 33.0
+    },
+    {
+     "code": "B_287_12_007",
+     "name": "Anzahl der Gebiete mit Sozialer Erhaltungsverordnung",
+     "einheit": "Stck.",
+     "2024": 13.0,
+     "2025": 16.0,
+     "2026": 19.0,
+     "2027": 16.0,
+     "2028": 16.0,
+     "2029": 16.0,
+     "2030": 16.0
+    },
+    {
+     "code": "B_287_12_009",
+     "name": "Anzahl der laufenden vorbereitenden Untersuchungen für städtebauliche Entwicklungsmaßnahmen",
+     "einheit": "Stck.",
+     "2024": 1.0,
+     "2025": 1.0,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    },
+    {
+     "code": "G_287_12_013",
+     "name": "Anteil Integrierter Entwicklungskonzepte (IEK), die unter Berücksichtigung des Gender-Mainstreaming und der geschlechtlichen Vielfalt erstellt und fortgeschrieben werden",
+     "einheit": "%",
+     "2024": 93.0,
+     "2025": 100.0,
+     "2026": 100.0,
+     "2027": 100.0,
+     "2028": 100.0,
+     "2029": 100.0,
+     "2030": 100.0
+    }
+   ]
+  },
+  {
+   "epl": "6.1",
+   "pg": "287.13",
+   "name": "Zentrale Programme WSB",
+   "seite": 70,
+   "ergebnisplan": {
+    "1": [
+     null,
+     null,
+     3635.0,
+     1721.0,
+     2936.0,
+     4766.0,
+     7131.0
+    ],
+    "2": [
+     null,
+     null,
+     75.0,
+     100.0,
+     100.0,
+     100.0,
+     100.0
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     null,
+     null,
+     7684.0,
+     3036.0,
+     5272.0,
+     8230.0,
+     12308.0
+    ],
+    "6": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     null,
+     null,
+     -4124.0,
+     -1415.0,
+     -2436.0,
+     -3564.0,
+     -5277.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     null,
+     null,
+     -4124.0,
+     -1415.0,
+     -2436.0,
+     -3564.0,
+     -5277.0
+    ],
+    "12": [
+     null,
+     null,
+     9426.0,
+     9462.0,
+     9462.0,
+     9462.0,
+     9462.0
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     null,
+     null,
+     -13551.0,
+     -10877.0,
+     -11899.0,
+     -13026.0,
+     -14739.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Zentrales Programm RISE",
+     "ipr": "992",
+     "e1": [
+      null,
+      null,
+      3185.0,
+      1675.0,
+      2890.0,
+      4720.0,
+      7085.0
+     ],
+     "k1": [
+      null,
+      null,
+      12508.0,
+      10193.0,
+      12070.0,
+      14887.0,
+      18625.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Wohnraumschutz",
+     "ipr": "992",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      null,
+      null,
+      465.0,
+      490.0,
+      490.0,
+      490.0,
+      490.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Zentrales Programm Investitionspakt",
+     "ipr": "992",
+     "e1": [
+      null,
+      null,
+      450.0,
+      46.0,
+      46.0,
+      46.0,
+      46.0
+     ],
+     "k1": [
+      null,
+      null,
+      450.0,
+      46.0,
+      46.0,
+      46.0,
+      46.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "ZP Stadtentw.fonds Lebendige Quartiere",
+     "ipr": "992",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      null,
+      null,
+      3763.0,
+      1869.0,
+      2229.0,
+      2369.0,
+      2709.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": []
+  },
+  {
+   "epl": "6.1",
+   "pg": "287.14",
+   "name": "Bezirkliche Zuweisungen WSB",
+   "seite": 76,
+   "ergebnisplan": {
+    "1": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     160008.0,
+     126008.0,
+     126008.0,
+     130008.0,
+     130008.0
+    ],
+    "5": [
+     null,
+     null,
+     null,
+     391.0,
+     946.0,
+     1584.0,
+     2029.0
+    ],
+    "6": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     null,
+     null,
+     -160008.0,
+     -126400.0,
+     -126955.0,
+     -131592.0,
+     -132037.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     null,
+     null,
+     -160008.0,
+     -126400.0,
+     -126955.0,
+     -131592.0,
+     -132037.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     null,
+     null,
+     -160008.0,
+     -126400.0,
+     -126955.0,
+     -131592.0,
+     -132037.0
+    ]
+   },
+   "produkte": [],
+   "kennzahlen": []
+  },
+  {
+   "epl": "6.1",
+   "pg": "288.11",
+   "name": "Bauordnung und Hochbau",
+   "seite": 92,
+   "ergebnisplan": {
+    "1": [
+     13473.0,
+     6865.0,
+     3966.0,
+     8403.0,
+     7934.0,
+     7927.0,
+     7927.0
+    ],
+    "2": [
+     9663.0,
+     9711.0,
+     12572.0,
+     19015.0,
+     16439.0,
+     17191.0,
+     17191.0
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     6558.0,
+     7265.0,
+     8486.0,
+     9390.0,
+     8811.0,
+     9509.0,
+     9509.0
+    ],
+    "2c": [
+     35.0,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     12167.0,
+     12189.0,
+     13324.0,
+     13335.0,
+     13637.0,
+     13947.0,
+     14248.0
+    ],
+    "3a": [
+     4223.0,
+     4590.0,
+     3979.0,
+     4923.0,
+     5064.0,
+     5199.0,
+     5331.0
+    ],
+    "3b": [
+     4114.0,
+     3917.0,
+     4970.0,
+     4204.0,
+     4278.0,
+     4359.0,
+     4438.0
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     1079.0,
+     1164.0,
+     1142.0,
+     1341.0,
+     1374.0,
+     1410.0,
+     1444.0
+    ],
+    "3e": [
+     2751.0,
+     2518.0,
+     3233.0,
+     2867.0,
+     2921.0,
+     2979.0,
+     3035.0
+    ],
+    "4": [
+     43.0,
+     47.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0,
+     50.0
+    ],
+    "5": [
+     14.0,
+     14.0,
+     4.0,
+     9.0,
+     7.0,
+     7.0,
+     7.0
+    ],
+    "6": [
+     5817.0,
+     1708.0,
+     614.0,
+     638.0,
+     663.0,
+     690.0,
+     690.0
+    ],
+    "7": [
+     -14233.0,
+     -16804.0,
+     -22598.0,
+     -24644.0,
+     -22863.0,
+     -23958.0,
+     -24259.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -14233.0,
+     -16804.0,
+     -22598.0,
+     -24644.0,
+     -22863.0,
+     -23958.0,
+     -24259.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -14233.0,
+     -16804.0,
+     -22598.0,
+     -24644.0,
+     -22863.0,
+     -23958.0,
+     -24259.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Genehmigung. u. Zulassungsentscheidungen",
+     "ipr": "421",
+     "e1": [
+      4004.0,
+      3887.0,
+      2893.0,
+      6679.0,
+      6190.0,
+      6183.0,
+      6183.0
+     ],
+     "k1": [
+      2151.0,
+      2263.0,
+      2395.0,
+      2871.0,
+      2933.0,
+      2993.0,
+      3054.0
+     ],
+     "e2": [
+      438.0,
+      406.0,
+      null,
+      354.0,
+      360.0,
+      363.0,
+      365.0
+     ],
+     "k2": [
+      2291.0,
+      2218.0,
+      null,
+      2359.0,
+      2418.0,
+      2514.0,
+      2535.0
+     ]
+    },
+    {
+     "produkt": "Techn. Prüfungen bautechn. Nachweise",
+     "ipr": "421",
+     "e1": [
+      4911.0,
+      995.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0
+     ],
+     "k1": [
+      3993.0,
+      2300.0,
+      1570.0,
+      1521.0,
+      1566.0,
+      1608.0,
+      1624.0
+     ],
+     "e2": [
+      115.0,
+      102.0,
+      null,
+      93.0,
+      95.0,
+      95.0,
+      96.0
+     ],
+     "k2": [
+      611.0,
+      566.0,
+      null,
+      622.0,
+      639.0,
+      666.0,
+      673.0
+     ]
+    },
+    {
+     "produkt": "Kontrolle auf Baustellen",
+     "ipr": "421",
+     "e1": [
+      59.0,
+      71.0,
+      97.0,
+      97.0,
+      97.0,
+      97.0,
+      97.0
+     ],
+     "k1": [
+      1052.0,
+      1151.0,
+      1125.0,
+      1085.0,
+      1113.0,
+      1139.0,
+      1166.0
+     ],
+     "e2": [
+      196.0,
+      182.0,
+      null,
+      152.0,
+      156.0,
+      157.0,
+      159.0
+     ],
+     "k2": [
+      1048.0,
+      1014.0,
+      null,
+      1013.0,
+      1043.0,
+      1093.0,
+      1107.0
+     ]
+    },
+    {
+     "produkt": "Bauaufsicht (Arbeitsmittel und Beiträge)",
+     "ipr": "421",
+     "e1": [
+      3701.0,
+      1183.0,
+      200.0,
+      925.0,
+      945.0,
+      945.0,
+      945.0
+     ],
+     "k1": [
+      13111.0,
+      10386.0,
+      13634.0,
+      14326.0,
+      13871.0,
+      14697.0,
+      14771.0
+     ],
+     "e2": [
+      669.0,
+      625.0,
+      null,
+      438.0,
+      445.0,
+      448.0,
+      449.0
+     ],
+     "k2": [
+      3573.0,
+      3489.0,
+      null,
+      2987.0,
+      3052.0,
+      3161.0,
+      3177.0
+     ]
+    },
+    {
+     "produkt": "Bauaufsichtliche Beratung",
+     "ipr": "421",
+     "e1": [
+      0.0,
+      0.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      1029.0,
+      1053.0,
+      1157.0,
+      1231.0,
+      1247.0,
+      1273.0,
+      1300.0
+     ],
+     "e2": [
+      220.0,
+      200.0,
+      null,
+      158.0,
+      160.0,
+      161.0,
+      162.0
+     ],
+     "k2": [
+      1177.0,
+      1114.0,
+      null,
+      1074.0,
+      1093.0,
+      1134.0,
+      1142.0
+     ]
+    },
+    {
+     "produkt": "Kontrolle Tariflohn",
+     "ipr": "421",
+     "e1": [
+      0.0,
+      0.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      694.0,
+      677.0,
+      833.0,
+      793.0,
+      815.0,
+      838.0,
+      860.0
+     ],
+     "e2": [
+      137.0,
+      118.0,
+      null,
+      123.0,
+      126.0,
+      128.0,
+      129.0
+     ],
+     "k2": [
+      732.0,
+      656.0,
+      null,
+      809.0,
+      835.0,
+      881.0,
+      895.0
+     ]
+    },
+    {
+     "produkt": "Arbeitsmittel für den öffentl. Hochbau",
+     "ipr": "421",
+     "e1": [
+      158.0,
+      3.0,
+      29.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "k1": [
+      3137.0,
+      3759.0,
+      4598.0,
+      10121.0,
+      8129.0,
+      8188.0,
+      8244.0
+     ],
+     "e2": [
+      453.0,
+      413.0,
+      null,
+      290.0,
+      295.0,
+      297.0,
+      297.0
+     ],
+     "k2": [
+      2424.0,
+      2306.0,
+      null,
+      2001.0,
+      2045.0,
+      2111.0,
+      2118.0
+     ]
+    },
+    {
+     "produkt": "Neu-, Um- u. Erweiterungsbauten Land",
+     "ipr": "421",
+     "e1": [
+      639.0,
+      725.0,
+      447.0,
+      402.0,
+      402.0,
+      402.0,
+      402.0
+     ],
+     "k1": [
+      2538.0,
+      2081.0,
+      1253.0,
+      1100.0,
+      1123.0,
+      1149.0,
+      1167.0
+     ],
+     "e2": [
+      396.0,
+      311.0,
+      null,
+      235.0,
+      240.0,
+      244.0,
+      247.0
+     ],
+     "k2": [
+      2129.0,
+      1744.0,
+      null,
+      1500.0,
+      1549.0,
+      1650.0,
+      1679.0
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_288_11_001",
+     "name": "Anzahl der beschiedenen Baugenehmigungs- und Zustimmungsverfahren",
+     "einheit": "Stck.",
+     "2024": 415.0,
+     "2025": 350.0,
+     "2026": 200.0,
+     "2027": 230.0,
+     "2028": 230.0,
+     "2029": 230.0,
+     "2030": 230.0
+    },
+    {
+     "code": "B_288_11_003",
+     "name": "Anzahl der Verfahren bei der Prüfung der bautechnischen Nachweise (Standsicherheit, Wärmeschutz und Energieeinsparung)",
+     "einheit": "Stck.",
+     "2024": 1214.0,
+     "2025": 1324.0,
+     "2026": 1000.0,
+     "2027": 1000.0,
+     "2028": 1000.0,
+     "2029": 1000.0,
+     "2030": 1000.0
+    },
+    {
+     "code": "B_288_11_001",
+     "name": "Anzahl der beschiedenen Baugenehmigungs- und Zustimmungsverfahren Die Kennzahl wird ab 2027 moderat erhöht aufgrund der gestiegenen beschiedenen und prognostizierten Zustimmungsverfahren.",
+     "einheit": "",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    },
+    {
+     "code": "B_288_11_003",
+     "name": "Anzahl der Verfahren bei der Prüfung der bautechnischen Nachweise (Standsicherheit, Wärmeschutz und Energieeinsparung) Bei einem großen Teil der Baumaßnahmen ist die bauaufsichtliche Prüfung der bautechnischen Nachweise erforderlich. Diese Anzahl ist in den letzten Jahren zurückgegangen, bei gleichzeitiger Zunahme der Größe und Komplexität solcher Baumaßnahmen.",
+     "einheit": "",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    }
+   ]
+  },
+  {
+   "epl": "6.1",
+   "pg": "288.12",
+   "name": "Bauaufgaben des Bundes (Hochbau)",
+   "seite": 100,
+   "ergebnisplan": {
+    "1": [
+     35510.0,
+     38222.0,
+     44707.0,
+     78167.0,
+     78433.0,
+     80294.0,
+     82524.0
+    ],
+    "2": [
+     17389.0,
+     19728.0,
+     22068.0,
+     50515.0,
+     50107.0,
+     50182.0,
+     50190.0
+    ],
+    "2a": [
+     2047.0,
+     2454.0,
+     2570.0,
+     2660.0,
+     2670.0,
+     2670.0,
+     2670.0
+    ],
+    "2b": [
+     1133.0,
+     1237.0,
+     1560.0,
+     1803.0,
+     1885.0,
+     1960.0,
+     1968.0
+    ],
+    "2c": [
+     119.0,
+     50.0,
+     55.0,
+     105.0,
+     105.0,
+     105.0,
+     105.0
+    ],
+    "3": [
+     16004.0,
+     16329.0,
+     19324.0,
+     23755.0,
+     24373.0,
+     26157.0,
+     28374.0
+    ],
+    "3a": [
+     9199.0,
+     8139.0,
+     9280.0,
+     11446.0,
+     11773.0,
+     12572.0,
+     13650.0
+    ],
+    "3b": [
+     2913.0,
+     3640.0,
+     4499.0,
+     5438.0,
+     5557.0,
+     6012.0,
+     6512.0
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     1607.0,
+     1843.0,
+     2195.0,
+     2807.0,
+     2885.0,
+     3086.0,
+     3349.0
+    ],
+    "3e": [
+     2286.0,
+     2707.0,
+     3350.0,
+     4064.0,
+     4158.0,
+     4487.0,
+     4863.0
+    ],
+    "4": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "6": [
+     2145.0,
+     2917.0,
+     3315.0,
+     3897.0,
+     3953.0,
+     3955.0,
+     3960.0
+    ],
+    "7": [
+     -28.0,
+     -752.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -28.0,
+     -752.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -28.0,
+     -752.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Neu-, Um- u. Erweiterungsbauten Bund",
+     "ipr": "421",
+     "e1": [
+      27415.0,
+      0.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      27024.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "e2": [
+      2133.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      10732.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Bauunterhaltungsmaßnahmen Bund",
+     "ipr": "421",
+     "e1": [
+      8095.0,
+      0.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      8515.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "e2": [
+      603.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      3034.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Baumaßnahmen des Bundes",
+     "ipr": "421",
+     "e1": [
+      null,
+      38222.0,
+      44707.0,
+      78167.0,
+      78433.0,
+      80294.0,
+      82524.0
+     ],
+     "k1": [
+      null,
+      38974.0,
+      44707.0,
+      78167.0,
+      78433.0,
+      80294.0,
+      82524.0
+     ],
+     "e2": [
+      null,
+      3135.0,
+      null,
+      3276.0,
+      3345.0,
+      3540.0,
+      3782.0
+     ],
+     "k2": [
+      null,
+      15907.0,
+      null,
+      19504.0,
+      20116.0,
+      22004.0,
+      23598.0
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_288_12_001",
+     "name": "Projektleistungen der Bundesbauabteilung für Baumaßnahmen des Bundes",
+     "einheit": "Tsd. EUR",
+     "2024": 19471.0,
+     "2025": 29936.0,
+     "2026": 20500.0,
+     "2027": 40000.0,
+     "2028": 40000.0,
+     "2029": 40000.0,
+     "2030": 40000.0
+    },
+    {
+     "code": "B_288_12_001",
+     "name": "Projektleistungen der Bundesbauabteilung für Baumaßnahmen des Bundes: Der Begriff „Projektleistungen“ umfasst bis zum Jahr 2024 alle Leistungen der Bundesbauabteilung sowie der von der Bundesbauabteilung beauftragten freiberuflich tätigen Architektinnen und Architekten sowie Ingenieurinnen und Ingenieure für investive Baumaßnahmen (Neu-, Um- und Erweiterungsbauten) des Bundes. Nach Einführung der Richtlinien für die Durchführung von Bauaufgaben des Bundes (RBBau) vom 01.10.2022 umfasst der Begriff „Projektleistungen“ ab 2025 alle Leistungen der Bundesbauabteilung für Baumaßnahmen (investiv und werterhaltend) des Bundes. Die Bezeichnung der Kennzahl wurde entsprechend angepasst. Die Erhöhung des Kennzahlenwertes ab 2027 ist in erhöhten Projektleistungen für Baumaßnahmen des Bundes in Hamburg begründet.",
+     "einheit": "",
+     "2024": null,
+     "2025": null,
+     "2026": null,
+     "2027": null,
+     "2028": null,
+     "2029": null,
+     "2030": null
+    }
+   ]
+  },
+  {
+   "epl": "6.1",
+   "pg": "289.11",
+   "name": "Landesplanung und Stadtentwicklung",
+   "seite": 113,
+   "ergebnisplan": {
+    "1": [
+     34926.0,
+     4370.0,
+     7515.0,
+     6915.0,
+     6915.0,
+     6915.0,
+     6915.0
+    ],
+    "2": [
+     18705.0,
+     43718.0,
+     13095.0,
+     15154.0,
+     15119.0,
+     25175.0,
+     19928.0
+    ],
+    "2a": [
+     105.0,
+     122.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     14670.0,
+     36638.0,
+     10330.0,
+     9730.0,
+     9730.0,
+     9730.0,
+     9730.0
+    ],
+    "2c": [
+     71.0,
+     95.0,
+     6.0,
+     6.0,
+     6.0,
+     6.0,
+     6.0
+    ],
+    "3": [
+     10173.0,
+     11458.0,
+     10768.0,
+     11611.0,
+     11893.0,
+     11978.0,
+     11875.0
+    ],
+    "3a": [
+     4974.0,
+     5688.0,
+     4882.0,
+     5619.0,
+     5770.0,
+     5768.0,
+     5629.0
+    ],
+    "3b": [
+     2350.0,
+     2530.0,
+     2730.0,
+     2639.0,
+     2693.0,
+     2743.0,
+     2791.0
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     1097.0,
+     1296.0,
+     1179.0,
+     1375.0,
+     1412.0,
+     1415.0,
+     1388.0
+    ],
+    "3e": [
+     1752.0,
+     1943.0,
+     1977.0,
+     1978.0,
+     2018.0,
+     2052.0,
+     2067.0
+    ],
+    "4": [
+     15915.0,
+     6784.0,
+     6800.0,
+     500.0,
+     500.0,
+     500.0,
+     6800.0
+    ],
+    "5": [
+     402.0,
+     410.0,
+     401.0,
+     405.0,
+     405.0,
+     405.0,
+     403.0
+    ],
+    "6": [
+     2583.0,
+     4230.0,
+     208.0,
+     208.0,
+     208.0,
+     208.0,
+     208.0
+    ],
+    "7": [
+     -12851.0,
+     -62229.0,
+     -23757.0,
+     -20963.0,
+     -21210.0,
+     -31351.0,
+     -32299.0
+    ],
+    "8": [
+     3980.0,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     38.0,
+     14489.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     3942.0,
+     -14489.0,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     -8910.0,
+     -76718.0,
+     -23757.0,
+     -20963.0,
+     -21210.0,
+     -31351.0,
+     -32299.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     -8910.0,
+     -76718.0,
+     -23757.0,
+     -20963.0,
+     -21210.0,
+     -31351.0,
+     -32299.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Gesamtstädtische Entwicklungsplanung",
+     "ipr": "421",
+     "e1": [
+      1783.0,
+      1687.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      5071.0,
+      6567.0,
+      1620.0,
+      4097.0,
+      4041.0,
+      4229.0,
+      3692.0
+     ],
+     "e2": [
+      232.0,
+      280.0,
+      null,
+      233.0,
+      237.0,
+      229.0,
+      230.0
+     ],
+     "k2": [
+      1111.0,
+      1241.0,
+      null,
+      1083.0,
+      1115.0,
+      1115.0,
+      1119.0
+     ]
+    },
+    {
+     "produkt": "Stadtwerkstatt",
+     "ipr": "421",
+     "e1": [
+      438.0,
+      683.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      1661.0,
+      2118.0,
+      1161.0,
+      1188.0,
+      1201.0,
+      1213.0,
+      1225.0
+     ],
+     "e2": [
+      162.0,
+      193.0,
+      null,
+      125.0,
+      126.0,
+      127.0,
+      128.0
+     ],
+     "k2": [
+      776.0,
+      855.0,
+      null,
+      592.0,
+      609.0,
+      636.0,
+      637.0
+     ]
+    },
+    {
+     "produkt": "Vorbereitende Bauleitplanung",
+     "ipr": "421",
+     "e1": [
+      2443.0,
+      2728.0,
+      7500.0,
+      6900.0,
+      6900.0,
+      6900.0,
+      6900.0
+     ],
+     "k1": [
+      9480.0,
+      14390.0,
+      8621.0,
+      8060.0,
+      8088.0,
+      8115.0,
+      8166.0
+     ],
+     "e2": [
+      173.0,
+      266.0,
+      null,
+      210.0,
+      213.0,
+      215.0,
+      220.0
+     ],
+     "k2": [
+      826.0,
+      1177.0,
+      null,
+      965.0,
+      990.0,
+      1027.0,
+      1046.0
+     ]
+    },
+    {
+     "produkt": "Senatsplanungen",
+     "ipr": "421",
+     "e1": [
+      30186.0,
+      -1154.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      6501.0,
+      23472.0,
+      3223.0,
+      3806.0,
+      3843.0,
+      3774.0,
+      3795.0
+     ],
+     "e2": [
+      222.0,
+      354.0,
+      null,
+      228.0,
+      232.0,
+      218.0,
+      219.0
+     ],
+     "k2": [
+      1060.0,
+      1566.0,
+      null,
+      1013.0,
+      1037.0,
+      1003.0,
+      1000.0
+     ]
+    },
+    {
+     "produkt": "Stadtentwicklungsvorhaben",
+     "ipr": "421",
+     "e1": [
+      39.0,
+      372.0,
+      15.0,
+      15.0,
+      15.0,
+      15.0,
+      15.0
+     ],
+     "k1": [
+      4320.0,
+      5310.0,
+      5464.0,
+      5908.0,
+      6017.0,
+      15923.0,
+      17197.0
+     ],
+     "e2": [
+      840.0,
+      1003.0,
+      null,
+      879.0,
+      883.0,
+      890.0,
+      858.0
+     ],
+     "k2": [
+      4013.0,
+      4437.0,
+      null,
+      4084.0,
+      4157.0,
+      4323.0,
+      4174.0
+     ]
+    },
+    {
+     "produkt": "Mitwirkung bezirkliche Planungen",
+     "ipr": "421",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      712.0,
+      758.0,
+      706.0,
+      653.0,
+      673.0,
+      677.0,
+      671.0
+     ],
+     "e2": [
+      167.0,
+      195.0,
+      null,
+      160.0,
+      163.0,
+      163.0,
+      160.0
+     ],
+     "k2": [
+      796.0,
+      865.0,
+      null,
+      772.0,
+      798.0,
+      829.0,
+      819.0
+     ]
+    },
+    {
+     "produkt": "Überregionale Planungen und Projekte",
+     "ipr": "421",
+     "e1": [
+      null,
+      4.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      453.0,
+      569.0,
+      465.0,
+      609.0,
+      618.0,
+      635.0,
+      823.0
+     ],
+     "e2": [
+      44.0,
+      53.0,
+      null,
+      65.0,
+      66.0,
+      65.0,
+      66.0
+     ],
+     "k2": [
+      212.0,
+      237.0,
+      null,
+      296.0,
+      303.0,
+      307.0,
+      308.0
+     ]
+    },
+    {
+     "produkt": "Planungen und Projekte Dritter",
+     "ipr": "421",
+     "e1": [
+      37.0,
+      17.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      3154.0,
+      3401.0,
+      3225.0,
+      2647.0,
+      2734.0,
+      2791.0,
+      2738.0
+     ],
+     "e2": [
+      568.0,
+      694.0,
+      null,
+      536.0,
+      547.0,
+      550.0,
+      537.0
+     ],
+     "k2": [
+      2715.0,
+      3072.0,
+      null,
+      2484.0,
+      2563.0,
+      2660.0,
+      2596.0
+     ]
+    },
+    {
+     "produkt": "Wohnungsbauentwicklung",
+     "ipr": "421",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      16399.0,
+      7807.0,
+      6781.0,
+      905.0,
+      905.0,
+      905.0,
+      903.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Finanzanlagen",
+     "ipr": "421",
+     "e1": [
+      3980.0,
+      35.0,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      65.0,
+      16696.0,
+      6.0,
+      6.0,
+      6.0,
+      6.0,
+      6.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": [
+    {
+     "code": "B_289_11_001",
+     "name": "Anzahl der bearbeiteten Konzepte, Planungen und Wettbewerbe",
+     "einheit": "Stck.",
+     "2024": 35.0,
+     "2025": 38.0,
+     "2026": 35.0,
+     "2027": 35.0,
+     "2028": 35.0,
+     "2029": 35.0,
+     "2030": 35.0
+    },
+    {
+     "code": "B_289_11_003",
+     "name": "Anzahl der bearbeiteten Flächennutzungsplanänderungen",
+     "einheit": "Stck.",
+     "2024": 45.0,
+     "2025": 41.0,
+     "2026": 45.0,
+     "2027": 45.0,
+     "2028": 45.0,
+     "2029": 45.0,
+     "2030": 45.0
+    },
+    {
+     "code": "B_289_11_004",
+     "name": "Anzahl der bearbeiteten Senatsbebauungspläne",
+     "einheit": "Stck.",
+     "2024": 35.0,
+     "2025": 34.0,
+     "2026": 36.0,
+     "2027": 36.0,
+     "2028": 36.0,
+     "2029": 36.0,
+     "2030": 36.0
+    },
+    {
+     "code": "B_289_11_005",
+     "name": "Anzahl der städtischen Großprojekte",
+     "einheit": "Stck.",
+     "2024": 4.0,
+     "2025": 4.0,
+     "2026": 4.0,
+     "2027": 4.0,
+     "2028": 4.0,
+     "2029": 4.0,
+     "2030": 4.0
+    },
+    {
+     "code": "B_289_11_008",
+     "name": "Anzahl betreuter Innovationsquartiere und -bereiche",
+     "einheit": "Stck.",
+     "2024": 17.0,
+     "2025": 17.0,
+     "2026": 17.0,
+     "2027": 17.0,
+     "2028": 17.0,
+     "2029": 17.0,
+     "2030": 17.0
+    },
+    {
+     "code": "G_289_11_018",
+     "name": "Anteil der Jurysitzungen / der Preisgerichte mit ausgewogener Besetzung innerhalb der Gruppe der Fachpreisrichterinnen und Fachpreisrichter",
+     "einheit": "%",
+     "2024": 82.0,
+     "2025": 82.0,
+     "2026": 60.0,
+     "2027": 60.0,
+     "2028": 60.0,
+     "2029": 60.0,
+     "2030": 60.0
+    }
+   ]
+  },
+  {
+   "epl": "6.1",
+   "pg": "289.12",
+   "name": "Zentrale Programme LP",
+   "seite": 122,
+   "ergebnisplan": {
+    "1": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     null,
+     null,
+     350.0,
+     437.0,
+     587.0,
+     743.0,
+     906.0
+    ],
+    "6": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "7": [
+     null,
+     null,
+     -350.0,
+     -437.0,
+     -587.0,
+     -743.0,
+     -906.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     null,
+     null,
+     -350.0,
+     -437.0,
+     -587.0,
+     -743.0,
+     -906.0
+    ],
+    "12": [
+     null,
+     null,
+     2230.0,
+     2145.0,
+     2085.0,
+     1760.0,
+     1160.0
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     null,
+     null,
+     -2580.0,
+     -2582.0,
+     -2672.0,
+     -2503.0,
+     -2066.0
+    ]
+   },
+   "produkte": [
+    {
+     "produkt": "Planung u. Begleitung des Wohnungsbaus",
+     "ipr": "992",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      null,
+      null,
+      2517.0,
+      2133.0,
+      2223.0,
+      2304.0,
+      1866.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "produkt": "Infrastrukturelle Aufwertungen",
+     "ipr": "992",
+     "e1": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k1": [
+      null,
+      null,
+      63.0,
+      450.0,
+      450.0,
+      200.0,
+      200.0
+     ],
+     "e2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "k2": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "kennzahlen": []
+  },
+  {
+   "epl": "6.1",
+   "pg": "289.13",
+   "name": "Bezirkliche Zuweisungen LP",
+   "seite": 128,
+   "ergebnisplan": {
+    "1": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2": [
+     null,
+     null,
+     2684.0,
+     2584.0,
+     1334.0,
+     1354.0,
+     1354.0
+    ],
+    "2a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "2c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3a": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3b": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3c": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3d": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "3e": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "4": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5": [
+     null,
+     null,
+     639.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "6": [
+     null,
+     null,
+     46.0,
+     46.0,
+     46.0,
+     46.0,
+     46.0
+    ],
+    "7": [
+     null,
+     null,
+     -3369.0,
+     -2630.0,
+     -1380.0,
+     -1400.0,
+     -1400.0
+    ],
+    "8": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "9": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "11": [
+     null,
+     null,
+     -3369.0,
+     -2630.0,
+     -1380.0,
+     -1400.0,
+     -1400.0
+    ],
+    "12": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "13": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "14": [
+     null,
+     null,
+     -3369.0,
+     -2630.0,
+     -1380.0,
+     -1400.0,
+     -1400.0
+    ]
+   },
+   "produkte": [],
+   "kennzahlen": []
+  }
+ ]
+}
